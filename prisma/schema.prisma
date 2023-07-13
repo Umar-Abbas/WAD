@@ -13,25 +13,185 @@ datasource db {
   shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
 }
 
+model User {
+  id            String    @id @default(cuid())
+  firstName     String?
+  lastName      String?
+  gender        String?
+  nationality   String?
+  dateOfBirth   DateTime?
+  phoneNum      String?
+  email         String?   @unique
+  password          String?
+  emailVerified DateTime?
+  image         String?
+  forgotPasswordToken String?
+  verifyToken String?
+  forgotPasswordTokenExpiry DateTime @default(now())
+  verifyTokenExpiry DateTime @default(now())
+  isVerified Boolean  @default(false)
+  tokenBalance  Int  @default(0)
+  role          String  @default("user")
+  accounts      Account[]
+  sessions      Session[]
+ 
+  comments      Comment[]
+  hearts        Heart[]
+}
+
+model Lottrey  {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @updatedAt @default(now())
+  updatedAt DateTime  @updatedAt
+  title     String
+  type      String
+  discription String
+  totalTicket Int?       @default(0)
+  totalSale   Int?       @default(0)
+  totalBalance Int?       @default(0)
+  progress  Int?       @default(0)
+  imageMain String
+  imageSmall String
+  imageThumb String
+  imageVideo String
+  category  String
+  isRunning Boolean  @default(true)
+  isEnded   Boolean  @default(false)
+  published Boolean   @default(false)
+  itemId    Int?       @default(0)
+  winnerId  Int?       @default(0)
+  endTime   String 
+  isFeatured Boolean @default(false)
+  comments  Comment[]
+  hearts    Heart[]
+
+}
+model Lottrey_ticket {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  lottreyId String
+  UserId    String
+  LottreyNo String
+  isExpired Boolean @default(false)
+  nftTX String
+}
+model Lottrey_winner {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  lottreyId String
+  UserId    String
+  LottreyNo String
+  
+}
+model UserWallet {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  UserId    String
+  tokenIn  Int  @default(0)
+  tokenOut Int  @default(0)
+  tokenBalance  Int  @default(0)
+  Description String
+  
+}
+model Wallet_Deposit {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  Coin   String
+  Network  String  
+  Address String  
+  QRCode  String  
+    
+}
+model MasterWallet {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  UserId    String
+  TokenSale  Int  @default(0)
+  Price      Int  @default(0)
+  TokenRecived Int
+  Description String
+  Approved  Boolean @default(false)
+  
+}
+model ShoppingCart {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  LottreyNo String
+  noOfTickets Int?
+  Price     Int
+  totalPrice Int?
+  isCompleted Boolean
+  userId    String
+  discription String  @default("NA")
+  
+  }
+  model Payment {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  cartId    String
+  UserId    String
+  amount    Int?
+  discription String
+  }
+  model WishList {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  LottreyNo String
+  noOfTickets Int?
+  Price     Int
+  isCompleted Boolean
+  userId    String
+  shoppingCart String
+  discription String
+  
+  }
+
+
+
+
+model Heart {
+  id     String @id @default(cuid())
+  lottreyId String
+  userId String
+  Lottrey   Lottrey   @relation(fields: [id], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  lottrey      Lottrey     @relation(fields: [id], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id])
+  title     String
+  lottreyId    String
+  userId    String
+  createdAt DateTime @default(now())
+}
 
 model Account {
-  id                 String  @id @default(cuid())
-  userId             String
-  type               String
-  provider           String
-  providerAccountId  String
-  refresh_token      String?  @db.Text
-  access_token       String?  @db.Text
-  expires_at         Int?
-  token_type         String?
-  scope              String?
-  id_token           String?  @db.Text
-  session_state      String?
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
-  @@index([userId])
 }
 
 model Session {
@@ -40,17 +200,6 @@ model Session {
   userId       String
   expires      DateTime
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  @@index([userId])
-}
-
-model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
 }
 
 model VerificationToken {
