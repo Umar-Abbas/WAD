@@ -20,6 +20,29 @@ module.exports = {
         "slide-up-fade": "slide-up-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
         "slide-down-fade": "slide-down-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
       },
+      colors: {
+        'card-bg': 'rgba(70, 70, 70, 0.09)',
+        'cardd2-bg': 'rgba(153, 60, 60, 0.70)',
+
+
+
+      },
+      saturate: {
+        25: '.25',
+        75: '.75',
+      },
+      boxShadow: {
+        'cardshado': '0px 21px 204px 0px rgba(0, 0, 0, 0.10)',
+        'card': '-3.013333320617676px 3.013333320617676px 3.013333320617676px 0px rgba(255, 255, 255, 0.39) inset, 2.009999990463257px -2.009999990463257px 20px 0px rgba(214, 214, 214, 0.17) inset',
+
+      },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+          '0 35px 35px rgba(0, 0, 0, 0.25)',
+          '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
+      },
       keyframes: {
         // Fade up and down
         "fade-up": {
@@ -68,4 +91,5 @@ module.exports = {
       addVariant("radix-side-bottom", '&[data-side="bottom"]');
     }),
   ],
+  darkMode: 'class',
 };

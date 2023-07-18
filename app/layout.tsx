@@ -1,10 +1,9 @@
-import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-import cx from "classnames";
-import { sfPro, inter } from "./fonts";
-import Nav from "@/components/layout/nav";
 import Footer from "@/components/layout/footer";
+import Navbar from "@/components/layout/navbar";
+import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
+import QueryWrapper from "./QueryWrapper";
+import "./globals.css";
 
 export const metadata = {
   title: "Precedent - Building blocks for your Next.js project",
@@ -28,17 +27,20 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+      <body className={`min-h-full dark:bg-black text-white cx(sfPro.variable, inter.variable)`} >
+      <QueryWrapper>
+        <div className="" />
         <Suspense fallback="...">
-          {/* @ts-expect-error Server Component */}
-          <Nav />
+          {/* @
+          ts-expect-error Server Component */}
+          <Navbar />
         </Suspense>
-        <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
+        <main className="dark:bg-black dark:text-white lg:pb-10 md:pb-8 pb-4 bg-white">
           {children}
         </main>
         <Footer />
         <Analytics />
+        </QueryWrapper>
       </body>
     </html>
   );

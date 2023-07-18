@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&');
+
+.bogold {
+  font-family: 'Agdasima', sans-serif;
+  font-weight: 600 !important;
+}
+
+.Pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.fixed-height-thumbnail {
+  height: 200px;
+  object-fit: cover;
+}
+
+.fixed-height-original {
+  height: 400px;
+  object-fit: cover;
+}
+
+.gallery-container {
+  max-width: 600px;
+  /* Adjust the container width as needed */
+  margin: 0 auto;
+}
+
+.image-gallery-slide .image-gallery-image {
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+  --primarycolor:
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
+}
+
+/* .bgsubscrube {
+  background-image: url(../public/images/Subscribe.png);
+} */
+
+.line-clamps {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-card {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 50px !important;
+}
+
+.image-gallery-thumbnail {
+  border-radius: 5px !important;
+  background: #F4F4F4 !important;
+  margin: 0 10px !important;
+
+}
+
+.image-gallery-thumbnails .image-gallery-thumbnails-container {
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+  right: 0;
+  bottom: 0px;
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  top: 93% !important;
+}
+
+@media (max-width: 768px) {
+  .image-gallery-thumbnail {
+    width: 50px !important;
+  }
+}
+
+.themeButton {
+  color: #9333EA;
+}
+
+.red .themeButton {
+  color: #DC2626;
+}
+
+.red .themebackground {
+  background-color: #DC2626;
+}
+
+.blue .themeButton {
+  color: #2563EB;
+}
+
+.fuchsia .themeButton {
+  color: #C026D3;
+}
+
+.cyan .themeButton {
+  color: #0891B2;
+}
+
+.sky .themeButton {
+  color: #0284C7;
+}
+
+.green .themeButton {
+  color: #16A34A;
+}
+
+.indigo .themeButton {
+  color: #4F46E5;
+}
+
+.violet .themeButton {
+  color: #7C3AED;
+}
+
+
+
+.detailshadow {
+  box-shadow: 0px 6.960000038146973px 26px 0px rgba(0, 0, 0, 0.19);
+}
+
+
+
+.Satoshi {
+  font-family: 'Satoshi', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.para {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700 !important;
+}
+
+.wadbtn {
+  border-radius: 100px;
+  background: linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%);
+  box-shadow: 0px 25px 30px 0px rgba(21, 0, 53, 0.16);
+}
+
+.slider-section .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slider-section .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-section .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  border-radius: 10px !important;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  opacity: 1;
+  color: #DBDBDB !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider-section .slick-dots li.slick-active button:before {
+  opacity: unset !important;
+  color: #F42D32 !important;
+  font-size: 10px;
+
+}
+
+.festuredC {
+  box-shadow: 0px 21px 204px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cardbgdark {
+  border-radius: 26px;
+  background: rgba(70, 70, 70, 0.09);
+  box-shadow: -3.013333320617676px 3.013333320617676px 3.013333320617676px 0px rgba(255, 255, 255, 0.39) inset, 2.009999990463257px -2.009999990463257px 20px 0px rgba(214, 214, 214, 0.17) inset;
+  backdrop-filter: blur(37.21466827392578px);
+}
