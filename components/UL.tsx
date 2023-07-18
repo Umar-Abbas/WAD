@@ -65,28 +65,18 @@ export default function Ul(props: any) {
             </div>
             <div className="md:hidden  flex  items-center" >
 
-                <Link className="relative font-medium text-white/[.8] hover lg:bg-transparent lg:p-2 px-4 lg:w-auto w-full:text-white py-3" href="/shoping-cart">
-                    <div className="relative w-8 h-8">
-                        <Image
-                            width={28}
-                            height={28}
-                            alt='copyicon'
-                            className='ml-1'
-                            src='/images/carticon.svg'
-                        />
-                        <span className="bg-[#fff] rounded-full w-3 h-3 absolute right-0 top-0 flex items-center justify-center font-bold text-[10px] p-1 text-purple-600 ">5</span>
-                    </div>
-                </Link>
+             
 
-                <button onClick={() => setToggle(!toggle)} type="button" className="hs-collapse-toggle p-1 inline-flex justify-center items-center gap-2 rounded-md border-2 border-white/[.8] font-medium text-white/[.5] shadow-sm align-middle hover:bg-white/[.1] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                    <Image
-                        width={28}
-                        height={28}
-                        alt='sfsf'
-                        className=''
-                        src='/images/menu.svg'
-                    />
-                </button>
+                <div className="lg:hidden">
+              <button  onClick={() => setToggle(!toggle)} type="button" className="hs-collapse-toggle p-2 bg-black inline-flex justify-center items-center gap-2 rounded-md border border-white/[.5] font-medium text-white/[.5] shadow-sm align-middle   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg className="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <svg className="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </button>
+            </div>
             </div>
 
         </>
