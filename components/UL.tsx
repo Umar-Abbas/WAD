@@ -29,49 +29,38 @@ export default function Ul(props: any) {
                             src='/images/xmarkw.svg' alt='logo'
                         />
                     </button>
-                    <Link
-                        onClick={() => setToggle(!toggle)}
-                        className="flex items-center font-medium lg:bg-transparent hover:bg-slate-500 lg:py-5 py-3 md:p-2 px-10 md:w-auto w-full text-white sm:py-6" href="/lottrey" aria-current="page">
-                        <Image src='/images/lottery-logo.svg'
-                            className="mr-2"
-                            width={20}
-                            height={20}
-                            alt="lottery"
-                        />
-                        Lottrey</Link>
-                    <Link
-                        onClick={() => setToggle(!toggle)}
-                        className="flex items-center font-medium text-white/[.8] hover lg:bg-transparent hover:bg-slate-500 lg:py-5 py-3 md:p-2 px-10 md:w-auto w-full:text-white sm:py-6" href="/winner">
-                        <Image src='/images/winner-logo.svg'
-                            className="mr-2"
-                            width={20}
-                            height={20}
-                            alt="lottery"
-                        />
-                        Winners
-                    </Link>
-                    <Link
-                        onClick={() => setToggle(!toggle)}
-                        className="flex items-center font-medium text-white/[.8] hover lg:bg-transparent hover:bg-slate-500 lg:py-5 py-3 md:p-2 px-10 md:w-auto w-full:text-white sm:py-6 lg:mr-8" href="/wallet">
-                        <Image src='/images/wallet-logo.svg'
-                            className="mr-2"
-                            width={20}
-                            height={20}
-                            alt="lottery"
-                        />
-                        Wallet</Link>
-                    <Link
-                        onClick={() => setToggle(!toggle)}
-                        className="flex items-center font-medium text-white/[.8] hover lg:bg-transparent hover:bg-slate-500 lg:py-5 py-3 md:p-2 px-10 md:w-auto w-full:text-white sm:py-6 lg:mr-8" href="/shoping-cart">
-                        <Image
-                            width={20}
-                            height={20}
-                            alt='copyicon'
-                            className='p-[1px] mr-2'
-                            src='/images/wishlist-icon.svg'
-                        />
-                        Wishlist
-                    </Link>
+                    <ul className='flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center md:justify-center sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7'>
+                        <li className="mx-5 nav-item">
+                            <Link href="/">
+                                <div className='nav-link  p-0  text-small' >Home    </div>
+                            </Link>
+                        </li>
+                        <li className="mx-5 nav-item">
+                            <Link href="/rating-index">
+                                <div className='nav-link  p-0  text-small' >Tokenomics</div>
+                            </Link>
+                        </li>
+                        <li className="mx-5 nav-item">
+                            <Link href="/investment">
+                                <div className='nav-link  p-0  text-small' >About WAD</div>
+                            </Link>
+                        </li>
+                        <li className="mx-5 nav-item">
+                            <Link href="/gallery">
+                                <div className='nav-link  p-0  text-small' >Key Features</div>
+                            </Link>
+                        </li>
+                        <li className="mx-5 nav-item">
+                            <Link href="/news">
+                                <div className='nav-link  p-0  text-small' >Core Values</div>
+                            </Link>
+                        </li>
+                        <li className="mx-5 nav-item">
+                            <Link href="/news">
+                                <div className='nav-link  p-0  text-small' >More</div>
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div className="md:hidden  flex  items-center" >
