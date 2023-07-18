@@ -1,5 +1,5 @@
 import Footer from "@/components/layout/footer";
-import Navbar from "@/components/layout/navbar";
+import Nav from "@/components/layout/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
 import QueryWrapper from "./QueryWrapper";
@@ -31,8 +31,7 @@ export default async function RootLayout({
       <QueryWrapper>
         <div className="" />
         <Suspense fallback="...">
-          {/* @
-          ts-expect-error Server Component */}
+          {/* @ts-expect-error Server Component */}
           <Navbar />
         </Suspense>
         <main className="dark:bg-black dark:text-white lg:pb-10 md:pb-8 pb-4 bg-white">
