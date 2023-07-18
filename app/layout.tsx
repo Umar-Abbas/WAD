@@ -28,17 +28,17 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-full dark:bg-black text-white cx(sfPro.variable, inter.variable)`} >
-      <QueryWrapper>
-        <div className="" />
-        <Suspense fallback="...">
-          {/* @ts-expect-error Server Component */}
-          <Navbar />
-        </Suspense>
-        <main className="dark:bg-black dark:text-white lg:pb-10 md:pb-8 pb-4 bg-white">
-          {children}
-        </main>
-        <Footer />
-        <Analytics />
+        <QueryWrapper>
+          <div className="" />
+          <Suspense fallback="...">
+            {/* @ts-expect-error Server Component */}
+            <Nav />
+          </Suspense>
+          <main className="dark:bg-black dark:text-white lg:pb-10 md:pb-8 pb-4 bg-white">
+            {children}
+          </main>
+          <Footer />
+          <Analytics />
         </QueryWrapper>
       </body>
     </html>
