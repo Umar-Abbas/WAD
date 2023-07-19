@@ -6,10 +6,10 @@ export default function WadCommunity() {
             <img className='absolute left-0' src="/images/lineL.png" />
             <img className='absolute right-0' src="/images/lineR.png" />
             <div className="max-w-[1280px] Satoshi mx-auto z-40">
-                <div className='grid lg:grid-cols-2 z-40 lg:h-[513px] bg-[url(/images/WadCommunityBG.png)] bg-cover rounded-[45px] overflow-hidden'>
+                <div className='grid lg:grid-cols-2 dark:shadow-cardabout items-center z-40 h-[350px] md:h-[400px] lg:h-[513px] bg-[url(/images/WadCommunityBG.png)] bg-cover rounded-[45px] overflow-hidden'>
 
                     <div className='flex items-center h-full'>
-                        <div className='pl-16'>
+                        <div className='md:pl-16 px-6'>
                             <h2 className="text-[#ffffff] lg:text-[40px] md:text-3xl sm:text-2xl text-xl dark:text-white">
                                 Join WAD Community
                             </h2>

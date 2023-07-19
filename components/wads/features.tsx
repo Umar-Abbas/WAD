@@ -22,13 +22,16 @@ export default function Feartures() {
                 <>
                   <div className="lg:p-6 p-4 w-full h-[267px] bg-white dark:bg-card-bg dark:shadow-card shadow-cardshado festuredC rounded-[24PX] overflow-hidden">
                     <div className="">
-                      <Image
-                        alt="logos"
-                        className="ml-6"
-                        width={100}
-                        height={112}
-                        src={datacard.Image}
-                      />
+                      <div className="inline-block rounded-xl  ml-6">
+                        <Image
+                         priority={true}
+                          alt="logos"
+                          className="dark:shadow-pillarImage rounded-xl "
+                          width={100}
+                          height={112}
+                          src={datacard.Image}
+                        />
+                      </div>
                       <h4 className="block mt-1 lg:text-[22px] font-extrabold text-[#000] dark:text-white">
                         {datacard.title}
 
@@ -60,13 +63,16 @@ export default function Feartures() {
                 <>
                   <div className="lg:p-6 p-4 w-full">
                     <div className="">
-                      <Image
-                        alt="logos"
-                        className="rounded-xl"
-                        width={100}
-                        height={112}
-                        src={data.Image}
-                      />
+                      <div className="inline-block rounded-xl dark:shadow-pillarImage">
+                        <Image
+                         priority={true}
+                          alt="logos"
+                          className="rounded-xl "
+                          width={100}
+                          height={112}
+                          src={data.Image}
+                        />
+                      </div>
                       <h4 className="block md:mt-6 mt-3 lg:text-[22px] font-extrabold text-[#000] dark:text-white">
                         {data.title}
                       </h4>
@@ -101,30 +107,45 @@ export default function Feartures() {
 
           <div className="grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 ">
             <div className="">
-              <img
+              <Image
+               priority={true}
+                width={600}
+                height={800}
                 alt="logos"
-                className="rounded-xl"
-                src='/images/buywad1.png'
+                className="rounded-xl w-full"
+                src='/images/buywad1.svg'
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:gap-6 gap-4">
-              <img
+              <Image
+               priority={true}
+                width={400}
+                height={400}
                 alt="logos"
-                className="rounded-xl"
-                src='/images/buywad5.png'
+                className="rounded-xl w-full"
+                src='/images/buywad5.svg'
               />
-              <img
+              <Image
+               priority={true}
+                width={400}
+                height={400}
                 alt="logos"
-                className="rounded-xl"
-                src='/images/buywad4.png'
-              />  <img
+                className="rounded-xl w-full"
+                src='/images/buywad4.svg'
+              />  <Image
+               priority={true}
+                width={400}
+                height={400}
                 alt="logos"
-                className="rounded-xl"
-                src='/images/buywad2.png'
-              />  <img
+                className="rounded-xl w-full"
+                src='/images/buywad2.svg'
+              />  <Image
+               priority={true}
+                width={400}
+                height={400}
                 alt="logos"
-                className="rounded-xl"
-                src='/images/buywad3.png'
+                className="rounded-xl w-full"
+                src='/images/buywad3.svg'
               />
             </div>
           </div>

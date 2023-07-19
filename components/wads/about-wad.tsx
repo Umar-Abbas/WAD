@@ -6,7 +6,7 @@ export default function AboutWad() {
       <img className='absolute left-0' src="/images/lineL.png" />
       <img className='absolute right-0' src="/images/lineR.png" />
       <div className="max-w-[1280px] Satoshi mx-auto z-40">
-        <div className='grid lg:grid-cols-2 z-40 lg:h-[513px] bg-[url(/images/bg-wad.png)] bg-cover rounded-[45px] overflow-hidden'>
+        <div className='grid lg:grid-cols-2 z-40 dark:shadow-cardabout lg:h-[513px] bg-[url(/images/bg-wad.png)] bg-cover rounded-[45px] overflow-hidden'>
           <div></div>
           <div className='flex items-center h-full'>
             <div className='p-6'>

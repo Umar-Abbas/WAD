@@ -10,18 +10,20 @@ import OurPartner from './our-partner';
 export default function PaymentCard() {
   return (
     <>
-      <section className="py-20 slider-section">
-        <div className="max-w-[1280px] Satoshi mx-auto">
-
+      <section className="lf:py-20 py-10 slider-section">
+        <div className="max-w-[1280px] Satoshi relative mx-auto">
+          <img
+            src='/images/carouselbg-wu.png' className='absolute bottom-0 w-full block dark:hidden left-0 right-0' />
+          <img src='/images/carouselbg-bu.png' className='absolute bottom-0 w-full dark:block hidden left-0 right-0' />
           <div className='grid grid-cols-1 gap-6'>
             {/* {wadteams?.map((teamscard, idx) => {
                 return (
                   <> */}
             {/* card1 */}
-            <div className=' z-40 flex items-center lg:h-[414px] bg-[url(/images/payment1.png)] bg-cover rounded-[45px] overflow-hidden'>
-              <div className='grid grid-cols-2 w-full px-10 lg:gap-20 gap-6 '>
-                <div className="flex lg:h-[298px] my-auto">
-                  <div className='flex flex-col justify-between'>
+            <div className=' z-40 flex items-center md:h-[414px] bg-[url(/images/payment1.png)] bg-cover rounded-[45px] overflow-hidden'>
+              <div className='grid md:grid-cols-2 w-full px-10 lg:gap-20 gap-6  py-10'>
+                <div className="md:flex md:h-[298px] my-auto">
+                  <div className='md:flex md:flex-col justify-between'>
                     <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-extrabold text-white dark:text-white">
                       WAD Statistics
                     </h3>
@@ -34,7 +36,9 @@ export default function PaymentCard() {
                       </h4>
                     </div>
                   </div>
-                  <img
+                  <Image
+                    width={300}
+                    height={300}
                     alt="logos"
                     className="rounded-xl"
                     src='/images/paymentImage.png'
@@ -68,10 +72,10 @@ export default function PaymentCard() {
               </div>
             </div>
             {/* card2 */}
-            <div className=' z-40 flex items-center lg:h-[414px] bg-[url(/images/payment2.png)] bg-cover rounded-[45px] overflow-hidden'>
-              <div className='grid grid-cols-2 w-full px-10 lg:gap-20 gap-6 '>
-                <div className="flex lg:h-[298px] my-auto">
-                  <div className='flex flex-col justify-between'>
+            <div className=' z-40 flex items-center md:h-[414px] bg-[url(/images/payment2.png)] bg-cover rounded-[45px] overflow-hidden'>
+              <div className='grid md:grid-cols-2 w-full px-10 lg:gap-20 gap-6  py-10'>
+                <div className="md:flex md:h-[298px] my-auto">
+                  <div className='md:flex md:flex-col justify-between'>
                     <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-extrabold text-white dark:text-white">
                       WAD Tokenomics
                     </h3>
@@ -84,7 +88,9 @@ export default function PaymentCard() {
                       </h4>
                     </div>
                   </div>
-                  <img
+                  <Image
+                    width={300}
+                    height={300}
                     alt="logos"
                     className="rounded-xl"
                     src='/images/paymentImage1.png'
@@ -118,10 +124,10 @@ export default function PaymentCard() {
               </div>
             </div>
             {/* card2 */}
-            <div className=' z-40 flex items-center lg:h-[414px] bg-[url(/images/payment3.png)] bg-cover rounded-[45px] overflow-hidden'>
-              <div className='grid grid-cols-2 w-full px-10 lg:gap-20 gap-6 '>
-                <div className="flex lg:h-[298px] my-auto">
-                  <div className='flex flex-col justify-between'>
+            <div className=' z-40 flex items-center md:h-[414px] bg-[url(/images/payment3.png)] bg-cover rounded-[45px] overflow-hidden'>
+              <div className='grid md:grid-cols-2 w-full px-10 lg:gap-20 gap-6  py-10'>
+                <div className="md:flex md:h-[298px] my-auto">
+                  <div className='md:flex md:flex-col justify-between'>
                     <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-extrabold text-white dark:text-white">
                       WAD Tokenomics
                     </h3>
@@ -134,13 +140,15 @@ export default function PaymentCard() {
                       </h4>
                     </div>
                   </div>
-               
-                <img
+
+                  <Image
+                    width={300}
+                    height={300}
                     alt="logos"
                     className="w-full"
                     src='/images/paymentImage3.png'
                   />
-            
+
                 </div>
                 <div className="flex items-center justify-center flex-col">
                   <div>
@@ -162,10 +170,10 @@ export default function PaymentCard() {
 
                     <div className='flex items-center' >
                       <button className="bg-white mr-5 w-auto inline-flex justify-center items-center gap-x-3 text-cente rounded-full  whitespace-nowrap text-black font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 transition py-3 px-8 dark:focus:ring-0" >
-                      WAD Token
+                        WAD Token
                       </button>
                       <button className="bg-white w-auto inline-flex justify-center items-center gap-x-3 text-cente rounded-full  whitespace-nowrap text-black font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 transition py-3 px-8 dark:focus:ring-0" >
-                      WADFi
+                        WADFi
                       </button>
                     </div>
                   </div>
@@ -175,7 +183,7 @@ export default function PaymentCard() {
           </div>
           <OurPartner />
         </div>
-      
+
       </section >
     </>
   )

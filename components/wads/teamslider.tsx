@@ -9,7 +9,7 @@ import { wadteams, settings2 } from "../../app/dataComponet";
 export default function Teamslider() {
   return (
     <>
-      <section className="py-20 slider-section">
+      <section className="lg:py-20 py-10 slider-section">
         <div className="max-w-[1280px] Satoshi mx-auto">
           <p className="md:text-[16px] text-sm font-normal text-center mb-6 text-[#516371] dark:text-white ">
             Core Team

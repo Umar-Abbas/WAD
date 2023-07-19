@@ -34,6 +34,9 @@ module.exports = {
       boxShadow: {
         'cardshado': '0px 21px 204px 0px rgba(0, 0, 0, 0.10)',
         'card': '-3.013333320617676px 3.013333320617676px 3.013333320617676px 0px rgba(255, 255, 255, 0.39) inset, 2.009999990463257px -2.009999990463257px 20px 0px rgba(214, 214, 214, 0.17) inset',
+        'cardabout': '1px 0px 171px -3px rgba(153, 60, 60, 0.70)',
+        'pillarImage':'0px 1px 73px 4px rgba(153, 60, 60)',
+        'mapcard':'0px 21px 204px 0px rgba(0, 0, 0, 0.10)'
 
       },
       dropShadow: {

@@ -84,6 +84,36 @@ export const imgcarusel = [
         Image: "/images/Clogo3.svg",
     },
 ];
+export const ourclient = [
+    {
+        Image: "/images/Clogo5.svg",
+    },
+    {
+        Image: "/images/Clogo6.svg",
+    },
+    {
+        Image: "/images/Clogo7.svg",
+    },
+    {
+        Image: "/images/Clogo6.svg",
+    },
+
+];
+export const ourclientd = [
+    {
+        Image: "/images/Clogo5w.svg",
+    },
+    {
+        Image: "/images/Clogo6w.svg",
+    },
+    {
+        Image: "/images/Clogo7w.svg",
+    },
+    {
+        Image: "/images/Clogo6w.svg",
+    },
+
+];
 export var settings = {
     dots: true,
     infinite: true,
@@ -96,7 +126,7 @@ export var settings = {
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
             },
         },
@@ -153,7 +183,7 @@ export const wadteams = [
 export var settings2 = {
     dots: true,
     infinite: true,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     speed: 800,
     slidesToShow: 3,

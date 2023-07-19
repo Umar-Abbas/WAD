@@ -13,7 +13,7 @@ export default function Carousel() {
           As Seen On
         </h2>
       </div>
-      <Slider className="lg:w-[670px]  mx-auto" {...settings}>
+      <Slider className="md:w-[670px] w-[85%]  mx-auto" {...settings}>
         {imgcarusel.map((carouselD, idx) => {
           return (
             <>
