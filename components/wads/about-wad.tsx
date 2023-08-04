@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutWad() {
   return (
-    <section className='lg:py-24 md:py-12 flex items-center relative overflow-hidden py-8'>
+    <section className='lg:pt-24 lg:pb-12 md:pt-12 md:mb-6 flex items-center relative overflow-hidden py-8' id="about">
       <img className='absolute left-0' src="/images/lineL.png" />
       <img className='absolute right-0' src="/images/lineR.png" />
       <div className="max-w-[1280px] Satoshi mx-auto z-40">
@@ -10,7 +10,7 @@ export default function AboutWad() {
           <div></div>
           <div className='flex items-center h-full'>
             <div className='p-6'>
-              <h2 className="text-[#ffffff] lg:text-[40px] md:text-3xl sm:text-2xl text-xl dark:text-white">
+              <h2 className="text-[#ffffff] lg:text-[40px] md:text-3xl sm:text-2xl text-xl dark:text-white font-bold">
                 About WAD
               </h2>
               <p className="mt-3 md:text-lg text-sm font-normal text-white dark:text-white ">

@@ -14,7 +14,7 @@ export default function Teamslider() {
           <p className="md:text-[16px] text-sm font-normal text-center mb-6 text-[#516371] dark:text-white ">
             Core Team
           </p>
-          <h2 className="text-[#150035]  lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white">
+          <h2 className="text-[#150035]  lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl font-bold text-xl text-center dark:text-white">
             WAD Team
           </h2>
        
@@ -31,7 +31,7 @@ export default function Teamslider() {
                           height={112}
                           src={teamscard.Image}
                         />
-                        <h4 className="block md:mt-6 mt-3 lg:text-lg font-extrabold text-[#000] dark:text-white">
+                        <h4 className="block md:mt-6 mt-3 lg:text-lg font-black text-[#000] dark:text-white">
                           {teamscard.title}
                         </h4>
                         <p className="mt-3 md:text-[16px] font-medium text-sm text-[#000] dark:text-white ">

@@ -9,10 +9,10 @@ export default function Feartures() {
   return (
     <>
       {/* hero */}
-      <section>
+      <section className='lg:pt-24 lg:pb-12 md:pt-12 md:pb-6' id='keyFeatures'>
         <div className="max-w-[1280px] Satoshi mx-auto">
 
-          <h2 className="text-[#150035] lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white">
+          <h2 className="text-[#150035] lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white font-bold">
             Key Features
           </h2>
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 ">
@@ -32,11 +32,11 @@ export default function Feartures() {
                           src={datacard.Image}
                         />
                       </div>
-                      <h4 className="block mt-1 lg:text-[22px] font-extrabold text-[#000] dark:text-white">
+                      <h4 className="block mt-1 lg:text-[22px] font-black text-[#000] dark:text-white">
                         {datacard.title}
 
                       </h4>
-                      <p className="mt-1 md:text-[16px] text-sm font-normal text-[#516371] dark:text-white ">
+                      <p className="mt-1 md:text-base text-sm font-normal text-[#516371] dark:text-white ">
                         {datacard.description}
                       </p>
                     </div>
@@ -48,14 +48,16 @@ export default function Feartures() {
           </div>
         </div>
       </section >
-      <section className="py-20">
+      <section className="py-20" id="coreValues">
         <div className="max-w-[1280px] Satoshi mx-auto">
-          <p className="md:text-[16px] text-sm font-normal text-[#516371] dark:text-white ">
+          <div className='text-center mx-auto'>
+          <p className="md:text-[16px] text-sm font-normal text-[#516371] dark:text-white mb-4">
             Core values
           </p>
-          <h2 className="text-[#150035] lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white">
+          <h2 className="text-[#150035] lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl dark:text-white font-bold">
             WAD’s Three Pillars
           </h2>
+          </div>
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 ">
             {pillars?.map((data, idx) => {
               console.log(data)
@@ -73,7 +75,7 @@ export default function Feartures() {
                           src={data.Image}
                         />
                       </div>
-                      <h4 className="block md:mt-6 mt-3 lg:text-[22px] font-extrabold text-[#000] dark:text-white">
+                      <h4 className="block md:mt-6 mt-3 lg:text-[22px] font-bold text-[#000] dark:text-white">
                         {data.title}
                       </h4>
                       <p className="mt-3 md:text-[16px] text-sm font-normal text-[#516371] dark:text-white ">
@@ -98,7 +100,7 @@ export default function Feartures() {
       </section >
       <section className="pb-20">
         <div className="max-w-[1280px] Satoshi mx-auto">
-          <h2 className="text-[#150035] mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white">
+          <h2 className="text-[#150035] mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl font-bold text-center dark:text-white">
             Where to buy WAD
           </h2>
           <p className="md:text-[16px] lg:w-1/2 lg:mb-7 mb-4 mx-auto px-4 text-center text-sm font-normal text-[#516371] dark:text-white ">

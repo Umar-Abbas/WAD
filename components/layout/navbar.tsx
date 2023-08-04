@@ -20,24 +20,24 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="l whitespace-nowrap nav-item">
-                  <Link href="/">
+                  <a href="/#tokenomics">
                     <div className='nav-link p-0 text-small'>Tokenomics</div>
-                  </Link>
+                  </a>
                 </li>
                 <li className="l whitespace-nowrap nav-item">
-                  <Link href="/">
+                  <a href="/#about" style={{scrollBehavior:'smooth'}}>
                     <div className='nav-link p-0 text-small'>About WAD</div>
-                  </Link>
+                  </a>
                 </li>
                 <li className="l whitespace-nowrap nav-item">
-                  <Link href="/">
+                  <a href="/#keyFeatures">
                     <div className='nav-link p-0 text-small'>Key Features</div>
-                  </Link>
+                  </a>
                 </li>
                 <li className="l whitespace-nowrap nav-item">
-                  <Link href="/">
+                  <a href="/#coreValues">
                     <div className='nav-link p-0 text-small'>Core Values</div>
-                  </Link>
+                  </a>
                 </li>
                 <li className="l whitespace-nowrap nav-item">
                   <Link href="/">

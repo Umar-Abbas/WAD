@@ -14,12 +14,13 @@ export default function Page() {
                 <div className="max-w-[1280px] Satoshi mx-auto">
                     {/* Grid */}
                     <div className="grid sm:grid-cols-2 lg:gap-x-8 xl:gap-x-12 sm:items-center">
-                        <div>
-                            <h1 className="block sm:text-3xl text-2xl text-[#150035] md:text-4xl lg:text-5xl xl:text-[54px] dark:text-white">
+                        <div className='relative'>
+                            <p className='text-lg text-[#516371] mb-4 font-normal'>WAD Ecosystem</p>
+                            <h1 className="block sm:text-3xl text-2xl text-[#150035] md:text-4xl font-bold lg:text-5xl xl:text-[54px] dark:text-white">
                                 The People&apos;s
                                 Cryptocurrency
                             </h1>
-                            <p className="mt-3 para text-lg text-[#000] dark:text-white ">
+                            <p className="mt-3 para text-lg text-[#000] dark:text-white font-bold">
                                 WAD is the utility token of the WAD ecosystem.
                             </p>
                             <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
@@ -40,6 +41,8 @@ export default function Page() {
                                     </button>
                                 </div>
                             </div>
+                            <img src="/images/spiralArrow.png" className='absolute bottom-[-70px] right-[100%] pointer-events-none'/>
+                            <img src="/images/orangeCircles.png" className='absolute top-[-70px] right-0 pointer-events-none'/>
                         </div>
                         {/* End Col */}
                         <div className="mt-10 lg:mt-0">

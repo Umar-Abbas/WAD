@@ -24,7 +24,7 @@ export default function PaymentCard() {
               <div className='grid md:grid-cols-2 w-full px-10 lg:gap-20 gap-6  py-10'>
                 <div className="md:flex md:h-[298px] my-auto">
                   <div className='md:flex md:flex-col justify-between'>
-                    <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-extrabold text-white dark:text-white">
+                    <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-bold text-white dark:text-white">
                       WAD Statistics
                     </h3>
                     <div>
@@ -76,7 +76,7 @@ export default function PaymentCard() {
               <div className='grid md:grid-cols-2 w-full px-10 lg:gap-20 gap-6  py-10'>
                 <div className="md:flex md:h-[298px] my-auto">
                   <div className='md:flex md:flex-col justify-between'>
-                    <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-extrabold text-white dark:text-white">
+                    <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-bold text-white dark:text-white">
                       WAD Tokenomics
                     </h3>
                     <div>
@@ -128,7 +128,7 @@ export default function PaymentCard() {
               <div className='grid md:grid-cols-2 w-full px-10 lg:gap-20 gap-6  py-10'>
                 <div className="md:flex md:h-[298px] my-auto">
                   <div className='md:flex md:flex-col justify-between'>
-                    <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-extrabold text-white dark:text-white">
+                    <h3 className="block lg:text-3xl md:text-2xl whitespace-nowrap text-xl font-bold text-white dark:text-white">
                       WAD Tokenomics
                     </h3>
                     <div>

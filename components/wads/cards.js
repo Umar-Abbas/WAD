@@ -9,14 +9,14 @@ export default function Cards() {
   return (
     <>
       {/* hero */}
-      <section>
+      <section >
         <div className="max-w-[1280px] Satoshi relative mx-auto">
           <img src='/images/carouselbgw.png' className='absolute top-0 w-full block dark:hidden left-0 right-0'  />
           <img src='/images/carouselbgb.png' className='absolute top-0 w-full dark:block hidden left-0 right-0'  />
           {/* Grid */}
           <Carousel />
-        <div className='z-30 relative'>
-        <h2 className="text-[#150035]  xl:mt-28 lg:mt-16 sm:mt-5 mt-3 lg:mb-12 md:mb-8 mb-5 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white">
+        <div className='z-30 relative xl:pt-28 lg:pt-16 sm:pt-5 pt-3' id="tokenomics">
+        <h2 className="text-[#150035]   lg:mb-12 md:mb-8 mb-5 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white font-bold">
             Tokenomics
           </h2>
           <div className="flex flex-wrap lg:gap-10 gap-4 !justify-center lg:items-center">
@@ -35,11 +35,11 @@ export default function Cards() {
                         src={datacard.Image}
                       />
                     </div>
-                      <h4 className="block mt-3 lg:text-[22px] font-extrabold text-white dark:text-white">
+                      <h4 className="block mt-3 lg:text-[22px] font-black text-white dark:text-white">
                         {datacard.title}
 
                       </h4>
-                      <p className="mt-3 md:text-lg text-sm font-normal text-white dark:text-white ">
+                      <p className="mt-3 md:text-base text-sm font-normal text-white dark:text-white ">
                         {datacard.description}
                       </p>
                     </div>

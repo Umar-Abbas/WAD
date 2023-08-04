@@ -10,7 +10,7 @@ export default function WadCommunity() {
 
                     <div className='flex items-center h-full'>
                         <div className='md:pl-16 px-6'>
-                            <h2 className="text-[#ffffff] lg:text-[40px] md:text-3xl sm:text-2xl text-xl dark:text-white">
+                            <h2 className="text-[#ffffff] lg:text-[40px] font-bold md:text-3xl sm:text-2xl text-xl dark:text-white">
                                 Join WAD Community
                             </h2>
                             <p className="mt-3 md:text-lg text-sm font-normal text-white dark:text-white ">

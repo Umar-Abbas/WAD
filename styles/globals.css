@@ -3,17 +3,63 @@
 @tailwind utilities;
 /* @import "~react-image-gallery/styles/css/image-gallery.css"; */
 
-@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&');
+/* @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&');
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&'); */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
 
+@font-face {
+  font-family: "satoshi regular";
+  src: url("/fonts/Satoshi-Regular.woff"), url("/fonts/Satoshi-Regular.woff");
+
+  font-display: swap;
+}
+@font-face {
+  font-family: "satoshi medium";
+  src: url("/fonts/Satoshi-Medium.woff"), url("/fonts/Satoshi-Medium.woff");
+
+  font-display: swap;
+}
+@font-face {
+  font-family: "satoshi bold";
+  src: url("/fonts/Satoshi-Bold.woff"), url("/fonts/Satoshi-Bold.woff");
+
+  font-display: swap;
+}
+@font-face {
+  font-family: "satoshi black";
+  src: url("/fonts/Satoshi-Black.woff"), url("/fonts/Satoshi-Black.woff");
+
+  font-display: swap;
+}
+body {
+  font-family: "satoshi regular";
+}
+html {
+  scroll-behavior: smooth;
+}
+.font-asap{
+  font-family: 'Asap', sans-serif !important;
+}
+.font-normal {
+  font-family: "satoshi regular";
+}
+.font-medium {
+  font-family: "satoshi medium";
+}
+.font-bold {
+  font-family: "satoshi bold";
+}
+.font-black {
+  font-family: "satoshi black";
+}
 .bogold {
-  font-family: 'Agdasima', sans-serif;
+  font-family: "Agdasima", sans-serif;
   font-weight: 600 !important;
 }
 
 .Pacifico {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 .fixed-height-thumbnail {
@@ -41,10 +87,10 @@
   /* Your default theme */
   --background: white;
   --foreground: black;
-  --primarycolor:
+  --primarycolor: ;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background: black;
   --foreground: white;
 }
@@ -74,9 +120,8 @@
 
 .image-gallery-thumbnail {
   border-radius: 5px !important;
-  background: #F4F4F4 !important;
+  background: #f4f4f4 !important;
   margin: 0 10px !important;
-
 }
 
 .image-gallery-thumbnails .image-gallery-thumbnails-container {
@@ -101,72 +146,67 @@
 }
 
 .themeButton {
-  color: #9333EA;
+  color: #9333ea;
 }
 
 .red .themeButton {
-  color: #DC2626;
+  color: #dc2626;
 }
 
 .red .themebackground {
-  background-color: #DC2626;
+  background-color: #dc2626;
 }
 
 .blue .themeButton {
-  color: #2563EB;
+  color: #2563eb;
 }
 
 .fuchsia .themeButton {
-  color: #C026D3;
+  color: #c026d3;
 }
 
 .cyan .themeButton {
-  color: #0891B2;
+  color: #0891b2;
 }
 
 .sky .themeButton {
-  color: #0284C7;
+  color: #0284c7;
 }
 
 .green .themeButton {
-  color: #16A34A;
+  color: #16a34a;
 }
 
 .indigo .themeButton {
-  color: #4F46E5;
+  color: #4f46e5;
 }
 
 .violet .themeButton {
-  color: #7C3AED;
+  color: #7c3aed;
 }
-
-
 
 .detailshadow {
   box-shadow: 0px 6.960000038146973px 26px 0px rgba(0, 0, 0, 0.19);
 }
 
-
-
 .Satoshi {
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 .para {
-  font-family: 'Satoshi', sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-weight: 700 !important;
-}
+} */
 
 .wadbtn {
   border-radius: 100px;
-  background: linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%);
+  background: linear-gradient(32deg, #f42d32 68.96%, #fccb4c 100%);
   box-shadow: 0px 25px 30px 0px rgba(21, 0, 53, 0.16);
 }
-
 
 .slider-section .slick-dots {
   position: absolute;
@@ -190,7 +230,7 @@ h4,
 }
 
 .slider-section .slick-dots li button:before {
-  font-family: 'slick';
+  font-family: "slick";
   font-size: 10px;
   line-height: 20px;
   position: absolute;
@@ -201,43 +241,43 @@ h4,
   height: 10px;
   text-align: center;
   opacity: 1;
-  color: #DBDBDB !important;
+  color: #dbdbdb !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slider-section .slick-dots li.slick-active button:before {
   opacity: unset !important;
-  color: #F42D32 !important;
+  color: #f42d32 !important;
   font-size: 10px;
-
 }
 
 .festuredC {
-  box-shadow: 0px 21px 204px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 21px 204px 0px rgba(0, 0, 0, 0.1);
 }
 
 .cardbgdark {
   border-radius: 26px;
   background: rgba(70, 70, 70, 0.09);
-  box-shadow: -3.013333320617676px 3.013333320617676px 3.013333320617676px 0px rgba(255, 255, 255, 0.39) inset, 2.009999990463257px -2.009999990463257px 20px 0px rgba(214, 214, 214, 0.17) inset;
+  box-shadow: -3.013333320617676px 3.013333320617676px 3.013333320617676px 0px
+      rgba(255, 255, 255, 0.39) inset,
+    2.009999990463257px -2.009999990463257px 20px 0px rgba(214, 214, 214, 0.17) inset;
   backdrop-filter: blur(37.21466827392578px);
 }
 
-.textleanir{
+.textleanir {
   /* background: linear-gradient(70deg, #F42D32 68.96%, #FCCB4C 100%); */
 
-    background: -webkit-linear-gradient(42deg, #F42D32 40.96%, #FCCB4C 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
-text-shadow: 0px 25px 30px 0px rgba(21, 0, 53, 0.16);
-font-weight: 900;
-line-height: normal;
+  background: -webkit-linear-gradient(42deg, #f42d32 40.96%, #fccb4c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0px 25px 30px 0px rgba(21, 0, 53, 0.16);
+  font-weight: 900;
+  line-height: normal;
 }
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .bgLinear {
-    background: linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%);
+    background: linear-gradient(32deg, #f42d32 68.96%, #fccb4c 100%);
   }
-  
 }

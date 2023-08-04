@@ -8,8 +8,8 @@ export default function Carousel() {
 
   return (
     <div className="pb-20 slider-section">
-      <div className="lg:w-2/3 mx-auto lg:mb-8 md:mb-6 mb-3 text-center">
-        <h2 className="text-[#516371] lg:pt-24 md:pt-10 pt-7 text-[16px] dark:text-white">
+      <div className="lg:w-2/3 mx-auto lg:mb-8 md:mb-6 mb-3 text-center relative z-50">
+        <h2 className="text-[#516371] lg:pt-24 md:pt-10 pt-7 text-[16px] dark:text-white font-asap">
           As Seen On
         </h2>
       </div>
