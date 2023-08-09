@@ -5,6 +5,9 @@ export default function AboutWad() {
     <section
       className="relative flex items-center overflow-hidden py-8 md:mb-6 md:pt-12 lg:pb-12 lg:pt-24"
       id="about"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="2000"
     >
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
@@ -22,11 +25,13 @@ export default function AboutWad() {
                 World Growth. In the era of digital engagement, our goal is to
                 develop, deploy as well as to design the ecosystem that
                 leverages our users in terms of exploration, evolution, and
-                great experience.<br/> With the power of technology, we serve our
-                mission to revolutionize the game of Financial Inclusivity,
-                Global Accessibility, Transparency, Truth, Value Sustainability,
-                Token Utility, and Community Growth.<br/> Be a part of the digital
-                revolution with WAD’s user-friendly ecosystem!
+                great experience.
+                <br /> With the power of technology, we serve our mission to
+                revolutionize the game of Financial Inclusivity, Global
+                Accessibility, Transparency, Truth, Value Sustainability, Token
+                Utility, and Community Growth.
+                <br /> Be a part of the digital revolution with WAD’s
+                user-friendly ecosystem!
               </p>
             </div>
           </div>

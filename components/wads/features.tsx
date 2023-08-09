@@ -7,7 +7,13 @@ export default function Feartures() {
   return (
     <>
       {/* hero */}
-      <section className="md:pb-6 md:pt-12 lg:pb-12 lg:pt-24" id="keyFeatures">
+      <section
+        className="md:pb-6 md:pt-12 lg:pb-12 lg:pt-24"
+        id="keyFeatures"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2000"
+      >
         <div className="Satoshi mx-auto max-w-[1280px]">
           <h2 className="mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[40px]">
             Key Features
@@ -17,7 +23,11 @@ export default function Feartures() {
               console.log(datacard);
               return (
                 <>
-                  <div className="festuredC h-[325px] w-full overflow-hidden rounded-[24PX] bg-white p-4 shadow-cardshado dark:bg-card-bg dark:shadow-card lg:p-6">
+                  <div
+                    data-aos="flip-up"
+                    data-aos-duration="1000"
+                    className="festuredC h-[325px] w-full overflow-hidden rounded-[24PX] bg-white p-4 shadow-cardshado dark:bg-card-bg dark:shadow-card lg:p-6"
+                  >
                     <div className="">
                       <div className="ml-6 inline-block  rounded-xl">
                         <Image
@@ -43,7 +53,13 @@ export default function Feartures() {
           </div>
         </div>
       </section>
-      <section className="py-20" id="coreValues">
+      <section
+        className="py-20"
+        id="coreValues"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2000"
+      >
         <div className="Satoshi mx-auto max-w-[1280px]">
           <div className="mx-auto text-center">
             <p className="mb-4 text-sm font-normal text-[#516371] dark:text-white md:text-lg">
@@ -58,7 +74,12 @@ export default function Feartures() {
               console.log(data);
               return (
                 <>
-                  <div className="w-full p-4 lg:p-6">
+                  <div
+                    className="w-full p-4 lg:p-6"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
                     <div className="">
                       <div className="inline-block rounded-xl dark:shadow-pillarImage">
                         <Image
@@ -94,7 +115,12 @@ export default function Feartures() {
           </div>
         </div>
       </section>
-      <section className="pb-20">
+      <section
+        className="pb-20"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2000"
+      >
         <div className="Satoshi mx-auto max-w-[1280px]">
           <h2 className="mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:text-3xl lg:text-[40px]">
             Where to buy WAD
@@ -106,7 +132,12 @@ export default function Feartures() {
           </p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 lg:gap-6 ">
-            <div className="">
+            <div
+              className=""
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               <Image
                 priority={true}
                 width={600}
@@ -124,6 +155,9 @@ export default function Feartures() {
                 alt="logos"
                 className="w-full rounded-xl"
                 src="/images/buywad5.svg"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="100"
               />
               <Image
                 priority={true}
@@ -132,6 +166,9 @@ export default function Feartures() {
                 alt="logos"
                 className="w-full rounded-xl"
                 src="/images/buywad4.svg"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
               />{" "}
               <Image
                 priority={true}
@@ -140,6 +177,9 @@ export default function Feartures() {
                 alt="logos"
                 className="w-full rounded-xl"
                 src="/images/buywad2.svg"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="300"
               />{" "}
               <Image
                 priority={true}
@@ -148,6 +188,9 @@ export default function Feartures() {
                 alt="logos"
                 className="w-full rounded-xl"
                 src="/images/buywad3.svg"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="400"
               />
             </div>
           </div>

@@ -2,7 +2,12 @@ import React from "react";
 
 export default function WadCommunity() {
   return (
-    <section className="relative flex items-center overflow-hidden py-8 md:py-12 lg:py-24">
+    <section
+      className="relative flex items-center overflow-hidden py-8 md:py-12 lg:py-24"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="2000"
+    >
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
       <div className="Satoshi z-40 mx-auto max-w-[1280px]">
@@ -15,14 +20,15 @@ export default function WadCommunity() {
               <p className="my-4 text-sm font-normal text-white dark:text-white md:text-lg ">
                 Are you ready to explore the world of limitless possibilities?
                 Join the WAD community, and embark on the journey of Crypto
-                Adventure!<br/> With WAD, enter the world of Global Economy,
-                Connection, Collaboration, Growth, and Future Success. Don’t
-                miss the opportunity to be a part of Crypto Evolution.<br /> Let’s
-                join hands to fulfill the WAD’s vision of shaping a better
-                future, for all!
+                Adventure!
+                <br /> With WAD, enter the world of Global Economy, Connection,
+                Collaboration, Growth, and Future Success. Don’t miss the
+                opportunity to be a part of Crypto Evolution.
+                <br /> Let’s join hands to fulfill the WAD’s vision of shaping a
+                better future, for all!
               </p>
               <button className="text-cente mt-6 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
-              Join the WAD community now
+                Join the WAD community now
               </button>
             </div>
           </div>

@@ -281,3 +281,25 @@ h4,
     background: linear-gradient(32deg, #f42d32 68.96%, #fccb4c 100%);
   }
 }
+.animateUpDown {
+  animation: MoveUpDown 4s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+  }
+}
+.circleRotaion{
+  animation: circle 15s linear infinite;
+}
+@keyframes circle{
+  from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
