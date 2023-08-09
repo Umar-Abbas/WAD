@@ -17,11 +17,10 @@ export default function Page() {
                         <div className='relative'>
                             <p className='text-lg text-[#516371] mb-4 font-normal'>WAD Ecosystem</p>
                             <h1 className="block sm:text-3xl text-2xl text-[#150035] md:text-4xl font-bold lg:text-5xl xl:text-[54px] dark:text-white">
-                                The People&apos;s
-                                Cryptocurrency
+                            Your Token To The Better Future 
                             </h1>
                             <p className="mt-3 para text-lg text-[#000] dark:text-white font-bold">
-                                WAD is the utility token of the WAD ecosystem.
+                            Empower the ecosystem with transformative utility tokens for all. 
                             </p>
                             <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
 

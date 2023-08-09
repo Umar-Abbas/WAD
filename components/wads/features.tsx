@@ -1,73 +1,68 @@
-import Image from 'next/image'
-import React from 'react'
-import Carousel from '@/components/wads/carousel'
-import { feartures, pillars } from "../../app/dataComponet"
+import Image from "next/image";
+import React from "react";
+import Carousel from "@/components/wads/carousel";
+import { feartures, pillars } from "../../app/dataComponet";
 
 export default function Feartures() {
-
-
   return (
     <>
       {/* hero */}
-      <section className='lg:pt-24 lg:pb-12 md:pt-12 md:pb-6' id='keyFeatures'>
-        <div className="max-w-[1280px] Satoshi mx-auto">
-
-          <h2 className="text-[#150035] lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl text-center dark:text-white font-bold">
+      <section className="md:pb-6 md:pt-12 lg:pb-12 lg:pt-24" id="keyFeatures">
+        <div className="Satoshi mx-auto max-w-[1280px]">
+          <h2 className="mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[40px]">
             Key Features
           </h2>
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 ">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 ">
             {feartures?.map((datacard, idx) => {
-              console.log(datacard)
+              console.log(datacard);
               return (
                 <>
-                  <div className="lg:p-6 p-4 w-full h-[267px] bg-white dark:bg-card-bg dark:shadow-card shadow-cardshado festuredC rounded-[24PX] overflow-hidden">
+                  <div className="festuredC h-[325px] w-full overflow-hidden rounded-[24PX] bg-white p-4 shadow-cardshado dark:bg-card-bg dark:shadow-card lg:p-6">
                     <div className="">
-                      <div className="inline-block rounded-xl  ml-6">
+                      <div className="ml-6 inline-block  rounded-xl">
                         <Image
-                         priority={true}
+                          priority={true}
                           alt="logos"
-                          className="dark:shadow-pillarImage rounded-xl "
+                          className="rounded-xl dark:shadow-pillarImage "
                           width={100}
                           height={112}
                           src={datacard.Image}
                         />
                       </div>
-                      <h4 className="block mt-1 lg:text-[22px] font-black text-[#000] dark:text-white">
+                      <h4 className="mt-1 block font-black text-[#000] dark:text-white lg:text-[22px]">
                         {datacard.title}
-
                       </h4>
-                      <p className="mt-1 md:text-base text-sm font-normal text-[#516371] dark:text-white ">
+                      <p className="mt-1 text-sm font-normal text-[#516371] dark:text-white md:text-base ">
                         {datacard.description}
                       </p>
                     </div>
-
                   </div>
                 </>
               );
             })}
           </div>
         </div>
-      </section >
+      </section>
       <section className="py-20" id="coreValues">
-        <div className="max-w-[1280px] Satoshi mx-auto">
-          <div className='text-center mx-auto'>
-          <p className="md:text-[16px] text-sm font-normal text-[#516371] dark:text-white mb-4">
-            Core values
-          </p>
-          <h2 className="text-[#150035] lg:mb-12 md:mb-8 mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl dark:text-white font-bold">
-            WAD’s Three Pillars
-          </h2>
+        <div className="Satoshi mx-auto max-w-[1280px]">
+          <div className="mx-auto text-center">
+            <p className="mb-4 text-sm font-normal text-[#516371] dark:text-white md:text-lg">
+              Our Core Values
+            </p>
+            <h2 className="mb-4 text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[40px]">
+              Three Pillars of Excellence!
+            </h2>
           </div>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 ">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 ">
             {pillars?.map((data, idx) => {
-              console.log(data)
+              console.log(data);
               return (
                 <>
-                  <div className="lg:p-6 p-4 w-full">
+                  <div className="w-full p-4 lg:p-6">
                     <div className="">
                       <div className="inline-block rounded-xl dark:shadow-pillarImage">
                         <Image
-                         priority={true}
+                          priority={true}
                           alt="logos"
                           className="rounded-xl "
                           width={100}
@@ -75,84 +70,89 @@ export default function Feartures() {
                           src={data.Image}
                         />
                       </div>
-                      <h4 className="block md:mt-6 mt-3 lg:text-[22px] font-bold text-[#000] dark:text-white">
+                      <h4 className="mt-3 block font-bold text-[#000] dark:text-white md:mt-6 lg:text-[22px]">
                         {data.title}
                       </h4>
-                      <p className="mt-3 md:text-[16px] text-sm font-normal text-[#516371] dark:text-white ">
+                      <p className="mt-3 h-[150px] text-sm font-normal text-[#516371] dark:text-white md:text-[16px]">
                         {data.description}
                       </p>
-                      <button className="wadbtn mt-6 rounded-full sm:w-[219px] w-auto inline-flex justify-center items-center gap-x-3 text-cente  text-white font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 transition py-4 px-8 dark:focus:ring-0"
+                      <button
+                        className="wadbtn mt-6 inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-4 py-4 text-center  text-sm font-medium  text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[250px]"
                         style={{
-
-                          background: 'linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)',
-                          boxShadow: '0px 25px 30px 0px rgba(21, 0, 53, 0.16)'
-                        }} >
+                          background:
+                            "linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)",
+                          boxShadow: "0px 25px 30px 0px rgba(21, 0, 53, 0.16)",
+                        }}
+                      >
                         {data.btntext}
                       </button>
                     </div>
-
                   </div>
                 </>
               );
             })}
           </div>
         </div>
-      </section >
+      </section>
       <section className="pb-20">
-        <div className="max-w-[1280px] Satoshi mx-auto">
-          <h2 className="text-[#150035] mb-4 lg:text-[40px] md:text-3xl sm:text-2xl text-xl font-bold text-center dark:text-white">
+        <div className="Satoshi mx-auto max-w-[1280px]">
+          <h2 className="mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:text-3xl lg:text-[40px]">
             Where to buy WAD
           </h2>
-          <p className="md:text-[16px] lg:w-1/2 lg:mb-7 mb-4 mx-auto px-4 text-center text-sm font-normal text-[#516371] dark:text-white ">
-            WAD is available on over 100 exchanges globally. For help buying or storing WAD, we offer 24/7 support in WAD Telegram.
+          <p className="mx-auto mb-4 px-4 text-center text-sm font-normal text-[#516371] dark:text-white md:text-[16px] lg:mb-7 lg:w-1/2 ">
+            WAD is now available across 100+ Global Exchanges. <br />
+            Need help buying WAD? Our assistance never sleeps! We are offering
+            24/7 services on WAD Telegram
           </p>
 
-          <div className="grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 ">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 lg:gap-6 ">
             <div className="">
               <Image
-               priority={true}
+                priority={true}
                 width={600}
                 height={800}
                 alt="logos"
-                className="rounded-xl w-full"
-                src='/images/buywad1.svg'
+                className="w-full rounded-xl"
+                src="/images/buywad1.svg"
               />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:gap-6 gap-4">
+            <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6">
               <Image
-               priority={true}
+                priority={true}
                 width={400}
                 height={400}
                 alt="logos"
-                className="rounded-xl w-full"
-                src='/images/buywad5.svg'
+                className="w-full rounded-xl"
+                src="/images/buywad5.svg"
               />
               <Image
-               priority={true}
+                priority={true}
                 width={400}
                 height={400}
                 alt="logos"
-                className="rounded-xl w-full"
-                src='/images/buywad4.svg'
-              />  <Image
-               priority={true}
+                className="w-full rounded-xl"
+                src="/images/buywad4.svg"
+              />{" "}
+              <Image
+                priority={true}
                 width={400}
                 height={400}
                 alt="logos"
-                className="rounded-xl w-full"
-                src='/images/buywad2.svg'
-              />  <Image
-               priority={true}
+                className="w-full rounded-xl"
+                src="/images/buywad2.svg"
+              />{" "}
+              <Image
+                priority={true}
                 width={400}
                 height={400}
                 alt="logos"
-                className="rounded-xl w-full"
-                src='/images/buywad3.svg'
+                className="w-full rounded-xl"
+                src="/images/buywad3.svg"
               />
             </div>
           </div>
         </div>
-      </section >
+      </section>
     </>
-  )
+  );
 }
