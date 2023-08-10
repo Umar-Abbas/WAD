@@ -12,7 +12,7 @@ export default function AboutWad() {
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
       <div className="Satoshi z-40 mx-auto max-w-[1280px]">
-        <div className="z-40 grid overflow-hidden rounded-[45px] bg-[url(/images/bg-wad.png)] bg-cover dark:shadow-cardabout lg:h-[513px] lg:grid-cols-2">
+        <div className="z-40 grid overflow-hidden rounded-2xl bg-black lg:rounded-[45px]  lg:bg-[url(/images/bg-wad.png)] bg-cover dark:shadow-cardabout lg:h-[513px] lg:grid-cols-2">
           <div></div>
           <div className="flex h-full items-center">
             <div className="p-6">

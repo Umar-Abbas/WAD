@@ -23,8 +23,7 @@ export default function Footer() {
               </Link>
 
               <p className=" text-[14px] text-black dark:text-[#BAC8D2] my-4 lg:my-8">
-                Your token to Innovation, Empowerment, Global Economy, and
-                Growth of the Ecosystem!
+               Your token to Innovation, Empowerment, Global Economy, and Ecosystem Growth!
               </p>
               <div className="mt-2 flex w-full  flex-col bg-transparent">
                 <h1 className="HelveticaneueBold text-xl text-[#516371] dark:text-white">

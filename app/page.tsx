@@ -35,7 +35,7 @@ export default function Page() {
               </h1>
               <p className="para mt-3 text-lg font-bold text-[#000] dark:text-white">
                 Empower the ecosystem with transformative utility tokens for
-                all.
+                all
               </p>
               <div className="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 lg:mt-8">
                 <button className="wadbtn hover:scale-110 duration-300  text-cente inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-8  py-4 font-medium  text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[195px]">
