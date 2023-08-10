@@ -68,10 +68,10 @@ export default function PaymentCard() {
                       BSC: 0xfb5b838b6cfeedc2873ab27866079ac55363d37e
                     </p>
                     <div className="flex items-center">
-                      <button className="text-cente mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300 mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         Join WAD Community
                       </button>
-                      <button className="text-cente inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         Join WAD Community
                       </button>
                     </div>
@@ -122,10 +122,10 @@ export default function PaymentCard() {
                       BSC: 0xfb5b838b6cfeedc2873ab27866079ac55363d37e
                     </p>
                     <div className="flex items-center">
-                      <button className="text-cente mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300 text-cente mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         EtherScan (ETH)
                       </button>
-                      <button className="text-cente inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300 text-cente inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         BscScan (BSC)
                       </button>
                     </div>
@@ -169,10 +169,10 @@ export default function PaymentCard() {
                     </p>
 
                     <div className="flex items-center lg:mb-10">
-                      <button className="text-cente mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300  text-cente mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         Binance Smart Chain
                       </button>
-                      <button className="text-cente inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300  text-cente inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         Ethereum
                       </button>
                     </div>
@@ -181,10 +181,10 @@ export default function PaymentCard() {
                     </p>
 
                     <div className="flex items-center">
-                      <button className="text-cente mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300  text-cente mr-5 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         WAD Token
                       </button>
-                      <button className="text-cente inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="hover:scale-110 duration-300  text-cente inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         WADFi
                       </button>
                     </div>

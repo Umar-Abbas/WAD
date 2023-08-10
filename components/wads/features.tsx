@@ -98,7 +98,7 @@ export default function Feartures() {
                         {data.description}
                       </p>
                       <button
-                        className="wadbtn mt-6 inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-4 py-4 text-center  text-sm font-medium  text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[250px]"
+                        className="wadbtn hover:scale-110 duration-300 mt-6 inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-4 py-4 text-center  text-sm font-medium  text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[250px]"
                         style={{
                           background:
                             "linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)",

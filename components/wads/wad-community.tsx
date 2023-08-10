@@ -27,7 +27,7 @@ export default function WadCommunity() {
                 <br /> Let’s join hands to fulfill the WAD’s vision of shaping a
                 better future, for all!
               </p>
-              <button className="text-cente mt-6 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+              <button className="hover:scale-110 duration-300  mt-6 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                 Join the WAD community now
               </button>
             </div>
