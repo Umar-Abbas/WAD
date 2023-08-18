@@ -172,12 +172,6 @@ export const wadteams = [
         title: 'Umar Abbas',
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
     },
-    {
-        Image: "/images/avatarArab.png",
-        creater: 'C.E.O',
-        title: 'Omar Al Shamsi',
-        description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
-    },
 
 ];
 export var settings2 = {
