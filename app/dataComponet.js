@@ -156,26 +156,26 @@ export var settings = {
 
 export const wadteams = [
     {
-        Image: "/images/team1.png",
+        Image: "/images/avatarArab.png",
         creater: 'C.E.O',
-        title: 'James Hukes',
+        title: 'Omar Al Shamsi',
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
     },
     {
-        Image: "/images/team2.png",
-        creater: 'C.T.O',
-        title: 'James Hukes',
+        Image: "/images/avatarArab.png",
+        creater: 'C.F.O',
+        title: 'Rashid Al Bukhatar',
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
     }, {
-        Image: "/images/team3.png",
-        creater: 'Sales Director',
-        title: 'James Hukes',
+        Image: "/images/avatarSuit2.png",
+        creater: 'C.T.O',
+        title: 'Umar Abbas',
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
     },
     {
-        Image: "/images/team2.png",
-        creater: 'Sales Director',
-        title: 'James Hukes',
+        Image: "/images/avatarArab.png",
+        creater: 'C.E.O',
+        title: 'Omar Al Shamsi',
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
     },
 

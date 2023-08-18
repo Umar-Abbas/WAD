@@ -28,7 +28,8 @@ export default function Teamslider() {
               return (
                 <>
                   <div className="w-full p-4 lg:p-6">
-                    <div className="">
+                    <div>
+                      <div className="w-[150px] h-[150px] flex items-center justify-center rounded-full bg-[#f98c41]">
                       <Image
                         alt="logos"
                         className="rounded-xl"
@@ -36,6 +37,7 @@ export default function Teamslider() {
                         height={112}
                         src={teamscard.Image}
                       />
+                      </div>
                       <h4 className="mt-3 block font-black text-[#000] dark:text-white md:mt-6 lg:text-lg">
                         {teamscard.title}
                       </h4>

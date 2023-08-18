@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="relative -z-[2] h-16 w-20 md:h-24 md:w-32 lg:h-32 lg:w-40"></div>
         </div>
         <div className="container mx-auto max-w-[1280px] px-4 py-10 text-center md:text-left">
-          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="">
+          <div className="flex items-center justify-between">
+            <div className="max-w-[288px]">
               <Link
                 href=""
                 className="flex items-center justify-center md:mb-4  lg:justify-start"
@@ -69,110 +69,9 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="">
-              <h6 className=" HelveticaneueBold mb-4 flex justify-center text-[18px] text-[#516371] dark:text-white md:justify-start">
-                Home
-              </h6>
-              <p className="mb-4 text-[14px]">
-                <Link
-                  href="/aboutus"
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  Tokenomics
-                </Link>
-              </p>
-              <p className="mb-4  text-[14px]">
-                <Link
-                  href="/pricing"
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  {" "}
-                  About WAD
-                </Link>
-              </p>
-              <p className="mb-4 text-[14px]">
-                <Link
-                  href="/terms-condition"
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  {" "}
-                  Key Features
-                </Link>
-              </p>
-              <p className="text-[14px]">
-                <Link
-                  href="/privacypolicy"
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  {" "}
-                  Core Values
-                </Link>
-              </p>
-              <p className="text-[14px]">
-                <Link
-                  href="/privacypolicy"
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  Where to Buy
-                </Link>
-              </p>
-              <p className="text-[14px]">
-                <Link
-                  href="/privacypolicy"
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  Road Map
-                </Link>
-              </p>
-            </div>
+          
 
-            <div className="">
-              <h6 className=" HelveticaneueBold mb-4 flex justify-center text-[18px] text-[#516371] dark:text-white md:justify-start">
-                WAD Statistics
-              </h6>
-              <p className="mb-4 text-[14px]">
-                <Link
-                  href={"/features/employee-recognition"}
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  WAD Tokenomics
-                </Link>
-              </p>
-              <p className="mb-4 text-[14px]">
-                <Link
-                  href={"/features/pulse-survey"}
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  WAD Audits
-                </Link>
-              </p>
-              <p className="mb-4 text-[14px]">
-                <Link
-                  href={"/features/pulse-survey"}
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  Our Partners
-                </Link>
-              </p>
-              <p className="text-[14px]">
-                <Link
-                  href={"/features/pulse-survey"}
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  Core Team
-                </Link>
-              </p>
-              <p className="text-[14px]">
-                <Link
-                  href={"/features/pulse-survey"}
-                  className="text-black dark:text-[#BAC8D2]"
-                >
-                  Join WAD Community
-                </Link>
-              </p>
-            </div>
-
-            <div className="">
+            <div className="max-w-[288px]">
               <div className="mt-2 md:mt-0">
                 <h3 className="text-xl md:text-[28px]">Contact Us</h3>
                 <ul className="flex flex-col gap-3 pt-2 text-xs font-thin md:text-sm">

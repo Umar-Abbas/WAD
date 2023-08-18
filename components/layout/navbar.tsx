@@ -1,57 +1,94 @@
-import React from 'react';
-import Link from 'next/dist/client/link';
-import ThemeButton from '@/app/themButton1';
-import Ul from '../UL';
-
+"use client";
+import React from "react";
+import Link from "next/dist/client/link";
+import ThemeButton from "@/app/themButton1";
+import Ul from "../UL";
+import { useWeb3Modal } from "@web3modal/react";
+import {
+  useAccount,
+  useConnect,
+  useDisconnect,
+  useEnsAvatar,
+  useEnsName,
+  useBalance,
+  useNetwork,
+} from "wagmi";
 
 export default function Navbar() {
+  const { open, close } = useWeb3Modal();
+  const { address, connector: activeConnector, isConnected } = useAccount();
+  const { data: ensName } = useEnsName({ address });
+  function truncate(str: string, n: number) {
+    return str.length > n ? str.slice(0, 4) + "..." + str.slice(-4) : str;
+  }
   return (
-    <div className='w-full fixed z-[9999] border-b-[1px] text-black px-4  border-fd-lightBlue' style={{ background: '#FFF', boxShadow: '0px 4px 30px 0px rgba(0, 0, 0, 0.04)' }}>
-      <div className='container max-w-[1280px] mx-auto'>
-        <div className='flex justify-between w-full py-4 align-middle bg-black-1'>
-          <img className='w-[70px] md:w-[100px]' src="/images/logo-top.png" alt="Logo" />
+    <div
+      className="border-fd-lightBlue fixed z-[9999] w-full border-b-[1px] px-4  text-black"
+      style={{
+        background: "#FFF",
+        boxShadow: "0px 4px 30px 0px rgba(0, 0, 0, 0.04)",
+      }}
+    >
+      <div className="container mx-auto max-w-[1280px]">
+        <div className="bg-black-1 flex w-full justify-between py-4 align-middle">
+          <img
+            className="w-[70px] md:w-[100px]"
+            src="/images/logo-top.png"
+            alt="Logo"
+          />
           <ThemeButton />
-          <div className='flex lg:justify-center justify-end flex-1 items-center'>
-            <Ul id="navbar-collapse-with-animation" className="!z-[999999] lg:bg-transparent md:w-auto lg:p-0 pb-3 md:block md:pb-0 md:mt-0">
-              <ul className=' flex-col lg:inline-flex hidden gap-y-4 gap-x-0 w-full lg:flex-row sm:items-center justify-center sm:gap-y-0 xl:gap-x-7 lg:space-x-6  sm:mt-0'>
-                <li className="l whitespace-nowrap nav-item">
+          <div className="flex flex-1 items-center justify-end lg:justify-center">
+            <Ul
+              id="navbar-collapse-with-animation"
+              className="!z-[999999] pb-3 md:mt-0 md:block md:w-auto md:pb-0 lg:bg-transparent lg:p-0"
+            >
+              <ul className=" hidden w-full flex-col justify-center gap-x-0 gap-y-4 sm:mt-0 sm:items-center sm:gap-y-0 lg:inline-flex lg:flex-row lg:space-x-6  xl:gap-x-7">
+                <li className="l nav-item whitespace-nowrap">
                   <Link href="/">
-                    <div className='nav-link p-0 text-small'>Home</div>
+                    <div className="nav-link text-small p-0">Home</div>
                   </Link>
                 </li>
-                <li className="l whitespace-nowrap nav-item">
+                <li className="l nav-item whitespace-nowrap">
                   <a href="/#tokenomics">
-                    <div className='nav-link p-0 text-small'>Tokenomics</div>
+                    <div className="nav-link text-small p-0">Tokenomics</div>
                   </a>
                 </li>
-                <li className="l whitespace-nowrap nav-item">
-                  <a href="/#about" style={{scrollBehavior:'smooth'}}>
-                    <div className='nav-link p-0 text-small'>About WAD</div>
+                <li className="l nav-item whitespace-nowrap">
+                  <a href="/#about" style={{ scrollBehavior: "smooth" }}>
+                    <div className="nav-link text-small p-0">About WAD</div>
                   </a>
                 </li>
-                <li className="l whitespace-nowrap nav-item">
+                <li className="l nav-item whitespace-nowrap">
                   <a href="/#keyFeatures">
-                    <div className='nav-link p-0 text-small'>Key Features</div>
+                    <div className="nav-link text-small p-0">Key Features</div>
                   </a>
                 </li>
-                <li className="l whitespace-nowrap nav-item">
+                <li className="l nav-item whitespace-nowrap">
                   <a href="/#coreValues">
-                    <div className='nav-link p-0 text-small'>Core Values</div>
+                    <div className="nav-link text-small p-0">Core Values</div>
                   </a>
                 </li>
-                <li className="l whitespace-nowrap nav-item">
+                <li className="l nav-item whitespace-nowrap">
                   <Link href="/">
-                    <div className='nav-link p-0 text-small'>More</div>
+                    <div className="nav-link text-small p-0">More</div>
                   </Link>
                 </li>
               </ul>
             </Ul>
           </div>
-          <Link href="/rating-index" className='lg:block hidden'>
-            <button className="wadbtn sm:w-[195px] hover:scale-110 duration-300 transition-all rounded-full w-auto inline-flex justify-center items-center gap-x-3 text-cente text-white font-medium focus:outline-none focus:ring-0 focus:ring-offset-0 transition py-4 px-8 dark:focus:ring-0" style={{ background: 'linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)', boxShadow: '0px 25px 30px 0px rgba(21, 0, 53, 0.16)' }}>
-              Get WAD
-            </button>
-          </Link>
+          <button
+          onClick={() => open()}
+            className="wadbtn text-cente inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-8 py-4 font-medium text-white transition transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[195px]"
+            style={{
+              background:
+                "linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)",
+              boxShadow: "0px 25px 30px 0px rgba(21, 0, 53, 0.16)",
+            }}
+          >
+            {isConnected
+              ? truncate(`${ensName ? `${ensName} (${address})` : address}`, 8)
+              : "Connect Wallet"}
+          </button>
         </div>
       </div>
     </div>
