@@ -78,13 +78,14 @@ export default function Page() {
           {/* End Grid */}
         </div>
       </section>
+      <Feartures />
       <Cards />
       <AboutWad />
-      <Feartures />
+      <Roadmap />
       <PaymentCard />
       <Teamslider />
       <WadCommunity />
-      <Roadmap />
+      
     </div>
   );
 }
