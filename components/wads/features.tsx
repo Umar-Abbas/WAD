@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Carousel from "@/components/wads/carousel";
-import { feartures, pillars } from "../../app/dataComponet";
+import { feartures, pillars , tokenomics } from "../../app/dataComponet";
 
 export default function Feartures() {
   return (
@@ -26,10 +26,10 @@ export default function Feartures() {
                   <div
                     data-aos="flip-up"
                     data-aos-duration="1000"
-                    className="festuredC h-[325px] w-full overflow-hidden rounded-[24PX] bg-white p-4 shadow-cardshado dark:bg-card-bg dark:shadow-card lg:p-6"
+                    className="festuredC h-[325px] w-full overflow-hidden rounded-[24PX] bg-[url(/images/cardBg.svg)] p-4 shadow-cardshado bg-cover object-cover dark:shadow-card lg:p-6"
                   >
                     <div className="">
-                      <div className="ml-6 inline-block  rounded-xl">
+                      <div className="inline-block rounded-xl">
                         <Image
                           priority={true}
                           alt="logos"
@@ -39,10 +39,10 @@ export default function Feartures() {
                           src={datacard.Image}
                         />
                       </div>
-                      <h4 className="mt-1 block font-black text-[#000] dark:text-white lg:text-[22px]">
+                      <h4 className="mt-1 block font-black text-[#FFF] dark:text-white lg:text-[22px]">
                         {datacard.title}
                       </h4>
-                      <p className="mt-1 text-sm font-normal text-[#516371] dark:text-white md:text-base ">
+                      <p className="mt-1 text-sm font-normal text-[#FFF] dark:text-white md:text-base ">
                         {datacard.description}
                       </p>
                     </div>
@@ -51,6 +51,33 @@ export default function Feartures() {
               );
             })}
           </div>
+          {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+              {feartures?.map((datacard, idx) => {
+                return (
+                  <>
+                    <div  data-aos="flip-left" data-aos-duration="2000" className="h-[250px] overflow-hidden rounded-[24PX] bg-[url(/images/cardBg.svg)] bg-cover object-cover p-6 sm:w-[45%] md:h-[308px] lg:w-[30%] xl:w-[31%]">
+                      <div className="text-center sm:text-left">
+                        <div className="flex justify-center sm:justify-start">
+                          <Image
+                            alt="logos"
+                            className=""
+                            width={71}
+                            height={71}
+                            src={datacard.Image}
+                          />
+                        </div>
+                        <h4 className="mt-3 block font-black text-white dark:text-white lg:text-[22px]">
+                          {datacard.title}
+                        </h4>
+                        <p className="mt-3 text-sm font-normal text-white dark:text-white md:text-base ">
+                          {datacard.description}
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div> */}
         </div>
       </section>
       <section
