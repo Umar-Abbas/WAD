@@ -78,12 +78,12 @@ export default function Page() {
       <Feartures />
       <Cards />
       <AboutWad />
-   
+      <Roadmap />
       <PaymentCard />
       <Teamslider />
       <Staking />
       <WadCommunity />
-      <Roadmap />
+      
     </div>
   );
 }
