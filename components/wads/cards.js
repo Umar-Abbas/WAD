@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { useState } from "react";
 import Carousel from "@/components/wads/carousel";
 import { tokenomics } from "../../app/dataComponet";
 import dynamic from "next/dynamic";
-import { useState } from "react";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 export default function Cards() {
+  const [hoveredBox, setHoveredBox] = useState(null);
+  const [hoveredLabel, setHoveredLabel] = useState(null);
   const data = [
     {
       stats: "Eco System",
@@ -27,56 +29,56 @@ export default function Cards() {
       stats: "Liquidity/Token",
       usage: "55%",
     },
+    {
+      stats: "Total",
+      usage: "100%",
+    },
   ];
-  const [hoveredLabelIndex, setHoveredLabelIndex] = useState(null);
-  const [chartData, setChartData] = useState({
-    options: {
-      chart: {
-        type: "pie",
-        id: "apexchart-example",
-      },
-      xaxis: {
-        categories: [],
-      },
-      plotOptions: {
-        donut: { // Add the "donut" property here
-          size: 100, // Adjust the size to increase the width of the donut
-          events: {
-            dataPointMouseEnter: function (event, chartContext, config) {
-              setHoveredLabelIndex(config.dataPointIndex);
-            },
-            dataPointMouseLeave: function (event, chartContext, config) {
-              setHoveredLabelIndex(null);
-            },
-          },
+
+  const options = {
+    chart: {
+      type: "donut",
+      id: "apexchart-example",
+      events: {
+        dataPointMouseEnter: function (event, chartContext, config) {
+          setHoveredLabel(config.dataPointIndex);
         },
-        highlightDataSeries: true,
-      },
-      fill: {
-        type: "gradient",
-        gradient: {
-          shade: "light",
-          type: "horizontal",
-          shadeIntensity: 0.5,
-          gradientToColors: undefined,
-          inverseColors: true,
-          opacityFrom: 1,
-          opacityTo: 1,
-          stops: [0, 50, 100],
-          colorStops: [],
-        },
-      },
-      dataLabels: {
-        enabled: true,
-      },
-      labels: ["Eco System", "Exchange Listing", "Reserved", "Team Wallet", "Liquidity/Token"],
-      legend: {
-        show: false,
       },
     },
-    series: [25, 10, 5, 5, 55],
-  });
-  return (
+    xaxis: {
+      categories: [],
+    },
+
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "light",
+        type: "horizontal",
+        shadeIntensity: 0.5,
+        gradientToColors: undefined,
+        inverseColors: true,
+        opacityFrom: 1,
+        opacityTo: 1,
+        stops: [0, 50, 100],
+        colorStops: [],
+      },
+    },
+    dataLabels: {
+      enabled: true,
+    },
+    labels: [
+      "Eco System",
+      "Exchange Listing",
+      "Reserved",
+      "Team Wallet",
+      "Liquidity/Token",
+    ],
+    legend: {
+      show: false,
+    },
+  };
+  const series = [25, 10, 5, 5, 55];
+   return (
     <>
       {/* hero */}
       <section
@@ -108,10 +110,15 @@ export default function Cards() {
               </p>
             </div>
             <div className="flex flex-wrap !justify-center gap-4 lg:items-center lg:gap-10">
-              <div className="grid items-center grid-cols-3 gap-40">
-                <div className="space-y-2">
+              <div className="grid items-center justify-center grid-cols-3 gap-0">
+                <div className="grid grid-cols-2 gap-2 ">
                   {data.map((item, index) => (
-                    <div className="rounded-[10px] bg-[url(/images/cardBg.svg)] bg-cover object-cover p-4" key={index}>
+                    <div
+                      className={`rounded-[10px] bg-[url(/images/cardBg.svg)] bg-cover object-cover p-4 ${
+                        hoveredLabel === index ? "hovered-div" : ""
+                      }`}
+                      key={index}
+                    >
                       <div className="">
                         <h1 className=" block font-black text-white dark:text-white lg:text-[20px]">
                           {item.stats}
@@ -125,17 +132,17 @@ export default function Cards() {
                 </div>
                 <div>
                   <Chart
-                    options={chartData.options}
-                    series={chartData.series}
+                    options={options}
+                    series={series}
                     type="donut"
                     width="300"
                     height="300"
-                  />
+                   />
                 </div>
-                <div>
+                 <div>
                   <div className="space-y-4">
                     <div>
-                      <h1 className="uppercase block font-black text-[#646464] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
                         Token Name
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
@@ -143,7 +150,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="uppercase block font-black text-[#646464] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
                         Token Symbol
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
@@ -151,7 +158,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="uppercase block font-black text-[#646464] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
                         Token Supply
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
@@ -159,7 +166,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="uppercase block font-black text-[#646464] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
                         BLockChain Network
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
@@ -167,7 +174,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="uppercase block font-black text-[#646464] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
                         Audit By
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
@@ -177,32 +184,7 @@ export default function Cards() {
                   </div>
                 </div>
               </div>
-              {/* {tokenomics?.map((datacard, idx) => {
-                return (
-                  <>
-                    <div  data-aos="flip-left" data-aos-duration="2000" className="h-[250px] w-full overflow-hidden rounded-[24PX] bg-[url(/images/cardBg.svg)] bg-cover object-cover p-6 sm:w-[45%] md:h-[308px] lg:w-[30%] xl:w-[31%]">
-                      <div className="text-center sm:text-left">
-                        <div className="flex justify-center sm:justify-start">
-                          <Image
-                            alt="logos"
-                            className=""
-                            width={71}
-                            height={71}
-                            src={datacard.Image}
-                          />
-                        </div>
-                        <h4 className="mt-3 block font-black text-white dark:text-white lg:text-[22px]">
-                          {datacard.title}
-                        </h4>
-                        <p className="mt-3 text-sm font-normal text-white dark:text-white md:text-base ">
-                          {datacard.description}
-                        </p>
-                      </div>
-                    </div>
-                  </>
-                );
-              })} */}
-            </div>
+             </div>
           </div>
         </div>
       </section>

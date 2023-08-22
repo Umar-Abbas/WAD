@@ -314,14 +314,20 @@ h4,
   color: red; /* For example */
 }
 .stakingbg1 {
-  background: linear-gradient(46deg, #BB0100 0%, #F42D32 68.03%, #FFCD2C 100%);
+  background: linear-gradient(46deg, #bb0100 0%, #f42d32 68.03%, #ffcd2c 100%);
   border-radius: 30px / 10px;
 }
 .stakingbg2 {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.17) 0%,
-    rgba(255, 255, 255, 0) 100%);
-    
-   
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+  .hovered-div {
+  /* Apply your desired styles here */
+  /* For example, change background color */
+  border: 3px solid #000;
+  border-radius: 20px;
+  transform: rotate3d();
 }
