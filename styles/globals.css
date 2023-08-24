@@ -207,7 +207,12 @@ h4,
   background: linear-gradient(32deg, #f42d32 68.96%, #fccb4c 100%);
   box-shadow: 0px 25px 30px 0px rgba(21, 0, 53, 0.16);
 }
-
+.subscribebtn {
+  background: var(
+    --gradient-2,
+    linear-gradient(45deg, #f42d32 68.96%, #fccb4c 100%)
+  );
+}
 .slider-section .slick-dots {
   position: absolute;
   bottom: -40px;
@@ -324,10 +329,62 @@ h4,
     rgba(255, 255, 255, 0) 100%
   );
 }
-  .hovered-div {
+.hovered-div {
   /* Apply your desired styles here */
   /* For example, change background color */
   border: 3px solid #000;
   border-radius: 20px;
   transform: rotate3d();
 }
+.dd {
+  background: var(
+    --gradient-2,
+    linear-gradient(45deg, #f42d32 68.96%, #fccb4c 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bullet li {
+  font-size: 1.2em;
+  list-style-image: url("/images/dot.svg");
+}
+.bullet li::marker {
+  font-size: 3.6em;
+  line-height: 0.1;
+}
+.roadmaptext {
+  opacity: 0.4;
+  background: var(
+    --gradient-2,
+    linear-gradient(45deg, #f42d32 68.96%, #fccb4c 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.stakingtext {
+  background: var(
+    --gradient-for-illustration,
+    linear-gradient(45deg, #f42d32 68.96%, #fccb4c 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.walletbg{
+ background: var(--gradient-2, linear-gradient(45deg, #F42D32 68.96%, #FCCB4C 100%));
+box-shadow: 0px 25px 30px 0px rgba(21, 0, 53, 0.16);
+}
+.tokenomicsbg{
+  background: linear-gradient(45deg, #F42D32 22.18%, #FCCB4C 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.tokenText{
+  background: var(--gradient-1, linear-gradient(10deg, #F42D32 68.96%, #FCCB4C 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  }

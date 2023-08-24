@@ -12,27 +12,34 @@ export default function Cards() {
     {
       stats: "Eco System",
       usage: "25%",
+      coin: "350,000,000",
     },
     {
       stats: "Exchange Listing",
       usage: "10%",
+      coin: " 350,000,000 ",
     },
     {
       stats: "Reserved",
       usage: "5%",
+      coin: " 350,000,000",
     },
     {
       stats: "Team Wallet",
       usage: "5%",
+      coin: "350,000,000",
     },
     {
       stats: "Liquidity/Token",
       usage: "55%",
+      coin: "350,000,000",
     },
     {
       stats: "Total",
       usage: "100%",
+      coin: "350,000,000",
     },
+   
   ];
 
   const options = {
@@ -48,7 +55,6 @@ export default function Cards() {
     xaxis: {
       categories: [],
     },
-
     fill: {
       type: "gradient",
       gradient: {
@@ -78,10 +84,137 @@ export default function Cards() {
     },
   };
   const series = [25, 10, 5, 5, 55];
-   return (
+  return (
     <>
       {/* hero */}
+       
       <section
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2000"
+      >
+      <img src="/images/backgroundtoken.svg" alt="background"  className="absolute left-0 right-0 w-full 2xl:-top-[8%]" />
+        <div className="Satoshi  relative mx-auto max-w-[1280px]">
+          <div
+            className="relative z-30 pt-3 sm:pt-5 lg:pt-16 xl:pt-4"
+            id="tokenomics"
+          >
+            <div className="mb-5 text-center md:mb-8 md:text-3xl lg:mb-12">
+              <div className="relative flex flex-col items-center justify-center">
+                <Image
+                  src="/images/tokennomicsh.svg"
+                  alt="keyFeature"
+                  height={10}
+                  width={10}
+                  className="h-[72px] w-[100%]"
+                />
+                <h2 className="absolute top-[23%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
+                  Tokenomics
+                </h2>
+                <Image
+                  src="/images/lineC.svg"
+                  alt="keyFeature"
+                  height={10}
+                  width={10}
+                  className="mt-2 h-[30px] w-[100%]"
+                />
+              </div>
+              <p className="mt-5 text-lg font-bold para tokenomicsbg dark:text-white">
+                Explore the financial DNA of Cryptocurrency!
+              </p>
+            </div>
+            <div className="mt-[73px]">
+              <div className="flex flex-col items-center justify-between lg:flex-row ">
+                <div className="grid grid-cols-2 gap-2 ">
+                  {data.map((item, index) => (
+                    <div
+                      className={` lg:h-[116px] sm:w-[250px] p-[2px] ${
+                        hoveredLabel === index ? "hovered-div" : ""
+                      }`}
+                      key={index}
+                      style={{
+                        background:
+                          "linear-gradient(74deg, rgb(247 6 14 / 14%) 0%, rgb(252, 203, 76) 100%)",
+                        borderRadius: "20px",
+                      }}
+                    >
+                      <div className="rounded-[20px] bg-[#FFF] p-5">
+                        <div className="">
+                          <h1 className=" block font-black text-[rgb(0,0,0)]  dark:text-white lg:text-[16px]">
+                            {item.stats}
+                          </h1>
+                          <div className="flex items-center gap-2">
+                            <h1 className="tokenomicsbg block font-black   lg:text-[32px]">
+                              {item.usage}
+                            </h1>
+                            <span className="text-sm  font-normal text-[#516371]">
+                              ({item.coin})
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="">
+                  <Chart
+                    options={options}
+                    series={series}
+                    type="donut"
+                    width="300"
+                    height="300"
+                  />
+                </div>
+                <div>
+                  <div className="grid justify-center grid-cols-3 gap-5 mt-5 lg:block md:grid-cols-5 lg:space-y-4">
+                    <div>
+                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                        Token Name
+                      </h1>
+                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
+                        Win All Day
+                      </h1>
+                    </div>
+                    <div>
+                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                        Token Symbol
+                      </h1>
+                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
+                        WAD{" "}
+                      </h1>
+                    </div>
+                    <div>
+                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                        Token Supply
+                      </h1>
+                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
+                        10,000,00 WAD
+                      </h1>
+                    </div>
+                    <div>
+                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                        BLockChain Network
+                      </h1>
+                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
+                        Binance Smart Chain (Bsc)
+                      </h1>
+                    </div>
+                    <div>
+                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                        Audit By
+                      </h1>
+                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
+                        Certix
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       {/* <section
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
@@ -95,8 +228,7 @@ export default function Cards() {
             src="/images/carouselbgb.png"
             className="absolute top-0 left-0 right-0 hidden w-full dark:block"
           />
-          {/* Grid */}
-          <Carousel />
+           <Carousel />
           <div
             className="relative z-30 pt-3 sm:pt-5 lg:pt-16 xl:pt-28"
             id="tokenomics"
@@ -109,23 +241,33 @@ export default function Cards() {
                 Explore the Financial DNA of Cryptocurrency!
               </p>
             </div>
-            <div className="flex flex-wrap !justify-center gap-4 lg:items-center lg:gap-10">
-              <div className="grid items-center justify-center grid-cols-3 gap-0">
+            <div className="">
+              <div className="flex items-center justify-between">
                 <div className="grid grid-cols-2 gap-2 ">
                   {data.map((item, index) => (
                     <div
-                      className={`rounded-[10px] bg-[url(/images/cardBg.svg)] bg-cover object-cover p-4 ${
+                      className={` h-auto w-full    p-[2px] ${
                         hoveredLabel === index ? "hovered-div" : ""
                       }`}
                       key={index}
+                      style={{
+                        background:
+                          "linear-gradient(74deg, rgb(247 6 14 / 14%) 0%, rgb(252, 203, 76) 100%)",
+                          borderRadius:"20px"
+                       }}
                     >
+                      <div className="bg-[#FFF] rounded-[20px] p-5">
                       <div className="">
-                        <h1 className=" block font-black text-white dark:text-white lg:text-[20px]">
+
+                        <h1 className=" block font-black text-[rgb(0,0,0)]  dark:text-white lg:text-[16px]">
                           {item.stats}
                         </h1>
-                        <h1 className="block font-black text-white dark:text-white lg:text-[20px]">
-                          {item.usage}
-                        </h1>
+                        <div>
+                          <h1 className="tokenomicsbg block font-black   lg:text-[32px]">
+                            {item.usage}
+                          </h1>
+                        </div>
+                      </div>
                       </div>
                     </div>
                   ))}
@@ -137,9 +279,9 @@ export default function Cards() {
                     type="donut"
                     width="300"
                     height="300"
-                   />
+                  />
                 </div>
-                 <div>
+                <div>
                   <div className="space-y-4">
                     <div>
                       <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
@@ -184,10 +326,10 @@ export default function Cards() {
                   </div>
                 </div>
               </div>
-             </div>
+            </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -33,27 +33,27 @@ export const tokenomics = [
 export const feartures = [
   {
     Image: "/images/fearture1.svg",
-    title: "Fearture 01",
+    title: "Raffle Powerhouse",
     description:
-      "WAD utility tokens can be used for multi-functions within the ecosystem which includes; Rewards, NFTs, Governance, MiniGames etc.",
+      "WAD utility tokens can be used for multi-functions of thrilling raffle experiences which includes; Rewards, Purchases, etc.",
   },
   {
     Image: "/images/fearture2.svg",
-    title: "Fearture 02",
+    title: "Winning Momentum",
     description:
-      "The WAD ecosystem continuously encourages the users to participate actively in the contribution of growth, decision-making as well as development processes. ",
+      "The WAD ecosystem continuously encourages the users to participate actively and Win all Day while contributing to collective community growth.",
   },
   {
     Image: "/images/fearture3.svg",
-    title: "Fearture 03",
+    title: "User-Centric Design",
     description:
       "WAD ecosystem is carefully designed by keeping users in mind to offer them user-friendly functionalities and interfaces to upgrade the overall experience.",
   },
   {
     Image: "/images/fearture4.svg",
-    title: "Fearture 04",
+    title: "Transparency and Reliability ",
     description:
-      "WAD ecosystem aims to provide transparency, security, and trust by ensuring that the users are timely informed about the updates, security protocols, and development decisions. ",
+      "WAD ecosystem aims to provide transparency, security, and trust by ensuring that the users are timely given the earned rewards on their purchases while informed about the updates, security protocols, and development decisions.",
   },
 ];
 export const pillars = [
@@ -171,21 +171,21 @@ export const wadteams = [
     creater: "C.E.O",
     title: "Omar Al Shamsi",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Meet Omar Al Shamsi, a guiding light and a true master of business advisory who turned .....",
   },
   {
     Image: "/images/avatarArab.png",
     creater: "C.F.O",
     title: "Rashid Al Bukhatar",
     description:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
+      "Meet Rashid Al Bukhatab, an energetic Chief Financial Officer at WAD who is born .....",
   },
   {
     Image: "/images/avatarSuit2.png",
     creater: "C.T.O",
     title: "Umar Abbas",
     description:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequat."',
+      "Meet Umar Abbas, a true visionary and innovative Chief Technology Officer ......",
   },
 ];
 export const staking = [

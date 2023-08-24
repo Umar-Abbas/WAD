@@ -3,16 +3,18 @@ import React from "react";
 export default function WadCommunity() {
   return (
     <section
-      className="relative flex items-center overflow-hidden py-8 md:py-12 lg:py-24"
+      className="relative flex items-center py-8 overflow-hidden md:py-12 lg:py-24"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
       data-aos-duration="2000"
     >
+            {/* <img src="/images/keybg.svg" alt="background"  className="absolute bottom-0" /> */}
+
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
       <div className="Satoshi z-40 mx-auto max-w-[1280px]">
         <div className="z-40 grid h-[350px] items-center overflow-hidden rounded-[45px] bg-[url(/images/WadCommunityBG.png)] bg-cover dark:shadow-cardabout md:h-[400px] lg:h-[513px] lg:grid-cols-2">
-          <div className="flex h-full items-center">
+          <div className="flex items-center h-full">
             <div className="px-6 md:pl-16">
               <h2 className="text-xl font-bold text-[#ffffff] dark:text-white sm:text-2xl md:text-3xl lg:text-[40px]">
                 Join WAD Community
@@ -27,7 +29,7 @@ export default function WadCommunity() {
                 <br /> Let’s join hands to fulfill the WAD’s vision of shaping a
                 better future, for all!
               </p>
-              <button className="hover:scale-110 duration-300  mt-6 inline-flex w-auto items-center justify-center gap-x-3 whitespace-nowrap rounded-full  bg-white px-8 py-3  font-medium text-black transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+              <button className="inline-flex items-center justify-center w-auto px-8 py-3 mt-6 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                 Join the WAD community now
               </button>
             </div>

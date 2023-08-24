@@ -8,8 +8,9 @@ export default function OurPartner() {
 
     return (
 
-        <div className="lg:pb-52 md:pb-20 pb-10 relative z-30 slider-section">
-            <div className="lg:w-2/3 mx-auto lg:mb-8 md:mb-6 mb-3 text-center">
+        <div className="relative z-30 pb-10 lg:pb-52 md:pb-20 slider-section">
+            {/* <img src="/images/ourpartner.png" className="absolute bottom-0" /> */}
+            <div className="mx-auto mb-3 text-center lg:w-2/3 lg:mb-8 md:mb-6">
                 <h2 className="text-[#516371] lg:pt-24 md:pt-10 pt-7 text-[16px] dark:text-white">
                     As Seen On
                 </h2>
@@ -18,7 +19,7 @@ export default function OurPartner() {
                 {ourclient.map((carouselD, idx) => {
                     return (
                         <>
-                            <div className=" ">
+                            <div className="">
                                 <div className="flex lg:px-5 h-[50px] px-3 py-4 items-center justify-center">
                                     <img
                                         alt="logos"
@@ -35,7 +36,7 @@ export default function OurPartner() {
                 {ourclientd.map((carouselD, idx) => {
                     return (
                         <>
-                            <div className=" ">
+                            <div className="">
                                 <div className="flex lg:px-5 h-[50px] px-3 py-4 items-center justify-center">
                                     <img
                                         alt="logos"

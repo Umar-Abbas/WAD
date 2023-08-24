@@ -1,24 +1,52 @@
 import Image from "next/image";
 import React from "react";
 import Carousel from "@/components/wads/carousel";
-import { feartures, pillars , tokenomics } from "../../app/dataComponet";
+import { feartures, pillars, tokenomics } from "../../app/dataComponet";
 
 export default function Feartures() {
   return (
     <>
       {/* hero */}
       <section
-        className="md:pb-6 md:pt-12 lg:pb-12 lg:pt-24"
+        className="relative mx-auto max-w-[1440px] md:pb-6 md:pt-12 lg:pb-12 lg:pt-24"
         id="keyFeatures"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
       >
+        <img
+          src="/images/keybg2.svg"
+          alt="background"
+          className="absolute -right-[10%] bottom-0 top-0 w-full"
+        />
+
+        <img
+          src="/images/keybg.svg"
+          alt="background"
+          className="absolute -top-[40%] right-[35%] w-full"
+        />
+
         <div className="Satoshi mx-auto max-w-[1280px]">
-          <h2 className="mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[40px]">
-            Key Features
-          </h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 ">
+          <div className="relative">
+            <Image
+              src="/images/keyFeature.svg"
+              alt="keyFeature"
+              height={10}
+              width={10}
+              className="h-[100px] w-[100%]"
+            />
+            <h2 className="absolute left-[34%] top-[21%] mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[64px]">
+              Key Features
+            </h2>
+            <Image
+              src="/images/lineC.svg"
+              alt="keyFeature"
+              height={10}
+              width={10}
+              className="h-[30px] w-[100%]"
+            />
+          </div>
+          <div className="mt-[102px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 ">
             {feartures?.map((datacard, idx) => {
               console.log(datacard);
               return (
@@ -26,10 +54,10 @@ export default function Feartures() {
                   <div
                     data-aos="flip-up"
                     data-aos-duration="1000"
-                    className="festuredC h-[325px] w-full overflow-hidden rounded-[24PX] bg-[url(/images/cardBg.svg)] p-4 shadow-cardshado bg-cover object-cover dark:shadow-card lg:p-6"
+                    className="  h-[400px] w-full overflow-hidden rounded-[20px] bg-[url(/images/Feature.svg)] bg-cover object-cover p-4   dark:shadow-card lg:p-6"
                   >
-                    <div className="">
-                      <div className="inline-block rounded-xl">
+                    <div className="px-[16px]">
+                      <div className="inline-block rounded-xl px-[40px] pb-[10px] pt-[20px]">
                         <Image
                           priority={true}
                           alt="logos"
@@ -39,10 +67,10 @@ export default function Feartures() {
                           src={datacard.Image}
                         />
                       </div>
-                      <h4 className="mt-1 block font-black text-[#FFF] dark:text-white lg:text-[22px]">
+                      <h4 className="mb-[5px] mt-1 block  font-black text-[#000] dark:text-white lg:text-[22px]">
                         {datacard.title}
                       </h4>
-                      <p className="mt-1 text-sm font-normal text-[#FFF] dark:text-white md:text-base ">
+                      <p className="mt-1 text-sm font-normal leading-[24px] text-[#516371] dark:text-white md:text-sm ">
                         {datacard.description}
                       </p>
                     </div>
@@ -87,16 +115,34 @@ export default function Feartures() {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
       >
+        <img
+          src="/images/threepilarbg.svg"
+          alt="background"
+          className="absolute bottom-0 left-0 right-0 w-full -top-40"
+        />
         <div className="Satoshi mx-auto max-w-[1280px]">
           <div className="mx-auto text-center">
-            <p className="mb-4 text-sm font-normal text-[#516371] dark:text-white md:text-lg">
-              Our Core Values
-            </p>
-            <h2 className="mb-4 text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[40px]">
-              Three Pillars of Excellence!
-            </h2>
+            <div className="relative flex flex-col items-center justify-center">
+              <Image
+                src="/images/threepillar.svg"
+                alt="keyFeature"
+                height={10}
+                width={10}
+                className="h-[60px] w-[100%]"
+              />
+              <h2 className="absolute top-[23%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
+                WAD Three Pillars
+              </h2>
+              <Image
+                src="/images/lineC.svg"
+                alt="keyFeature"
+                height={10}
+                width={10}
+                className="mt-2 h-[30px] w-[100%]"
+              />
+            </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 ">
+          <div className="mt-[50px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 ">
             {pillars?.map((data, idx) => {
               console.log(data);
               return (
@@ -125,7 +171,7 @@ export default function Feartures() {
                         {data.description}
                       </p>
                       <button
-                        className="wadbtn hover:scale-110 duration-300 mt-6 inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-4 py-4 text-center  text-sm font-medium  text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[250px]"
+                        className="wadbtn mt-6 inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-4 py-4 text-center text-sm font-medium  text-white transition  duration-300 hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[250px]"
                         style={{
                           background:
                             "linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)",
@@ -148,10 +194,26 @@ export default function Feartures() {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
       >
-        <div className="Satoshi mx-auto max-w-[1280px]">
-          <h2 className="mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:text-3xl lg:text-[40px]">
-            Where to buy WAD?
-          </h2>
+        <div className="Satoshi mx-auto max-w-[1280px] mt-[100px]">
+        <div className="relative flex flex-col items-center justify-center">
+              <Image
+                src="/images/buyWAD.svg"
+                alt="keyFeature"
+                height={10}
+                width={10}
+                className="h-[70px] w-[100%]"
+              />
+              <h2 className="absolute top-[10%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
+              Where to buy WAD
+              </h2>
+              <Image
+                src="/images/lineC.svg"
+                alt="keyFeature"
+                height={10}
+                width={10}
+                className="mt-2 h-[30px] w-[100%]"
+              />
+            </div>
           <p className="mx-auto mb-4 px-4 text-center text-sm font-normal text-[#516371] dark:text-white md:text-[16px] lg:mb-7 lg:w-1/2 ">
             WAD is now available across 100+ Global Exchanges. <br />
             Need help buying WAD? Our assistance never sleeps! We are offering
