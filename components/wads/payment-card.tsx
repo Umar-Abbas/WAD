@@ -34,7 +34,7 @@ export default function PaymentCard() {
                 <div className="my-auto md:flex md:h-[298px]">
                   <div className="justify-between md:flex md:flex-col">
                     <h3 className="block text-xl font-bold text-white whitespace-nowrap dark:text-white md:text-2xl lg:text-3xl">
-                      WAD Statistics
+                      $WAD Statistics
                     </h3>
                     <div>
                       <p className=" mb-3 text-sm font-medium text-white dark:text-white md:text-[16px] ">
@@ -59,7 +59,7 @@ export default function PaymentCard() {
                       Powered by ETH and BSC
                     </p>
                     <p className=" mb-3 pb-1 text-sm font-normal text-white dark:text-white md:text-[16px] lg:mb-4 ">
-                      WAD contract addresses
+                      $WAD contract addresses
                     </p>
                     <p className=" mb-3 pb-1 text-sm font-normal text-white dark:text-white md:text-[16px] lg:mb-4 ">
                       ETH: 0xcf0c122c6b73ff809c693db761e7baebe62b6a2e
@@ -69,10 +69,10 @@ export default function PaymentCard() {
                     </p>
                     <div className="flex items-center">
                       <button className="inline-flex items-center justify-center w-auto px-8 py-3 mr-5 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
-                        Join WAD Community
+                        Join $WAD Community
                       </button>
                       <button className="inline-flex items-center justify-center w-auto px-8 py-3 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
-                        Join WAD Community
+                        Join $WAD Community
                       </button>
                     </div>
                   </div>
@@ -88,7 +88,7 @@ export default function PaymentCard() {
                 <div className="my-auto md:flex md:h-[298px]">
                   <div className="justify-between md:flex md:flex-col">
                     <h3 className="block text-xl font-bold text-white whitespace-nowrap dark:text-white md:text-2xl lg:text-3xl">
-                      WAD Tokenomics
+                      $WAD Tokenomics
                     </h3>
                     <div>
                       <p className=" mb-3 text-sm font-medium text-white dark:text-white md:text-[16px] ">
@@ -113,7 +113,7 @@ export default function PaymentCard() {
                       Powered by ETH and BSC
                     </p>
                     <p className=" mb-3 pb-1 text-sm font-normal text-white dark:text-white md:text-[16px] lg:mb-4 ">
-                      WAD contract addresses
+                      $WAD contract addresses
                     </p>
                     <p className=" mb-3 pb-1 text-sm font-normal text-white dark:text-white md:text-[16px] lg:mb-4 ">
                       ETH: 0xcf0c122c6b73ff809c693db761e7baebe62b6a2e
@@ -142,7 +142,7 @@ export default function PaymentCard() {
                 <div className="my-auto md:flex md:h-[298px]">
                   <div className="justify-between md:flex md:flex-col">
                     <h3 className="block text-xl font-bold text-white whitespace-nowrap dark:text-white md:text-2xl lg:text-3xl">
-                      WAD Tokenomics
+                      $WAD Tokenomics
                     </h3>
                     <div>
                       <p className=" mb-3 text-sm font-medium text-white dark:text-white md:text-[16px] ">
@@ -182,7 +182,7 @@ export default function PaymentCard() {
 
                     <div className="flex items-center">
                       <button className="inline-flex items-center justify-center w-auto px-8 py-3 mr-5 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 text-cente gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
-                        WAD Token
+                        $WAD Token
                       </button>
                       <button className="inline-flex items-center justify-center w-auto px-8 py-3 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 text-cente gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         WADFi

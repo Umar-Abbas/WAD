@@ -42,7 +42,7 @@ export default function Ul(props: any) {
                         </li>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='nav-link  p-0  text-small' >About WAD</div>
+                                <div className='nav-link  p-0  text-small' >About $WAD</div>
                             </Link>
                         </li>
                         <li className="mx-5 nav-item">
@@ -70,7 +70,7 @@ export default function Ul(props: any) {
 
                 <Link href="/rating-index">
                     <button className="wadbtn sm:w-[195px] rounded-full w-auto inline-flex justify-center items-center gap-x-3 text-cente text-white font-medium focus:outline-none focus:ring-0 focus:ring-offset-0 transition py-4 px-8 dark:focus:ring-0" style={{ background: 'linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)', boxShadow: '0px 25px 30px 0px rgba(21, 0, 53, 0.16)' }}>
-                        Get WAD
+                        Get $WAD
                     </button>
                 </Link>
                 <button onClick={() => setToggle(!toggle)} type="button" className="hs-collapse-toggl ml-3 inline-flex justify-center items-center gap-2 rounded-md border border-white/[.5] font-medium text-white/[.5] shadow-sm align-middle   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">

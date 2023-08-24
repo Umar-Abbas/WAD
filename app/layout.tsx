@@ -5,20 +5,20 @@ import { Suspense } from "react";
 import QueryWrapper from "./QueryWrapper";
 import "@/styles/globals.css";
 
-export const metadata = {
-  title: "Enter to Win Our Amazing Prizes! Buy Your WAD Tokens and Win All Day",
-  description:
-    "Purchase your WAD Token today and get a chance to win amazing prizes! Our grand raffle is coming up soon, and you don't want to miss out.",
-  twitter: {
-    card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
-    description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-    creator: "@steventey",
-  },
-  metadataBase: new URL("https://precedent.dev"),
-  themeColor: "#FFF",
-};
+// export const metadata = {
+//   title: "Enter to Win Our Amazing Prizes! Buy Your $WAD Tokens and Win All Day",
+//   description:
+//     "Purchase your $WAD Token today and get a chance to win amazing prizes! Our grand raffle is coming up soon, and you don't want to miss out.",
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Precedent - Building blocks for your Next.js project",
+//     description:
+//       "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+//     creator: "@steventey",
+//   },
+//   metadataBase: new URL("https://precedent.dev"),
+//   themeColor: "#FFF",
+// };
 
 export default async function RootLayout({
   children,

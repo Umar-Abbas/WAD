@@ -17,10 +17,10 @@ export default function AboutWad() {
           <div className="flex h-full items-center">
             <div className="p-6">
               <h2 className="text-xl font-bold text-[#ffffff] dark:text-white sm:text-2xl md:text-3xl lg:text-[40px]">
-                About WAD
+                About $WAD
               </h2>
               <p className="mt-3 text-sm font-normal text-white dark:text-white md:text-lg ">
-                WAD Ecosystem aims to help the community to propel towards the
+                $WAD Ecosystem aims to help the community to propel towards the
                 journey of Financial Freedom, Elevation, Innovation, and Real
                 World Growth. In the era of digital engagement, our goal is to
                 develop, deploy as well as to design the ecosystem that
@@ -30,7 +30,7 @@ export default function AboutWad() {
                 revolutionize the game of Financial Inclusivity, Global
                 Accessibility, Transparency, Truth, Value Sustainability, Token
                 Utility, and Community Growth.
-                <br /> Be a part of the digital revolution with WAD’s
+                <br /> Be a part of the digital revolution with $WAD’s
                 user-friendly ecosystem!
               </p>
             </div>

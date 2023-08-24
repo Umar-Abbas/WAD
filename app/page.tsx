@@ -27,21 +27,21 @@ export default function Page() {
           <div className="grid sm:grid-cols-2 lg:gap-x-8 xl:gap-x-12">
             <div className="relative z-50 mt-[80px]">
               <p className="mb-3 text-base font-normal text-[#516371]">
-                WAD ECOSYSTEM (Win All Day)
+                $$WAD ECOSYSTEM (Win All Day)
               </p>
               <h1 className="block text-2xl font-bold text-[#150035] dark:text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-[48px]">
                 Your <span className="tokenText">Token</span> To The Better
                 Future.
               </h1>
               <p className="para mt-4 text-xl font-normal text-[#516371] dark:text-white w-full lg:w-[34rem]">
-                Introducing WAD, the Win All Day token - Launched by the Youth
+                Introducing $$WAD, the Win All Day token - Launched by the Youth
                 of Dubai, aiming to unite 180 nationalities under a single
                 banner.Illuminate your path towards victory by earning rewards
                 on each purchase.
               </p>
               <div className="flex flex-col items-center gap-2 mt-5 sm:flex-row sm:gap-3 lg:mt-12">
                 <button className="wadbtn inline-flex h-[50px] w-[195px] items-center  justify-center gap-x-3 rounded-full    text-center text-[15px] font-medium  text-white transition  duration-300 hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0  ">
-                  Get WAD
+                  Get $$WAD
                 </button>
                 <div
                   className=" p-[2px] sm:w-auto"

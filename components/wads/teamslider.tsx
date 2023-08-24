@@ -26,7 +26,7 @@ export default function Teamslider() {
               className="h-[72px] w-[100%]"
             />
             <h2 className="absolute top-[23%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
-              WAD Team
+              $WAD Team
             </h2>
             <Image
               src="/images/lineC.svg"
