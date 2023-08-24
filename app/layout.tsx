@@ -38,7 +38,7 @@ export default async function RootLayout({
           <main className="px-4 pb-4 xl:px-0 dark:bg-black dark:text-white lg:pb-10 md:pb-8 ">
             {children}
           </main>
-          {/* <Footer /> */}
+          <Footer />
           <Analytics />
         </QueryWrapper>
       </body>

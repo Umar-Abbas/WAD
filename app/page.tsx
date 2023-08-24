@@ -95,11 +95,11 @@ export default function Page() {
       <Cards />
       <AboutWad />
       <Feartures />
-      {/* <Roadmap />
+      <Roadmap />
       <PaymentCard />
       <Teamslider />
       <Staking />
-      <WadCommunity /> */}
+      <WadCommunity />
     </div>
   );
 }
