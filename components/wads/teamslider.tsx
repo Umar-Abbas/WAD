@@ -23,9 +23,9 @@ export default function Teamslider() {
               alt="keyFeature"
               height={10}
               width={10}
-              className="h-[72px] w-[100%]"
+              className="h-[32px] md:h-[72px] w-[100%]"
             />
-            <h2 className="absolute top-[23%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
+            <h2 className="absolute md:top-[23%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
               $WAD Team
             </h2>
             <Image
@@ -33,7 +33,7 @@ export default function Teamslider() {
               alt="keyFeature"
               height={10}
               width={10}
-              className="mt-2 h-[30px] w-[100%]"
+              className="mt-2 h-[23px] md:h-[30px] w-[100%]"
             />
           </div>
           <Slider className="" {...settings2}>
@@ -63,7 +63,7 @@ export default function Teamslider() {
                     <p className="dd relative mt-3  text-sm font-normal text-[#000] md:text-xl">
                       {teamscard.creater}
                     </p>
-                    <p className="mt-3 px-14 relative text-center text-sm font-normal text-[#516371] md:text-[16px] lg:text-sm ">
+                    <p className="mt-3 lg:px-14 relative text-center text-sm font-normal text-[#516371] md:text-[16px] lg:text-sm ">
                         {teamscard.description}
                       </p>
                       <p className="relative text-sm font-medium  mt-[16px] uppercase tokenomicsbg">read more</p>
