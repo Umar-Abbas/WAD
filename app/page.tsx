@@ -92,14 +92,14 @@ export default function Page() {
         </div>
       </section>
 
-      {/* <Cards />
+      <Cards />
       <AboutWad />
       <Feartures />
       <Roadmap />
       <PaymentCard />
       <Teamslider />
       <Staking />
-      <WadCommunity /> */}
+      <WadCommunity />
     </div>
   );
 }
