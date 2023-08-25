@@ -117,7 +117,7 @@ export default function Footer() {
                   </li>{" "}
                   <li className="">
                     <a className="flex" href="/">
-                      About WAD
+                      About $WAD
                     </a>
                   </li>{" "}
                   <li className="">
@@ -148,17 +148,17 @@ export default function Footer() {
                 <ul className="flex flex-col gap-3 pt-5 text-xs font-normal   text-[#516371] dark:text-[#FFF] md:text-base">
                   <li className="">
                     <a className="flex" href="/">
-                      WAD Statistics
+                      $WAD Statistics
                     </a>
                   </li>
                   <li className="">
                     <a className="flex" href="/">
-                      WAD Tokenomics
+                      $WAD Tokenomics
                     </a>
                   </li>{" "}
                   <li className="">
                     <a className="flex" href="/">
-                      WAD Audits
+                      $WAD Audits
                     </a>
                   </li>{" "}
                   <li className="">
@@ -173,7 +173,7 @@ export default function Footer() {
                   </li>{" "}
                   <li className="">
                     <a className="flex" href="/">
-                      Join WAD Community
+                      Join $WAD Community
                     </a>
                   </li>
                 </ul>

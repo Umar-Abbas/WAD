@@ -180,7 +180,7 @@ export default function Cards() {
                         Token Symbol
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
-                        WAD{" "}
+                        $WAD{" "}
                       </h1>
                     </div>
                     <div>
@@ -188,7 +188,7 @@ export default function Cards() {
                         Token Supply
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
-                        10,000,00 WAD
+                        10,000,00 $WAD
                       </h1>
                     </div>
                     <div>
@@ -296,7 +296,7 @@ export default function Cards() {
                         Token Symbol
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
-                        WAD{" "}
+                        $WAD{" "}
                       </h1>
                     </div>
                     <div>
@@ -304,7 +304,7 @@ export default function Cards() {
                         Token Supply
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
-                        10,000,00 WAD
+                        10,000,00 $WAD
                       </h1>
                     </div>
                     <div>

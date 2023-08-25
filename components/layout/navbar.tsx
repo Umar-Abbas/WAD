@@ -55,7 +55,7 @@ export default function Navbar() {
                 </li>
                 <li className="l nav-item whitespace-nowrap">
                   <a href="/#about" style={{ scrollBehavior: "smooth" }}>
-                    <div className="p-0 nav-link text-small">About WAD</div>
+                    <div className="p-0 nav-link text-small">About $WAD</div>
                   </a>
                 </li>
                 <li className="l nav-item whitespace-nowrap">

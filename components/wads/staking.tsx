@@ -42,7 +42,7 @@ export default function Teamslider() {
             />
           </div>
           <h2 className="mb-4 mt-[20px] text-center text-sm font-normal text-[#516371] dark:text-white   md:mb-8   lg:mb-12 lg:px-20 lg:text-xl">
-            The WAD team has designed an efficient allocative staking pool that
+            The $WAD team has designed an efficient allocative staking pool that
             reward our users up to 100% at an annual return rate.There is also a
             feasibility of availing diffrent staking pools services depending on
             which locking period suits you best.
@@ -97,14 +97,14 @@ export default function Teamslider() {
                       <div className="block font-normal text-[#516371]    lg:text-sm 2xl:text-base">
                         Total Staked
                       </div>
-                      <div className="block  text-[#000]    lg:text-sm 2xl:text-base">
-                        0.00 WAD
+                      <div className="block  text-[#000] dark:text-white  lg:text-sm 2xl:text-base">
+                        0.00 $WAD
                       </div>
                     </div>
                     <div className="flex justify-between mt-4">
                       <div>
                         <h1 className="block font-bold stakingtext lg:text-sm 2xl:text-base">
-                          WAD Earned
+                          $WAD Earned
                         </h1>
                         <h1 className="block font-black text-[#000]   lg:text-sm 2xl:text-base">
                           0.00

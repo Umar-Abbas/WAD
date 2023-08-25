@@ -9,13 +9,13 @@ export const tokenomics = [
     Image: "/images/cardlogo2.svg",
     title: "Strategic Marketing ",
     description:
-      "To empower growth, the WAD team retains the transactions of 4% from every Buy and 5% from every Sell to boost the impact of the token through intensive marketing.",
+      "To empower growth, the $WAD team retains the transactions of 4% from every Buy and 5% from every Sell to boost the impact of the token through intensive marketing.",
   },
   {
     Image: "/images/cardlogo3.svg",
     title: "Development Insight ",
     description:
-      "The WAD team aims to retain the transactions of 4% from every Buy, and 5% from every Sell to be invested in the development of the WAD Ecosystem. ",
+      "The $WAD team aims to retain the transactions of 4% from every Buy, and 5% from every Sell to be invested in the development of the $WAD Ecosystem. ",
   },
   {
     Image: "/images/cardlogo4.svg",
@@ -27,7 +27,7 @@ export const tokenomics = [
     Image: "/images/cardlogo5.svg",
     title: "Refection",
     description:
-      "0.5% of every transaction will be redistributed to all the WAD holders. ",
+      "0.5% of every transaction will be redistributed to all the $WAD holders. ",
   },
 ];
 export const feartures = [
@@ -35,25 +35,25 @@ export const feartures = [
     Image: "/images/fearture1.svg",
     title: "Raffle Powerhouse",
     description:
-      "WAD utility tokens can be used for multi-functions of thrilling raffle experiences which includes; Rewards, Purchases, etc.",
+      "$WAD utility tokens can be used for multi-functions of thrilling raffle experiences which includes; Rewards, Purchases, etc.",
   },
   {
     Image: "/images/fearture2.svg",
     title: "Winning Momentum",
     description:
-      "The WAD ecosystem continuously encourages the users to participate actively and Win all Day while contributing to collective community growth.",
+      "The $WAD ecosystem continuously encourages the users to participate actively and Win all Day while contributing to collective community growth.",
   },
   {
     Image: "/images/fearture3.svg",
     title: "User-Centric Design",
     description:
-      "WAD ecosystem is carefully designed by keeping users in mind to offer them user-friendly functionalities and interfaces to upgrade the overall experience.",
+      "$WAD ecosystem is carefully designed by keeping users in mind to offer them user-friendly functionalities and interfaces to upgrade the overall experience.",
   },
   {
     Image: "/images/fearture4.svg",
     title: "Transparency and Reliability ",
     description:
-      "WAD ecosystem aims to provide transparency, security, and trust by ensuring that the users are timely given the earned rewards on their purchases while informed about the updates, security protocols, and development decisions.",
+      "$WAD ecosystem aims to provide transparency, security, and trust by ensuring that the users are timely given the earned rewards on their purchases while informed about the updates, security protocols, and development decisions.",
   },
 ];
 export const pillars = [
@@ -62,21 +62,21 @@ export const pillars = [
     btntext: "Join Our Thriving Community",
     title: "Community",
     description:
-      "Community brings purpose to the WAD! Recently, the WAD successfully expanded the global community to over 470,000 strong, aiming to propel it as one of the most popular cryptocurrencies in the world. People admire us for the outshining social media raids and presence by providing our users with engaging meme content.",
+      "Community brings purpose to the $WAD! Recently, the $WAD successfully expanded the global community to over 470,000 strong, aiming to propel it as one of the most popular cryptocurrencies in the world. People admire us for the outshining social media raids and presence by providing our users with engaging meme content.",
   },
   {
     Image: "/images/pillarcard2.png",
     btntext: "Explore Whitepaper",
     title: "Utility",
     description:
-      "Memes emerged and became a great source of utility projects that are Industry-leading. The ecosystem provided by WAD offers a 3D NFT Metaverse, Crypto knowledge, Defi functionalities, NFTs, etc. We primarily focus on the utility of the WAD token. ",
+      "Memes emerged and became a great source of utility projects that are Industry-leading. The ecosystem provided by $WAD offers a 3D NFT Metaverse, Crypto knowledge, Defi functionalities, NFTs, etc. We primarily focus on the utility of the $WAD token. ",
   },
   {
     Image: "/images/pillarcard3.png",
     btntext: "Watch Documentary",
     title: "Charity",
     description:
-      "WAD's vision is to provide every continent with a state-of-the-art school in priority, and then expand it in every underdeveloped nation to serve a bigger purpose. WAD already dwelled schools in Guatemala, Ghana, Laos, and Nigeria to change the world for the better.",
+      "$WAD's vision is to provide every continent with a state-of-the-art school in priority, and then expand it in every underdeveloped nation to serve a bigger purpose. $WAD already dwelled schools in Guatemala, Ghana, Laos, and Nigeria to change the world for the better.",
   },
 ];
 
@@ -178,7 +178,7 @@ export const wadteams = [
     creater: "C.F.O",
     title: "Rashid Al Bukhatar",
     description:
-      "Meet Rashid Al Bukhatab, an energetic Chief Financial Officer at WAD who is born .....",
+      "Meet Rashid Al Bukhatab, an energetic Chief Financial Officer at $WAD who is born .....",
   },
   {
     Image: "/images/avatarSuit2.png",

@@ -17,20 +17,20 @@ export default function WadCommunity() {
           <div className="flex items-center h-full">
             <div className="px-6 md:pl-16">
               <h2 className="text-xl font-bold text-[#ffffff] dark:text-white sm:text-2xl md:text-3xl lg:text-[40px]">
-                Join WAD Community
+                Join $WAD Community
               </h2>
               <p className="my-4 text-sm font-normal text-white dark:text-white md:text-lg ">
                 Are you ready to explore the world of limitless possibilities?
-                Join the WAD community, and embark on the journey of Crypto
+                Join the $WAD community, and embark on the journey of Crypto
                 Adventure!
-                <br /> With WAD, enter the world of Global Economy, Connection,
+                <br /> With $WAD, enter the world of Global Economy, Connection,
                 Collaboration, Growth, and Future Success. Don’t miss the
                 opportunity to be a part of Crypto Evolution.
-                <br /> Let’s join hands to fulfill the WAD’s vision of shaping a
+                <br /> Let’s join hands to fulfill the $WAD’s vision of shaping a
                 better future, for all!
               </p>
               <button className="inline-flex items-center justify-center w-auto px-8 py-3 mt-6 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
-                Join the WAD community now
+                Join the $WAD community now
               </button>
             </div>
           </div>
