@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="relative -z-[2] h-16 w-20 md:h-24 md:w-32 lg:h-32 lg:w-40"></div>
         </div>
         <div className="container mx-auto max-w-[1280px] px-4 py-10 text-center md:text-left">
-          <div className="flex items-center justify-between ">
+          <div className="items-center justify-between md:grid md:grid-cols-4 justify-items-center">
             <div className="lg:max-w-[288px]">
               <Link
                 href=""
@@ -31,7 +31,7 @@ export default function Footer() {
                   Follow Us
                 </h1>
                 <div className="flex flex-row justify-center w-full mt-2 mb-3 space-x-3 align-middle lg:justify-start ">
-                  <Link href="social-icon">
+                  <Link href="social-icon " className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -53,7 +53,7 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="social-icon">
+                  <Link href="social-icon" className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -67,7 +67,7 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="social-icon">
+                  <Link href="social-icon" className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -83,7 +83,7 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="social-icon">
+                  <Link href="social-icon" className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -100,11 +100,11 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-
-            <div className="max-w-[288px]">
+            <div className="flex items-center justify-evenly md:col-span-4 md:col-start-2 md:contents">
+                 <div className="">
               <div className="mt-2 md:mt-0">
-                <h1 className="text-xl font-bold md:text-[16px]">Links</h1>
-                <ul className="flex flex-col gap-3 pt-2 text-xs font-normal   text-[#516371] md:text-base">
+                <h1 className="text-xl text-start font-bold md:text-[16px]">Links</h1>
+                <ul className="flex flex-col gap-3 pt-2 text-xs font-normal   text-[#516371] dark:text-[#FFF] md:text-base">
                   <li className="">
                     <a className="flex" href="/">
                       Home
@@ -143,9 +143,9 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="max-w-[288px]">
+            <div className="">
               <div className="mt-2 md:mt-0">
-                <ul className="flex flex-col gap-3 pt-5 text-xs font-normal   text-[#516371] md:text-base">
+                <ul className="flex flex-col gap-3 pt-5 text-xs font-normal   text-[#516371] dark:text-[#FFF] md:text-base">
                   <li className="">
                     <a className="flex" href="/">
                       WAD Statistics
@@ -179,31 +179,37 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="max-w-[288px]">
+             </div>
+             <div className="max-w-[288px]">
               <div className="mt-2 md:mt-0">
-                <h3 className="text-xl font-bold text-[#150035] md:text-[16px]">
+                <h3 className="text-xl font-bold text-[#150035] dark:text-[#FFF] md:text-[16px]">
                   Contact
                 </h3>
                 <ul className="flex flex-col gap-3 pt-2 text-xs font-thin md:text-sm">
                   <li className="flex gap-2 items-centers">
+                    <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
+                    
                     >
                       <path
                         d="M3.24375 5.39531L5.73984 2.90156C5.91592 2.72471 6.1252 2.58439 6.35567 2.48867C6.58614 2.39294 6.83325 2.34369 7.08281 2.34375C7.5914 2.34375 8.06953 2.54297 8.42812 2.90156L11.1141 5.5875C11.2909 5.76358 11.4312 5.97286 11.527 6.20333C11.6227 6.4338 11.6719 6.68091 11.6719 6.93047C11.6719 7.43906 11.4727 7.91719 11.1141 8.27578L9.15 10.2398C9.60974 11.2532 10.2489 12.175 11.0367 12.9609C11.8225 13.7506 12.7443 14.3922 13.7578 14.8547L15.7219 12.8906C15.898 12.7138 16.1072 12.5735 16.3377 12.4777C16.5682 12.382 16.8153 12.3328 17.0648 12.3328C17.5734 12.3328 18.0516 12.532 18.4102 12.8906L21.0984 15.5742C21.2755 15.7506 21.4159 15.9603 21.5117 16.1912C21.6074 16.4221 21.6565 16.6696 21.6562 16.9195C21.6562 17.4281 21.457 17.9062 21.0984 18.2648L18.607 20.7562C18.0352 21.3305 17.2453 21.6562 16.4344 21.6562C16.2633 21.6562 16.0992 21.6422 15.9375 21.6141C12.7781 21.0938 9.64453 19.4133 7.11562 16.8867C4.58906 14.3625 2.91094 11.2312 2.38359 8.0625C2.22422 7.09453 2.54531 6.09844 3.24375 5.39531Z"
                         fill="black"
                       />
                     </svg>
+                    </div>
                     <a className="flex" href="tel:+70 214 7760">
                       {" "}
                       +70 214 7760
                     </a>
                   </li>
+
                   <li className="flex items-center gap-2 ">
+                  <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -216,9 +222,11 @@ export default function Footer() {
                         fill="black"
                       />
                     </svg>
+                    </div>
                     <a href="mailto: wad@winallday.com">wad@winallday.com</a>
                   </li>
                   <li className="flex items-center gap-2">
+                  <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -231,12 +239,14 @@ export default function Footer() {
                         fill="black"
                       />
                     </svg>
+                    </div>
                     <a href="mailto: info@basatanwertech.com">
                       {" "}
                       info@basatanwertech.com
                     </a>
                   </li>
                   <li className="flex items-center gap-2 ">
+                  <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px] p-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -256,13 +266,14 @@ export default function Footer() {
                         </clipPath>
                       </defs>
                     </svg>
+                    </div>
                     <a href="tel:+70 214 7760"> +703.214.7760</a>
                   </li>
                 </ul>
               </div>
+             </div>
             </div>
-          </div>
-          <div className="flex flex-wrap  justify-center  pt-6 text-[14px] ">
+           <div className="flex flex-wrap  justify-center  pt-6 text-[14px] ">
             <div className="">
               <span>© 2023 Win All Day.</span>
               <Link

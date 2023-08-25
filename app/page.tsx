@@ -52,14 +52,14 @@ export default function Page() {
                   }}
                 >
                   <div className="rounded-[100px] bg-[#FFF]">
-                    <button className="text-cente flex h-[50px] w-[195px] items-center justify-center gap-x-3 font-medium text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0  ">
+                    <button className="text-center flex h-[50px] w-[195px] items-center justify-center gap-x-3 font-medium text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0  ">
                       <Image
                         src="/images/palybtn.svg"
                         alt="palybtn"
                         width={32}
                         height={32}
                       />
-                      <span className="text-black dark:text-white">
+                      <span className="text-black">
                         Explore
                       </span>
                     </button>
@@ -92,14 +92,14 @@ export default function Page() {
         </div>
       </section>
 
-      <Cards />
+      {/* <Cards />
       <AboutWad />
       <Feartures />
       <Roadmap />
       <PaymentCard />
       <Teamslider />
       <Staking />
-      <WadCommunity />
+      <WadCommunity /> */}
     </div>
   );
 }

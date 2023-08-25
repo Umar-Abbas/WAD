@@ -54,7 +54,7 @@ export default function Feartures() {
                   <div
                     data-aos="flip-up"
                     data-aos-duration="1000"
-                    className="  h-[400px] w-full overflow-hidden rounded-[20px] bg-[url(/images/Feature.svg)] bg-cover object-cover p-4   dark:shadow-card lg:p-6"
+                    className="  h-[400px] w-full overflow-hidden rounded-[20px] bg-[url(/images/Feature.svg)] bg-cover object-cover p-4  lg:p-6"
                   >
                     <div className="px-[16px]">
                       <div className="inline-block rounded-xl px-[40px] pb-[10px] pt-[20px]">
@@ -67,10 +67,10 @@ export default function Feartures() {
                           src={datacard.Image}
                         />
                       </div>
-                      <h4 className="mb-[5px] mt-1 block  font-black text-[#000] dark:text-white lg:text-[22px]">
+                      <h4 className="mb-[5px] mt-1 block  font-black text-[#000]  lg:text-[22px]">
                         {datacard.title}
                       </h4>
-                      <p className="mt-1 text-sm font-normal leading-[24px] text-[#516371] dark:text-white md:text-sm ">
+                      <p className="mt-1 text-sm font-normal leading-[24px] text-[#516371]  md:text-sm ">
                         {datacard.description}
                       </p>
                     </div>

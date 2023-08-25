@@ -57,13 +57,13 @@ export default function Teamslider() {
                         src={teamscard.Image}
                       />
                     </div>
-                    <h4 className="relative mt-3 block font-black text-[#000] dark:text-white md:mt-6 lg:text-lg">
+                    <h4 className="relative mt-3 block font-black text-[#000] md:mt-6 lg:text-lg">
                       {teamscard.title}
                     </h4>
-                    <p className="dd relative mt-3  text-sm font-normal text-[#000] dark:text-white md:text-xl">
+                    <p className="dd relative mt-3  text-sm font-normal text-[#000] md:text-xl">
                       {teamscard.creater}
                     </p>
-                    <p className="mt-3 px-14 relative text-center text-sm font-normal text-[#516371] dark:text-white md:text-[16px] lg:text-sm ">
+                    <p className="mt-3 px-14 relative text-center text-sm font-normal text-[#516371] md:text-[16px] lg:text-sm ">
                         {teamscard.description}
                       </p>
                       <p className="relative text-sm font-medium  mt-[16px] uppercase tokenomicsbg">read more</p>

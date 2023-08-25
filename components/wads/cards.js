@@ -140,7 +140,7 @@ export default function Cards() {
                     >
                       <div className="rounded-[20px] bg-[#FFF] p-5">
                         <div className="">
-                          <h1 className=" block font-black text-[rgb(0,0,0)]  dark:text-white lg:text-[16px]">
+                          <h1 className=" block font-black text-[rgb(0,0,0)] lg:text-[16px]">
                             {item.stats}
                           </h1>
                           <div className="flex items-center gap-2">
