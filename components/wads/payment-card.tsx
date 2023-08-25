@@ -30,7 +30,7 @@ export default function PaymentCard() {
               data-aos="fade-up"
               data-aos-duration="2500"
             >
-              <div className="grid w-full gap-6 px-10 py-10 md:grid-cols-2 lg:gap-20">
+              <div className="grid w-full gap-6 px-2 py-10 md:px-10 md:grid-cols-2 lg:gap-20">
                 <div className="my-auto md:flex md:h-[298px]">
                   <div className="justify-between md:flex md:flex-col">
                     <h3 className="block text-xl font-bold text-white whitespace-nowrap dark:text-white md:text-2xl lg:text-3xl">
@@ -67,11 +67,11 @@ export default function PaymentCard() {
                     <p className=" mb-3 pb-1 text-sm font-normal text-white dark:text-white md:mb-8 md:text-[16px] lg:mb-12 ">
                       BSC: 0xfb5b838b6cfeedc2873ab27866079ac55363d37e
                     </p>
-                    <div className="flex items-center">
-                      <button className="inline-flex items-center justify-center w-auto px-8 py-3 mr-5 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                    <div className="flex flex-col space-y-5 md:space-y-0 md:items-center md:flex-row">
+                      <button className="inline-flex items-center justify-center w-full px-8 py-3 mr-5 font-medium text-black transition duration-300 bg-white rounded-full md:w-auto hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         Join $WAD Community
                       </button>
-                      <button className="inline-flex items-center justify-center w-auto px-8 py-3 font-medium text-black transition duration-300 bg-white rounded-full hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
+                      <button className="inline-flex items-center justify-center w-full px-8 py-3 font-medium text-black transition duration-300 bg-white rounded-full md:w-auto hover:scale-110 gap-x-3 whitespace-nowrap focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">
                         Join $WAD Community
                       </button>
                     </div>
@@ -84,7 +84,7 @@ export default function PaymentCard() {
             data-aos="fade-up"
             data-aos-duration="2500"
             >
-              <div className="grid w-full gap-6 px-10 py-10 md:grid-cols-2 lg:gap-20">
+              <div className="grid w-full gap-6 px-2 py-10 md:px-10 md:grid-cols-2 lg:gap-20">
                 <div className="my-auto md:flex md:h-[298px]">
                   <div className="justify-between md:flex md:flex-col">
                     <h3 className="block text-xl font-bold text-white whitespace-nowrap dark:text-white md:text-2xl lg:text-3xl">
@@ -99,13 +99,13 @@ export default function PaymentCard() {
                       </h4>
                     </div>
                   </div>
-                  <Image
+                  {/* <Image
                     width={300}
                     height={300}
                     alt="logos"
                     className="rounded-xl"
                     src="/images/paymentImage1.png"
-                  />
+                  /> */}
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <div>
@@ -134,7 +134,7 @@ export default function PaymentCard() {
               </div>
             </div>
             {/* card2 */}
-            <div className=" z-40 flex items-center overflow-hidden rounded-[45px] bg-[url(/images/payment3.png)] bg-cover md:h-[414px]"
+            {/* <div className=" z-40 flex items-center overflow-hidden rounded-[45px] bg-[url(/images/payment3.png)] bg-cover md:h-[414px]"
             data-aos="fade-up"
             data-aos-duration="2500"
             >
@@ -191,7 +191,7 @@ export default function PaymentCard() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <OurPartner />
         </div>

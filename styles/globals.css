@@ -388,3 +388,18 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
   }
+.herotext{
+  background: var(--gradient-for-illustration, linear-gradient(45deg, #F42D32 0%, #FCCB4C 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.quartertext{
+  background: var(--gradient-for-illustration, linear-gradient(45deg, #F42D32 0%, #FCCB4C 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.comunitybg {
+ background: var(--gradient-for-illustration, linear-gradient(45deg, #F42D32 0%, #FCCB4C 100%));
+}

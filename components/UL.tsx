@@ -8,8 +8,8 @@ export default function Ul(props: any) {
         <>
             {" "}
             <div style={{ justifyContent: "start" }}
-                className={`flex-1 !z-[999999] md:bg-transparent bg-purple-600 lg:w-auto lg:p-0 py-2 flex flex-col-reverse justify-end  fixed top-0 right-0 bottom-0 md:relative pb-3 lg:block md:pb-0 md:mt-0 ${toggle
-                    ? "md:w-[50%] w-[70%] "
+                className={`flex-1 !z-[999999] lg:bg-transparent bg-purple-600 lg:w-auto lg:p-0 py-2 flex flex-col-reverse justify-end  fixed top-0 right-0 bottom-0 lg:relative pb-3 lg:block md:pb-0 md:mt-0 ${toggle
+                    ? "lg:w-[50%] w-[70%] "
                     : " lg:inline-block hidden"
                     }`} id={props.id}>
                 {/* <div
@@ -17,9 +17,9 @@ export default function Ul(props: any) {
                 
             > */}
                 {props.children}
-                <div className="lg:hidden 2xl:gap-x-7 order-1 lg:gap-x-4 md:gap-x-2 block">
+                <div className="order-1 block lg:hidden 2xl:gap-x-7 lg:gap-x-4 md:gap-x-2">
                     <button
-                        className="absolute top-3 right-3 px-4 py-2 font-bold bg-transparent rounded hover:bg-transparent"
+                        className="absolute px-4 py-2 font-bold bg-transparent rounded top-3 right-3 hover:bg-transparent"
                         onClick={() => setToggle(!toggle)}
                     >
                         <Image
@@ -29,50 +29,46 @@ export default function Ul(props: any) {
                             src='/images/xmarkw.svg' alt='logo'
                         />
                     </button>
-                    <ul className='flex flex-col gap-y-4 gap-x-0 mt-5 text-white md:flex-row lg:justify-center md:gap-y-0- sm:gap-x-7 md:mt-0 sm:pl-7'>
+                    <ul className='flex flex-col mt-5 text-white gap-y-4 gap-x-0 lg:flex-row lg:justify-center md:gap-y-0- sm:gap-x-7 md:mt-0 sm:pl-7'>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='nav-link  p-0  text-small' >Home    </div>
+                                <div className='p-0 nav-link text-small' >Home    </div>
                             </Link>
                         </li>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='nav-link  p-0  text-small' >Tokenomics</div>
+                                <div className='p-0 nav-link text-small' >Tokenomics</div>
                             </Link>
                         </li>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='nav-link  p-0  text-small' >About $WAD</div>
+                                <div className='p-0 nav-link text-small' >About $WAD</div>
                             </Link>
                         </li>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='nav-link  p-0  text-small' >Key Features</div>
+                                <div className='p-0 nav-link text-small' >Key Features</div>
                             </Link>
                         </li>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='nav-link  p-0  text-small' >Core Values</div>
+                                <div className='p-0 nav-link text-small' >Core Values</div>
                             </Link>
                         </li>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='nav-link  p-0  text-small' >More</div>
+                                <div className='p-0 nav-link text-small' >More</div>
                             </Link>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div className="lg:hidden  flex justify-end  items-center" >
-
-
-
-
-                <Link href="/rating-index">
+            <div className="flex items-center justify-end lg:hidden" >
+                 {/* <Link href="/rating-index">
                     <button className="wadbtn sm:w-[195px] rounded-full w-auto inline-flex justify-center items-center gap-x-3 text-cente text-white font-medium focus:outline-none focus:ring-0 focus:ring-offset-0 transition py-4 px-8 dark:focus:ring-0" style={{ background: 'linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)', boxShadow: '0px 25px 30px 0px rgba(21, 0, 53, 0.16)' }}>
                         Get $WAD
                     </button>
-                </Link>
+                </Link> */}
                 <button onClick={() => setToggle(!toggle)} type="button" className="hs-collapse-toggl ml-3 inline-flex justify-center items-center gap-2 rounded-md border border-white/[.5] font-medium text-white/[.5] shadow-sm align-middle   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 341 308" fill="none">
                         <rect width="341" height="308" rx="24" fill="url(#paint0_linear_202_74)" />

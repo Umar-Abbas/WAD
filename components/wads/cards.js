@@ -39,7 +39,6 @@ export default function Cards() {
       usage: "100%",
       coin: "350,000,000",
     },
-   
   ];
 
   const options = {
@@ -87,13 +86,17 @@ export default function Cards() {
   return (
     <>
       {/* hero */}
-       
+
       <section
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
       >
-      <img src="/images/backgroundtoken.svg" alt="background"  className="absolute left-0 right-0 w-full 2xl:-top-[8%]" />
+        <img
+          src="/images/backgroundtoken.svg"
+          alt="background"
+          className="absolute left-0 right-0 w-full 2xl:top-[8%]"
+        />
         <div className="Satoshi  relative mx-auto max-w-[1280px]">
           <div
             className="relative z-30 pt-3 sm:pt-5 lg:pt-16 xl:pt-4"
@@ -119,16 +122,21 @@ export default function Cards() {
                   className="mt-2 h-[30px] w-[100%]"
                 />
               </div>
-              <p className="mt-5 text-lg font-bold para tokenomicsbg dark:text-white">
+              <p className="mt-3 text-lg font-bold para tokenomicsbg dark:text-white">
                 Explore the financial DNA of Cryptocurrency!
               </p>
+              <h1 className="text-[#516371] text-[20px] font-normal lg:px-[200px] leading-[28px] top-[18px] text-center">
+                With a strong dedication to fostering the project’s growth and
+                successful outcome; the WAD team has designed the transactional
+                distribution to leverage various dimensions of the ecosystem. 
+              </h1>
             </div>
             <div className="mt-[73px]">
               <div className="flex flex-col items-center justify-between lg:flex-row ">
                 <div className="grid grid-cols-2 gap-2 ">
                   {data.map((item, index) => (
                     <div
-                      className={` lg:h-[116px] sm:w-[250px] p-[2px] ${
+                      className={` p-[2px] sm:w-[250px] lg:h-[116px] ${
                         hoveredLabel === index ? "hovered-div" : ""
                       }`}
                       key={index}
@@ -166,7 +174,7 @@ export default function Cards() {
                   />
                 </div>
                 <div>
-                  <div className="grid justify-center grid-cols-3 gap-5 mt-5 lg:block md:grid-cols-5 lg:space-y-4">
+                  <div className="grid justify-center grid-cols-3 gap-5 mt-5 md:grid-cols-5 lg:block lg:space-y-4">
                     <div>
                       <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
                         Token Name
@@ -176,7 +184,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
                         Token Symbol
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -184,7 +192,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
                         Token Supply
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -192,7 +200,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
                         BLockChain Network
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -200,7 +208,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                    <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
                         Audit By
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -214,7 +222,7 @@ export default function Cards() {
           </div>
         </div>
       </section>
-       {/* <section
+      {/* <section
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"

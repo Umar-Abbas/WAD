@@ -17,13 +17,13 @@ export default function Feartures() {
         <img
           src="/images/keybg2.svg"
           alt="background"
-          className="absolute -right-[10%] bottom-0 top-0 w-full"
+          className="absolute 2xl:-right-[10%] md:block hidden bottom-0 top-0 w-full"
         />
 
         <img
           src="/images/keybg.svg"
           alt="background"
-          className="absolute -top-[40%] right-[35%] w-full"
+          className="absolute -top-[40%] md:block hidden right-[35%] w-full"
         />
 
         <div className="Satoshi mx-auto max-w-[1280px]">
@@ -46,15 +46,14 @@ export default function Feartures() {
               className="h-[30px] w-[100%]"
             />
           </div>
-          <div className="mt-[102px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 ">
+          <div className="mt-[102px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 2xl:gap-6 ">
             {feartures?.map((datacard, idx) => {
-              console.log(datacard);
-              return (
+               return (
                 <>
                   <div
                     data-aos="flip-up"
                     data-aos-duration="1000"
-                    className="  h-[400px] w-full overflow-hidden rounded-[20px] bg-[url(/images/Feature.svg)] bg-cover object-cover p-4  lg:p-6"
+                    className="h-[380px] w-full overflow-hidden rounded-[20px] bg-[url(/images/Feature.svg)] bg-cover object-cover p-4  lg:p-6"
                   >
                     <div className="px-[16px]">
                       <div className="inline-block rounded-xl px-[40px] pb-[10px] pt-[20px]">
@@ -79,37 +78,10 @@ export default function Feartures() {
               );
             })}
           </div>
-          {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-              {feartures?.map((datacard, idx) => {
-                return (
-                  <>
-                    <div  data-aos="flip-left" data-aos-duration="2000" className="h-[250px] overflow-hidden rounded-[24PX] bg-[url(/images/cardBg.svg)] bg-cover object-cover p-6 sm:w-[45%] md:h-[308px] lg:w-[30%] xl:w-[31%]">
-                      <div className="text-center sm:text-left">
-                        <div className="flex justify-center sm:justify-start">
-                          <Image
-                            alt="logos"
-                            className=""
-                            width={71}
-                            height={71}
-                            src={datacard.Image}
-                          />
-                        </div>
-                        <h4 className="mt-3 block font-black text-white dark:text-white lg:text-[22px]">
-                          {datacard.title}
-                        </h4>
-                        <p className="mt-3 text-sm font-normal text-white dark:text-white md:text-base ">
-                          {datacard.description}
-                        </p>
-                      </div>
-                    </div>
-                  </>
-                );
-              })}
-            </div> */}
-        </div>
+         </div>
       </section>
       <section
-        className="py-20"
+        className="md:py-20"
         id="coreValues"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
@@ -194,33 +166,32 @@ export default function Feartures() {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
       >
-        <div className="Satoshi mx-auto max-w-[1280px] mt-[100px]">
-        <div className="relative flex flex-col items-center justify-center">
-              <Image
-                src="/images/buyWAD.svg"
-                alt="keyFeature"
-                height={10}
-                width={10}
-                className="h-[70px] w-[100%]"
-              />
-              <h2 className="absolute top-[10%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
+        <div className="Satoshi mx-auto mt-[100px] max-w-[1280px]">
+          <div className="relative flex flex-col items-center justify-center">
+            <Image
+              src="/images/buyWAD.svg"
+              alt="keyFeature"
+              height={10}
+              width={10}
+              className="md:h-[70px] h-[30px] w-[100%]"
+            />
+            <h2 className="absolute top-[10%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
               Where to buy $WAD
-              </h2>
-              <Image
-                src="/images/lineC.svg"
-                alt="keyFeature"
-                height={10}
-                width={10}
-                className="mt-2 h-[30px] w-[100%]"
-              />
-            </div>
-          <p className="mx-auto mb-4 px-4 text-center text-sm font-normal text-[#516371] dark:text-white md:text-[16px] lg:mb-7 lg:w-1/2 ">
-            $WAD is now available across 100+ Global Exchanges. <br />
-            Need help buying $WAD? Our assistance never sleeps! We are offering
-            24/7 services on $WAD Telegram
+            </h2>
+            <Image
+              src="/images/lineC.svg"
+              alt="keyFeature"
+              height={10}
+              width={10}
+              className="mt-2 h-[10px] md:h-[30px] w-[100%]"
+            />
+          </div>
+          <p className="mx-auto mb-4 mt-4 px-4 text-center text-sm font-normal text-[#516371] dark:text-white md:text-[18px] lg:mb-7 lg:w-1/2 ">
+            Need help buying WAD? Our assistance never sleeps! We are offering
+            24/7 services on WAD Telegram.
           </p>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 lg:gap-6 ">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 lg:gap-0 ">
             <div
               className=""
               data-aos="fade-right"
@@ -229,20 +200,20 @@ export default function Feartures() {
             >
               <Image
                 priority={true}
-                width={600}
-                height={800}
+                width={10}
+                height={10}
                 alt="logos"
                 className="w-full rounded-xl"
                 src="/images/buywad1.svg"
               />
             </div>
-            <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6">
+            <div className="flex flex-col gap-5">
               <Image
                 priority={true}
-                width={400}
-                height={400}
+                width={10}
+                height={10}
                 alt="logos"
-                className="w-full rounded-xl"
+                className="w-full h-[220px]  2xl:h-[255px] rounded-xl"
                 src="/images/buywad5.svg"
                 data-aos="fade-left"
                 data-aos-duration="1000"
@@ -250,37 +221,16 @@ export default function Feartures() {
               />
               <Image
                 priority={true}
-                width={400}
-                height={400}
+                width={10}
+                height={10}
                 alt="logos"
-                className="w-full rounded-xl"
+                className="w-full h-[220px] 2xl:h-[255px] rounded-xl"
                 src="/images/buywad4.svg"
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-delay="200"
               />{" "}
-              <Image
-                priority={true}
-                width={400}
-                height={400}
-                alt="logos"
-                className="w-full rounded-xl"
-                src="/images/buywad2.svg"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              />{" "}
-              <Image
-                priority={true}
-                width={400}
-                height={400}
-                alt="logos"
-                className="w-full rounded-xl"
-                src="/images/buywad3.svg"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="400"
-              />
+             
             </div>
           </div>
         </div>

@@ -8,16 +8,26 @@ import Teamslider from "@/components/wads/teamslider";
 import Staking from "@/components/wads/staking";
 import WadCommunity from "@/components/wads/wad-community";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 //@ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
 import OurPartner from "@/components/wads/our-partner";
+import Link from "next/link";
 
 export default function Page() {
   useEffect(() => {
     AOS.init({});
   }, []);
+  const [popupVisible, setPopupVisible] = useState(false);
+  
+  const openPopup = () => {
+    setPopupVisible(true);
+  };
+
+  const closePopup = () => {
+    setPopupVisible(false);
+  };
   return (
     <div className=" pt-20 dark:bg-black lg:pt-[125px]">
       {/* hero */}
@@ -33,16 +43,24 @@ export default function Page() {
                 Your <span className="tokenText">Token</span> To The Better
                 Future.
               </h1>
-              <p className="para mt-4 text-xl font-normal text-[#516371] dark:text-white w-full lg:w-[34rem]">
+              <p className="para mt-4 w-full text-xl font-normal text-[#516371] dark:text-white lg:w-[34rem]">
                 Introducing $WAD, the Win All Day token - Launched by the Youth
                 of Dubai, aiming to unite 180 nationalities under a single
                 banner.Illuminate your path towards victory by earning rewards
                 on each purchase.
               </p>
+              <h1 className="herotext mt-3 text-[15px] font-medium">
+                WAD, the Premium token at your fingertips!
+              </h1>
               <div className="flex flex-col items-center gap-2 mt-5 sm:flex-row sm:gap-3 lg:mt-12">
-                <button className="wadbtn inline-flex h-[50px] w-[195px] items-center  justify-center gap-x-3 rounded-full    text-center text-[15px] font-medium  text-white transition  duration-300 hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0  ">
-                  Get $WAD
-                </button>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1-Ct2UDzdme31bNwjdD93elMatNfao9-uE5PUHqI6ysQ/edit?usp=sharing"
+                >
+                  <button className="wadbtn inline-flex h-[50px] w-[195px] items-center  justify-center gap-x-3 rounded-full    text-center text-[15px] font-medium  text-white transition  duration-300 hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0  ">
+                    Get $WAD
+                  </button>
+                </Link>
                 <div
                   className=" p-[2px] sm:w-auto"
                   style={{
@@ -51,21 +69,23 @@ export default function Page() {
                     borderRadius: "100px",
                   }}
                 >
-                  <div className="rounded-[100px] bg-[#FFF]">
-                    <button className="text-center flex h-[50px] w-[195px] items-center justify-center gap-x-3 font-medium text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0  ">
+                  <div
+                    className="rounded-[100px] bg-[#FFF]"
+                    onClick={openPopup}
+                  >
+                    <button className="flex h-[50px] w-[195px] items-center justify-center gap-x-3 text-center font-medium text-white transition focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0  ">
                       <Image
                         src="/images/palybtn.svg"
                         alt="palybtn"
                         width={32}
                         height={32}
                       />
-                      <span className="text-black">
-                        Explore
-                      </span>
+                      <span className="text-black">Explore</span>
                     </button>
                   </div>
                 </div>
               </div>
+
               {/* <img
                 src="/images/spiralArrow.png"
                 className="pointer-events-none absolute bottom-[-70px] right-[100%]"
@@ -79,7 +99,7 @@ export default function Page() {
               /> */}
             </div>
             {/* End Col */}
-            <div className="relative mt-10 h-[550px] md:mt-0">
+            <div className="relative ml-5 mt-10 h-[550px] md:mt-[80px]">
               <img
                 className="w-full h-full animateUpDown rounded-xl"
                 src="/images/heroBanner.svg"
@@ -90,8 +110,25 @@ export default function Page() {
           </div>
           {/* End Grid */}
         </div>
+       
       </section>
-
+      <div className="">
+          {popupVisible && (
+            <div className="fixed inset-0 !z-[99999]  bg-[#3a3939f1]" onClick={closePopup}>
+              <div className="flex items-center justify-center min-h-screen">
+                <div className="relative z-[999] mx-auto  rounded-lg bg-white     shadow-lg lg:w-[800px]">
+                 
+                  <div className="p-4 pb-6 modal-body">
+                  <video controls width="100%" autoPlay>
+      <source src="/images/videoexplore.mp4" type="video/mp4" />
+      Sorry, your browser doesnt support embedded videos.
+    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       <Cards />
       <AboutWad />
       <Feartures />

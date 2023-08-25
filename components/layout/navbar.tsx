@@ -23,15 +23,15 @@ export default function Navbar() {
   }
   return (
     <div
-      className="border-fd-lightBlue fixed z-[9999] w-full border-b-[1px] px-4  text-black"
-      style={{
-        background: "#FFF",
-        boxShadow: "0px 4px 30px 0px rgba(0, 0, 0, 0.04)",
-      }}
-    >
-      <div className="container mx-auto max-w-[1280px]">
-        <div className="flex justify-between w-full py-4 align-middle bg-black-1">
-          <img
+    className="border-fd-lightBlue fixed z-[9999] w-full border-b-[1px] px-4 text-black"
+    style={{
+      background: "#FFF",
+      boxShadow: "0px 4px 30px 0px rgba(0, 0, 0, 0.04)",
+    }}
+  >
+    <div className="container mx-auto max-w-[1280px]">
+      <div className="flex justify-between w-full py-4 align-middle bg-black-1">
+         <img
             className="w-[70px] md:w-[100px]"
             src="/images/logo-top.png"
             alt="Logo"
@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex items-center justify-end flex-1 lg:justify-center">
             <Ul
               id="navbar-collapse-with-animation"
-              className="!z-[999999] pb-3 md:mt-0 md:block md:w-auto md:pb-0 lg:bg-transparent lg:p-0"
+              className="!z-[999999] pb-3 md:mt-0 block md:w-auto md:pb-0 lg:bg-transparent lg:p-0"
             >
               <ul className="flex-col justify-center hidden w-full gap-x-0 gap-y-4 sm:mt-0 sm:items-center sm:gap-y-0 lg:inline-flex lg:flex-row lg:space-x-6 xl:gap-x-7">
                 <li className="l nav-item whitespace-nowrap">
@@ -71,6 +71,11 @@ export default function Navbar() {
                 <li className="l nav-item whitespace-nowrap">
                   <Link href="/">
                     <div className="p-0 nav-link text-small">Go To App</div>
+                  </Link>
+                </li>
+                <li className="l nav-item whitespace-nowrap">
+                  <Link href="/">
+                    <div className="p-0 nav-link text-small">Go To Platform</div>
                   </Link>
                 </li>
               </ul>
