@@ -13,12 +13,12 @@ export default function WadCommunity() {
 
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
-      <div className="Satoshi z-40 mx-auto max-w-[1380px]">
-        <div className="z-40 mr-20 grid  items-center justify-items-center overflow-hidden rounded-[45px] bg-[url(/images/WadCommunityBG.png)] bg-[length:100%_100%]   dark:shadow-cardabout h-auto lg:h-[600px] lg:grid-cols-2">
+      <div className="Satoshi z-40 mx-auto max-w-[1280px]">
+        <div className="z-40  grid  items-center justify-items-center overflow-hidden rounded-[45px] bg-[url(/images/bgwad.png)] bg-[length:100%_100%] h-auto lg:grid-cols-2">
           <div>
-            <img src="/images/comunitybg.png" alt=""  className=" mt-[80px] md:mt-0 w-[50%] lg:w-[70%] ml-20 sm:ml-48"/>
+            <img src="/images/comunitybg.png" alt=""  className=""/>
           </div>
-          <div className="flex items-center h-full px-10 2xl:px-20 mb-28 md:mb-0">
+          <div className="flex items-center h-full mb-5 md:mb-0">
             <div className="px-6 md:pl-16">
               <h2 className="text-xl font-bold text-[#ffffff] dark:text-white sm:text-2xl md:text-3xl lg:text-[40px]">
                 Join $WAD Community

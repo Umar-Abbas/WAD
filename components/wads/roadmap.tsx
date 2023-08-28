@@ -114,7 +114,7 @@ export default function Roadmap() {
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-delay="100"
-                className=" mb-20 md:mt-24 h-auto w-full overflow-hidden rounded-[24px] bg-[url(/images/road2.svg)] bg-cover object-cover p-10    sm:h-[230px] sm:p-10 md:mb-0 lg:p-8"
+                className="  mb-5 md:mt-24 h-auto w-full overflow-hidden rounded-[24px] bg-[url(/images/road2.svg)] bg-cover object-cover p-10    sm:h-[230px] sm:p-10 md:mb-0 lg:p-8"
               >
                 <ul className="bullet">
                   <li className="bullet mb-2 mt-1 text-[11px] font-normal text-[#516371] dark:text-[#000] sm:list-disc sm:text-sm md:text-[14px] ">
@@ -125,7 +125,7 @@ export default function Roadmap() {
                 </ul>
                 <div className="flex items-center justify-between ">
                   <h1 className="quartertext text-end  text-[20px] font-black ">
-                    Q3,2024
+                    Q2,2024
                   </h1>
                   <h1 className="roadmaptext text-end  text-[40px] font-black ">
                     4

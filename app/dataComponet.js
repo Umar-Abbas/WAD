@@ -62,21 +62,21 @@ export const pillars = [
     btntext: "Join Our Thriving Community",
     title: "Community",
     description:
-      "Community brings purpose to the $WAD! Recently, the $WAD successfully expanded the global community to over 470,000 strong, aiming to propel it as one of the most popular cryptocurrencies in the world. People admire us for the outshining social media raids and presence by providing our users with engaging meme content.",
+      "The utility token - $WAD is deeply rooted in the Dubai community, embodying the essence of the Middle East. Its Raffle system is helping diverse communities of Dubai to connect by bridging the world of benefits and winning breathtaking prizes.",
   },
   {
     Image: "/images/pillarcard2.png",
     btntext: "Explore Whitepaper",
     title: "Utility",
     description:
-      "Memes emerged and became a great source of utility projects that are Industry-leading. The ecosystem provided by $WAD offers a 3D NFT Metaverse, Crypto knowledge, Defi functionalities, NFTs, etc. We primarily focus on the utility of the $WAD token. ",
+      "$WAD - Win All Day, utility token is a game changer, offering a raffle system to add a thrilling twist on every single purchase. With the $WAD utility token, you can now craft your winning tale by transforming excitement into real-world treasures.",
   },
   {
     Image: "/images/pillarcard3.png",
     btntext: "Watch Documentary",
     title: "Charity",
     description:
-      "$WAD's vision is to provide every continent with a state-of-the-art school in priority, and then expand it in every underdeveloped nation to serve a bigger purpose. $WAD already dwelled schools in Guatemala, Ghana, Laos, and Nigeria to change the world for the better.",
+      "$WAD serves the purpose of the greater good for a greater number of people by contributing to charity. Our aim to spread kindness and positivity in the community is as big as our ambition to succeed. With $WAD’s raffle system, you’re not just spending but securing exciting rewards!",
   },
 ];
 

@@ -289,9 +289,8 @@ h4,
 .animateUpDown {
   animation: MoveUpDown 4s linear infinite;
   position: absolute;
-  left: 0;
-  bottom: 0;
-}
+   left: 0;
+ }
 
 @keyframes MoveUpDown {
   0%,

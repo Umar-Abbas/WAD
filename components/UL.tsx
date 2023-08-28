@@ -8,7 +8,7 @@ export default function Ul(props: any) {
         <>
             {" "}
             <div style={{ justifyContent: "start" }}
-                className={`flex-1 !z-[999999] lg:bg-transparent bg-purple-600 lg:w-auto lg:p-0 py-2 flex flex-col-reverse justify-end  fixed top-0 right-0 bottom-0 lg:relative pb-3 lg:block md:pb-0 md:mt-0 ${toggle
+                className={`flex-1 !z-[999999] lg:bg-transparent bgLinear dark:bg-[#000] lg:w-auto lg:p-0 py-2 flex flex-col-reverse justify-end  fixed top-0 right-0 bottom-0 lg:relative pb-3 lg:block md:pb-0 md:mt-0 ${toggle
                     ? "lg:w-[50%] w-[70%] "
                     : " lg:inline-block hidden"
                     }`} id={props.id}>
@@ -60,7 +60,7 @@ export default function Ul(props: any) {
                                 <div className='p-0 nav-link text-small' >More</div>
                             </Link>
                         </li>
-                    </ul>
+                     </ul>
                 </div>
             </div>
             <div className="flex items-center justify-end lg:hidden" >
@@ -70,7 +70,7 @@ export default function Ul(props: any) {
                     </button>
                 </Link> */}
                 <button onClick={() => setToggle(!toggle)} type="button" className="hs-collapse-toggl ml-3 inline-flex justify-center items-center gap-2 rounded-md border border-white/[.5] font-medium text-white/[.5] shadow-sm align-middle   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-purple-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 341 308" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 341 308" fill="none">
                         <rect width="341" height="308" rx="24" fill="url(#paint0_linear_202_74)" />
                         <path d="M50 64.8333C50 54.9693 57.685 47 67.1972 47H273.564C283.076 47 290.761 54.9693 290.761 64.8333C290.761 74.6974 283.076 82.6667 273.564 82.6667H67.1972C57.685 82.6667 50 74.6974 50 64.8333ZM50 154C50 144.136 57.685 136.167 67.1972 136.167H273.564C283.076 136.167 290.761 144.136 290.761 154C290.761 163.864 283.076 171.833 273.564 171.833H67.1972C57.685 171.833 50 163.864 50 154ZM290.761 243.167C290.761 253.031 283.076 261 273.564 261H67.1972C57.685 261 50 253.031 50 243.167C50 233.303 57.685 225.333 67.1972 225.333H273.564C283.076 225.333 290.761 233.303 290.761 243.167Z" fill="white" />
                         <defs>

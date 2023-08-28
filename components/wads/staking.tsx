@@ -52,7 +52,7 @@ export default function Teamslider() {
 
             {staking?.map((teamscard, idx) => {
               return (
-                <div className="relative w-full p-6 mx-auto lg:p-4 lg:px-12" key={idx}>
+                <div className="relative w-full p-6 mx-auto sm:p-8 md:p-14 lg:p-4 lg:px-12" key={idx}>
                   <img
                     src="/images/stakingbg.svg"
                     alt="staking"

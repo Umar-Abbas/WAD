@@ -33,7 +33,7 @@ export default function Feartures() {
               alt="keyFeature"
               height={10}
               width={10}
-              className="h-[100px] w-[100%]"
+              className=" h-[40px] md:h-[100px] w-[100%]"
             />
             <h2 className="absolute left-[34%] top-[21%] mb-4 text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[64px]">
               Key Features
@@ -46,27 +46,27 @@ export default function Feartures() {
               className="h-[30px] w-[100%]"
             />
           </div>
-          <div className="mt-[102px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 2xl:gap-6 ">
+          <div className=" mt-5 md:mt-[102px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 2xl:gap-6 ">
             {feartures?.map((datacard, idx) => {
                return (
                 <>
                   <div
                     data-aos="flip-up"
                     data-aos-duration="1000"
-                    className="h-[380px] w-full overflow-hidden rounded-[20px] bg-[url(/images/Feature.svg)] bg-cover object-cover p-4  lg:p-6"
+                    className="h-[380px] w-full overflow-hidden rounded-[20px] bg-[url(/images/Feature.svg)] dark:bg-[url(/images/keyfeaturDark.svg)] bg-cover object-cover p-4  lg:p-6"
                   >
                     <div className="px-[16px]">
                       <div className="inline-block rounded-xl px-[40px] pb-[10px] pt-[20px]">
                         <Image
                           priority={true}
                           alt="logos"
-                          className="rounded-xl dark:shadow-pillarImage "
+                          className="rounded-xl "
                           width={100}
                           height={112}
                           src={datacard.Image}
                         />
                       </div>
-                      <h4 className="mb-[5px] mt-1 block  font-black text-[#000]  lg:text-[22px]">
+                      <h4 className="mb-[5px] mt-1 block  font-black text-[#000] dark:text-[#FFF] lg:text-[22px]">
                         {datacard.title}
                       </h4>
                       <p className="mt-1 text-sm font-normal leading-[24px] text-[#516371]  md:text-sm ">
@@ -100,7 +100,7 @@ export default function Feartures() {
                 alt="keyFeature"
                 height={10}
                 width={10}
-                className="h-[60px] w-[100%]"
+                className="h-[30px] md:h-[60px] w-[100%]"
               />
               <h2 className="absolute top-[23%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
                 $WAD Three Pillars
@@ -139,11 +139,14 @@ export default function Feartures() {
                       <h4 className="mt-3 block font-bold text-[#000] dark:text-white md:mt-6 lg:text-[22px]">
                         {data.title}
                       </h4>
-                      <p className="mt-3 h-[150px] text-sm font-normal text-[#516371] dark:text-white md:text-[16px]">
+                      <p className="mt-3 h-[150px] text-sm font-normal text-[#516371]  md:text-[18px]">
                         {data.description}
                       </p>
+                      <p className="mt-8 mb-8 uppercase tokenomicsbg text-sm font-normal text-[#516371]  md:text-[18px]">
+                        Learn More
+                      </p>
                       <button
-                        className="wadbtn mt-6 inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-4 py-4 text-center text-sm font-medium  text-white transition  duration-300 hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[250px]"
+                        className="wadbtn  inline-flex w-auto items-center justify-center gap-x-3 rounded-full px-4 py-4 text-center text-sm font-medium  text-white transition  duration-300 hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0 sm:w-[250px]"
                         style={{
                           background:
                             "linear-gradient(32deg, #F42D32 68.96%, #FCCB4C 100%)",
@@ -166,14 +169,14 @@ export default function Feartures() {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
       >
-        <div className="Satoshi mx-auto mt-[100px] max-w-[1280px]">
+        <div className="Satoshi mx-auto mt-5 md:mt-[100px] max-w-[1280px]">
           <div className="relative flex flex-col items-center justify-center">
             <Image
               src="/images/buyWAD.svg"
               alt="keyFeature"
               height={10}
               width={10}
-              className="md:h-[70px] h-[30px] w-[100%]"
+              className="md:h-[70px] h-[40px] w-[100%]"
             />
             <h2 className="absolute top-[10%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
               Where to buy $WAD
@@ -191,7 +194,7 @@ export default function Feartures() {
             24/7 services on WAD Telegram.
           </p>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 lg:gap-0 ">
+          <div className="grid items-center grid-cols-1 gap-4 justify-items-center sm:grid-cols-2 lg:grid-cols-2 lg:gap-0">
             <div
               className=""
               data-aos="fade-right"
@@ -207,15 +210,15 @@ export default function Feartures() {
                 src="/images/buywad1.svg"
               />
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-y-5 ">
               <Image
                 priority={true}
                 width={10}
                 height={10}
                 alt="logos"
-                className="w-full h-[220px]  2xl:h-[255px] rounded-xl"
+                className="w-auto md:w-[450px] 2xl:w-full h-[220px]  2xl:h-[255px] rounded-xl"
                 src="/images/buywad5.svg"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="100"
               />
@@ -224,9 +227,9 @@ export default function Feartures() {
                 width={10}
                 height={10}
                 alt="logos"
-                className="w-full h-[220px] 2xl:h-[255px] rounded-xl"
+                className="w-auto md:w-[450px] 2xl:w-full h-[220px] 2xl:h-[255px] rounded-xl"
                 src="/images/buywad4.svg"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
               />{" "}

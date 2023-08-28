@@ -13,33 +13,33 @@ export default function Cards() {
       stats: "Eco System",
       usage: "25%",
       coin: "350,000,000",
+      color: "#FD8928",
     },
     {
       stats: "Exchange Listing",
       usage: "10%",
       coin: " 350,000,000 ",
+      color: "#FFD92D",
     },
     {
       stats: "Reserved",
       usage: "5%",
       coin: " 350,000,000",
+      color: "#CFD330",
     },
     {
       stats: "Team Wallet",
       usage: "5%",
       coin: "350,000,000",
+      color: "#90D400",
     },
     {
       stats: "Liquidity/Token",
       usage: "55%",
       coin: "350,000,000",
+      color: "#FF5B5F",
     },
-    {
-      stats: "Total",
-      usage: "100%",
-      coin: "350,000,000",
-    },
-  ];
+   ];
 
   const options = {
     chart: {
@@ -71,6 +71,7 @@ export default function Cards() {
     dataLabels: {
       enabled: true,
     },
+    colors: ["#FD8928", "#FFD92D", "#CFD330", "#90D400", "#FF5B5F"],
     labels: [
       "Eco System",
       "Exchange Listing",
@@ -86,7 +87,6 @@ export default function Cards() {
   return (
     <>
       {/* hero */}
-
       <section
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
@@ -125,10 +125,10 @@ export default function Cards() {
               <p className="mt-3 text-lg font-bold para tokenomicsbg dark:text-white">
                 Explore the financial DNA of Cryptocurrency!
               </p>
-              <h1 className="text-[#516371] text-[20px] font-normal lg:px-[200px] leading-[28px] top-[18px] text-center">
+              <h1 className="top-[18px] text-center text-[20px] font-normal leading-[28px] text-[#516371] lg:px-[200px]">
                 With a strong dedication to fostering the project’s growth and
                 successful outcome; the WAD team has designed the transactional
-                distribution to leverage various dimensions of the ecosystem. 
+                distribution to leverage various dimensions of the ecosystem.
               </h1>
             </div>
             <div className="mt-[73px]">
@@ -136,19 +136,26 @@ export default function Cards() {
                 <div className="grid grid-cols-2 gap-2 ">
                   {data.map((item, index) => (
                     <div
-                      className={` p-[2px] sm:w-[250px] lg:h-[116px] ${
-                        hoveredLabel === index ? "hovered-div" : ""
-                      }`}
+                      className={` p-[2.5px] sm:w-[250px] lg:h-[116px] `}
                       key={index}
                       style={{
-                        background:
+                        background: hoveredLabel === index ? "":
                           "linear-gradient(74deg, rgb(247 6 14 / 14%) 0%, rgb(252, 203, 76) 100%)",
                         borderRadius: "20px",
                       }}
                     >
-                      <div className="rounded-[20px] bg-[#FFF] p-5">
+                      <div
+                        className={`rounded-[20px] bg-[#FFF] dark:bg-[#000] p-[17px] lg:p-[20px]`} 
+                        style={{
+                          border:
+                            hoveredLabel === index
+                              ? `4px solid ${item.color} `
+                              : "",
+                              transform: hoveredLabel === index ? "revert-layer":""
+                        }}
+                      >
                         <div className="">
-                          <h1 className=" block font-black text-[rgb(0,0,0)] lg:text-[16px]">
+                          <h1 className=" block text-[#000] dark:text-[#FFF] font-black text-[rgb(0,0,0)] lg:text-[16px]">
                             {item.stats}
                           </h1>
                           <div className="flex items-center gap-2">
@@ -176,7 +183,7 @@ export default function Cards() {
                 <div>
                   <div className="grid justify-center grid-cols-3 gap-5 mt-5 md:grid-cols-5 lg:block lg:space-y-4">
                     <div>
-                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371]   lg:text-[14px]">
                         Token Name
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -184,7 +191,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371]   lg:text-[14px]">
                         Token Symbol
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -192,7 +199,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371]   lg:text-[14px]">
                         Token Supply
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -200,7 +207,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371]   lg:text-[14px]">
                         BLockChain Network
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -208,7 +215,7 @@ export default function Cards() {
                       </h1>
                     </div>
                     <div>
-                      <h1 className="block font-bold uppercase text-[#516371] dark:text-white lg:text-[14px]">
+                      <h1 className="block font-bold uppercase text-[#516371]   lg:text-[14px]">
                         Audit By
                       </h1>
                       <h1 className=" block font-black text-[#000] dark:text-white lg:text-[20px]">
@@ -222,122 +229,6 @@ export default function Cards() {
           </div>
         </div>
       </section>
-      {/* <section
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="2000"
-      >
-        <div className="Satoshi relative mx-auto max-w-[1280px]">
-          <img
-            src="/images/carouselbgw.png"
-            className="absolute top-0 left-0 right-0 block w-full dark:hidden"
-          />
-          <img
-            src="/images/carouselbgb.png"
-            className="absolute top-0 left-0 right-0 hidden w-full dark:block"
-          />
-           <Carousel />
-          <div
-            className="relative z-30 pt-3 sm:pt-5 lg:pt-16 xl:pt-28"
-            id="tokenomics"
-          >
-            <div className="mb-5 text-center md:mb-8 md:text-3xl lg:mb-12">
-              <h2 className="text-xl font-bold text-[#150035] dark:text-white sm:text-2xl  lg:text-[40px]">
-                Tokenomics
-              </h2>
-              <p className="para mt-3 text-lg font-bold text-[#000] dark:text-white">
-                Explore the Financial DNA of Cryptocurrency!
-              </p>
-            </div>
-            <div className="">
-              <div className="flex items-center justify-between">
-                <div className="grid grid-cols-2 gap-2 ">
-                  {data.map((item, index) => (
-                    <div
-                      className={` h-auto w-full    p-[2px] ${
-                        hoveredLabel === index ? "hovered-div" : ""
-                      }`}
-                      key={index}
-                      style={{
-                        background:
-                          "linear-gradient(74deg, rgb(247 6 14 / 14%) 0%, rgb(252, 203, 76) 100%)",
-                          borderRadius:"20px"
-                       }}
-                    >
-                      <div className="bg-[#FFF] rounded-[20px] p-5">
-                      <div className="">
-
-                        <h1 className=" block font-black text-[rgb(0,0,0)]  dark:text-white lg:text-[16px]">
-                          {item.stats}
-                        </h1>
-                        <div>
-                          <h1 className="tokenomicsbg block font-black   lg:text-[32px]">
-                            {item.usage}
-                          </h1>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div>
-                  <Chart
-                    options={options}
-                    series={series}
-                    type="donut"
-                    width="300"
-                    height="300"
-                  />
-                </div>
-                <div>
-                  <div className="space-y-4">
-                    <div>
-                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
-                        Token Name
-                      </h1>
-                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
-                        Win All Day
-                      </h1>
-                    </div>
-                    <div>
-                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
-                        Token Symbol
-                      </h1>
-                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
-                        $WAD{" "}
-                      </h1>
-                    </div>
-                    <div>
-                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
-                        Token Supply
-                      </h1>
-                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
-                        10,000,00 $WAD
-                      </h1>
-                    </div>
-                    <div>
-                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
-                        BLockChain Network
-                      </h1>
-                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
-                        Binance Smart Chain (Bsc)
-                      </h1>
-                    </div>
-                    <div>
-                      <h1 className="block font-black uppercase text-[#646464] dark:text-white lg:text-[14px]">
-                        Audit By
-                      </h1>
-                      <h1 className=" block font-black text-[#000] dark:text-white lg:text-[18px]">
-                        Certix
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 }
