@@ -31,8 +31,8 @@ export default function Navbar() {
       <div className="container mx-auto max-w-[1280px]">
         <div className="flex justify-between w-full py-4 align-middle bg-black-1">
           <img
-            className="w-[70px] md:w-[100px]"
-            src="/images/logo-top.png"
+            className="w-[70px] md:w-[110px]"
+            src="/images/logo.svg"
             alt="Logo"
           />
           <ThemeButton />
