@@ -15,8 +15,8 @@ export default function Footer() {
               >
                 <div className="relative w-40 h-7 xl:h-7 xl:w-40">
                   <img
-                    className="w-[70px] md:w-[100px]"
-                    src="/images/logo-top.png"
+                    className="w-[70px] md:w-[110px]"
+                    src="/images/logo.svg"
                     alt="Logo"
                   />
                 </div>
