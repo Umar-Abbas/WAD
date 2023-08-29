@@ -23,10 +23,9 @@ export default function Navbar() {
   }
   return (
     <div
-      className="border-fd-lightBlue fixed z-[9999] w-full border-b-[1px] px-4 text-black"
+      className="border-fd-lightBlue fixed z-[9999] bg-[#FFF] dark:bg-[#000] w-full border-b-[1px] px-4 text-black"
       style={{
-        background: "#FFF",
-        boxShadow: "0px 4px 30px 0px rgba(0, 0, 0, 0.04)",
+         boxShadow: "0px 4px 30px 0px rgba(0, 0, 0, 0.04)",
       }}
     >
       <div className="container mx-auto max-w-[1280px]">
@@ -42,7 +41,7 @@ export default function Navbar() {
               id="navbar-collapse-with-animation"
               className="!z-[999999] block pb-3 md:mt-0 md:w-auto md:pb-0 lg:bg-transparent lg:p-0"
             >
-              <ul className="flex-col justify-center hidden w-full gap-x-0 gap-y-4 sm:mt-0 sm:items-center sm:gap-y-0 lg:inline-flex lg:flex-row lg:space-x-6 xl:gap-x-7">
+              <ul className="flex-col dark:text-[#FFF] justify-center hidden w-full gap-x-0 gap-y-4 sm:mt-0 sm:items-center sm:gap-y-0 lg:inline-flex lg:flex-row lg:space-x-6 xl:gap-x-7">
                 <li className="l nav-item whitespace-nowrap">
                   <Link href="/">
                     <div className="p-0 nav-link text-small">Home</div>

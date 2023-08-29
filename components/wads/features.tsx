@@ -190,8 +190,8 @@ export default function Feartures() {
             />
           </div>
           <p className="mx-auto mb-4 mt-4 px-4 text-center text-sm font-normal text-[#516371] dark:text-white md:text-[18px] lg:mb-7 lg:w-1/2 ">
-            Need help buying WAD? Our assistance never sleeps! We are offering
-            24/7 services on WAD Telegram.
+            Need help buying $WAD? Our assistance never sleeps! We are offering
+            24/7 services on $WAD Telegram.
           </p>
 
           <div className="grid items-center grid-cols-1 gap-4 justify-items-center sm:grid-cols-2 lg:grid-cols-2 lg:gap-0">

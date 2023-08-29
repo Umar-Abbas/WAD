@@ -402,3 +402,8 @@ background-clip: text;
 .comunitybg {
  background: var(--gradient-for-illustration, linear-gradient(45deg, #F42D32 0%, #FCCB4C 100%));
 }
+.roadmapbg{
+  border-radius: 168.783px;
+background: linear-gradient(40deg, rgba(255, 184, 0, 0.74) 0%);
+filter: blur(358.5185241699219px);
+}

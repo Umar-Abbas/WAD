@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="relative -z-[2] h-16 w-20 md:h-24 md:w-32 lg:h-32 lg:w-40"></div>
         </div>
         <div className="container mx-auto max-w-[1280px] px-4 py-10 text-center md:text-left">
-          <div className="items-center justify-between md:grid md:grid-cols-4 justify-items-center">
+          <div className="items-center justify-between justify-items-center md:grid md:grid-cols-4">
             <div className="lg:max-w-[288px]">
               <Link
                 href=""
@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
               </Link>
 
-              <p className=" my-4 text-[14px] text-black dark:text-[#BAC8D2] lg:my-8">
+              <p className=" my-4 text-[14px] text-black dark:text-[#8E8E8E] lg:my-8">
                 Your token to Innovation, Empowerment, Global Economy, and
                 Ecosystem Growth!
               </p>
@@ -31,7 +31,10 @@ export default function Footer() {
                   Follow Us
                 </h1>
                 <div className="flex flex-row justify-center w-full mt-2 mb-3 space-x-3 align-middle lg:justify-start ">
-                  <Link href="social-icon " className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
+                  <Link
+                    href="social-icon "
+                    className="dark:rounded-[10px] dark:border dark:bg-[#FFF]"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -53,7 +56,10 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="social-icon" className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
+                  <Link
+                    href="social-icon"
+                    className="dark:rounded-[10px] dark:border dark:bg-[#FFF]"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -67,7 +73,10 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="social-icon" className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
+                  <Link
+                    href="social-icon"
+                    className="dark:rounded-[10px] dark:border dark:bg-[#FFF]"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -83,7 +92,10 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="social-icon" className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
+                  <Link
+                    href="social-icon"
+                    className="dark:rounded-[10px] dark:border dark:bg-[#FFF]"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -101,183 +113,184 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex items-center justify-evenly md:col-span-4 md:col-start-2 md:contents">
-                 <div className="">
-              <div className="mt-2 md:mt-0">
-                <h1 className="text-xl text-start font-bold md:text-[16px]">Links</h1>
-                <ul className="flex flex-col gap-3 pt-2 text-xs font-normal   text-[#516371] dark:text-[#FFF] md:text-base">
-                  <li className="">
-                    <a className="flex" href="/">
-                      Home
-                    </a>
-                  </li>
-                  <li className="">
-                    <a className="flex" href="/">
-                      Tokenomics
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      About $WAD
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      Key Features
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      Core Values
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      Where to Buy
-                    </a>
-                  </li>
-                  <li className="">
-                    <a className="flex" href="/">
-                      Road Map
-                    </a>
-                  </li>
-                </ul>
+              <div className="">
+                <div className="mt-2 md:mt-0">
+                  <h1 className="text-start text-xl font-bold md:text-[16px]">
+                    Links
+                  </h1>
+                  <ul className="flex flex-col gap-3 pt-2 text-xs font-normal   text-[#516371] dark:text-[#8E8E8E] md:text-base">
+                    <li className="">
+                      <a className="flex" href="/">
+                        Home
+                      </a>
+                    </li>
+                    <li className="">
+                      <a className="flex" href="/">
+                        Tokenomics
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        About $WAD
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        Key Features
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        Core Values
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        Where to Buy
+                      </a>
+                    </li>
+                    <li className="">
+                      <a className="flex" href="/">
+                        Road Map
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="">
+                <div className="mt-2 md:mt-0">
+                  <ul className="flex flex-col gap-3 pt-5 text-xs font-normal   text-[#516371] dark:text-[#8E8E8E] md:text-base">
+                    <li className="">
+                      <a className="flex" href="/">
+                        $WAD Statistics
+                      </a>
+                    </li>
+                    <li className="">
+                      <a className="flex" href="/">
+                        $WAD Tokenomics
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        $WAD Audits
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        Our Partners
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        Core Team
+                      </a>
+                    </li>{" "}
+                    <li className="">
+                      <a className="flex" href="/">
+                        Join $WAD Community
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div className="">
-              <div className="mt-2 md:mt-0">
-                <ul className="flex flex-col gap-3 pt-5 text-xs font-normal   text-[#516371] dark:text-[#FFF] md:text-base">
-                  <li className="">
-                    <a className="flex" href="/">
-                      $WAD Statistics
-                    </a>
-                  </li>
-                  <li className="">
-                    <a className="flex" href="/">
-                      $WAD Tokenomics
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      $WAD Audits
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      Our Partners
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      Core Team
-                    </a>
-                  </li>{" "}
-                  <li className="">
-                    <a className="flex" href="/">
-                      Join $WAD Community
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-             </div>
-             <div className="max-w-[288px]">
+            <div className="max-w-[288px]">
               <div className="mt-2 md:mt-0">
                 <h3 className="text-xl font-bold text-[#150035] dark:text-[#FFF] md:text-[16px]">
                   Contact
                 </h3>
                 <ul className="flex flex-col gap-3 pt-2 text-xs font-thin md:text-sm">
                   <li className="flex gap-2 items-centers">
-                    <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    
-                    >
-                      <path
-                        d="M3.24375 5.39531L5.73984 2.90156C5.91592 2.72471 6.1252 2.58439 6.35567 2.48867C6.58614 2.39294 6.83325 2.34369 7.08281 2.34375C7.5914 2.34375 8.06953 2.54297 8.42812 2.90156L11.1141 5.5875C11.2909 5.76358 11.4312 5.97286 11.527 6.20333C11.6227 6.4338 11.6719 6.68091 11.6719 6.93047C11.6719 7.43906 11.4727 7.91719 11.1141 8.27578L9.15 10.2398C9.60974 11.2532 10.2489 12.175 11.0367 12.9609C11.8225 13.7506 12.7443 14.3922 13.7578 14.8547L15.7219 12.8906C15.898 12.7138 16.1072 12.5735 16.3377 12.4777C16.5682 12.382 16.8153 12.3328 17.0648 12.3328C17.5734 12.3328 18.0516 12.532 18.4102 12.8906L21.0984 15.5742C21.2755 15.7506 21.4159 15.9603 21.5117 16.1912C21.6074 16.4221 21.6565 16.6696 21.6562 16.9195C21.6562 17.4281 21.457 17.9062 21.0984 18.2648L18.607 20.7562C18.0352 21.3305 17.2453 21.6562 16.4344 21.6562C16.2633 21.6562 16.0992 21.6422 15.9375 21.6141C12.7781 21.0938 9.64453 19.4133 7.11562 16.8867C4.58906 14.3625 2.91094 11.2312 2.38359 8.0625C2.22422 7.09453 2.54531 6.09844 3.24375 5.39531Z"
-                        fill="black"
-                      />
-                    </svg>
+                    <div className="dark:rounded-[10px] dark:border dark:bg-[#FFF]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.24375 5.39531L5.73984 2.90156C5.91592 2.72471 6.1252 2.58439 6.35567 2.48867C6.58614 2.39294 6.83325 2.34369 7.08281 2.34375C7.5914 2.34375 8.06953 2.54297 8.42812 2.90156L11.1141 5.5875C11.2909 5.76358 11.4312 5.97286 11.527 6.20333C11.6227 6.4338 11.6719 6.68091 11.6719 6.93047C11.6719 7.43906 11.4727 7.91719 11.1141 8.27578L9.15 10.2398C9.60974 11.2532 10.2489 12.175 11.0367 12.9609C11.8225 13.7506 12.7443 14.3922 13.7578 14.8547L15.7219 12.8906C15.898 12.7138 16.1072 12.5735 16.3377 12.4777C16.5682 12.382 16.8153 12.3328 17.0648 12.3328C17.5734 12.3328 18.0516 12.532 18.4102 12.8906L21.0984 15.5742C21.2755 15.7506 21.4159 15.9603 21.5117 16.1912C21.6074 16.4221 21.6565 16.6696 21.6562 16.9195C21.6562 17.4281 21.457 17.9062 21.0984 18.2648L18.607 20.7562C18.0352 21.3305 17.2453 21.6562 16.4344 21.6562C16.2633 21.6562 16.0992 21.6422 15.9375 21.6141C12.7781 21.0938 9.64453 19.4133 7.11562 16.8867C4.58906 14.3625 2.91094 11.2312 2.38359 8.0625C2.22422 7.09453 2.54531 6.09844 3.24375 5.39531Z"
+                          fill="black"
+                        />
+                      </svg>
                     </div>
-                    <a className="flex" href="tel:+70 214 7760">
+                    <a className="flex dark:text-[#8E8E8E]" href="tel:+971 55 538 9227">
                       {" "}
-                      +70 214 7760
+                      +971 55 538 9227
                     </a>
                   </li>
 
                   <li className="flex items-center gap-2 ">
-                  <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M4.64272 4.7998H20.5427C22.0427 4.7998 22.7987 5.5078 22.7987 6.9478V17.0518C22.7987 18.4798 22.0427 19.1998 20.5427 19.1998H4.64272C3.14272 19.1998 2.38672 18.4798 2.38672 17.0518V6.9478C2.38672 5.5078 3.14272 4.7998 4.64272 4.7998ZM12.5867 15.1198L20.6747 8.4838C20.9627 8.2438 21.1907 7.6918 20.8307 7.1998C20.4827 6.7078 19.8467 6.6958 19.4267 6.9958L12.5867 11.6278L5.75872 6.9958C5.33872 6.6958 4.70272 6.7078 4.35472 7.1998C3.99472 7.6918 4.22272 8.2438 4.51072 8.4838L12.5867 15.1198Z"
-                        fill="black"
-                      />
-                    </svg>
+                    <div className="dark:rounded-[10px] dark:border dark:bg-[#FFF]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.64272 4.7998H20.5427C22.0427 4.7998 22.7987 5.5078 22.7987 6.9478V17.0518C22.7987 18.4798 22.0427 19.1998 20.5427 19.1998H4.64272C3.14272 19.1998 2.38672 18.4798 2.38672 17.0518V6.9478C2.38672 5.5078 3.14272 4.7998 4.64272 4.7998ZM12.5867 15.1198L20.6747 8.4838C20.9627 8.2438 21.1907 7.6918 20.8307 7.1998C20.4827 6.7078 19.8467 6.6958 19.4267 6.9958L12.5867 11.6278L5.75872 6.9958C5.33872 6.6958 4.70272 6.7078 4.35472 7.1998C3.99472 7.6918 4.22272 8.2438 4.51072 8.4838L12.5867 15.1198Z"
+                          fill="black"
+                        />
+                      </svg>
                     </div>
-                    <a href="mailto: wad@winallday.com">wad@winallday.com</a>
+                    <a className="dark:text-[#8E8E8E]" href="mailto: wad@winallday.com">wad@winallday.com</a>
                   </li>
                   <li className="flex items-center gap-2">
-                  <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M4.64272 4.7998H20.5427C22.0427 4.7998 22.7987 5.5078 22.7987 6.9478V17.0518C22.7987 18.4798 22.0427 19.1998 20.5427 19.1998H4.64272C3.14272 19.1998 2.38672 18.4798 2.38672 17.0518V6.9478C2.38672 5.5078 3.14272 4.7998 4.64272 4.7998ZM12.5867 15.1198L20.6747 8.4838C20.9627 8.2438 21.1907 7.6918 20.8307 7.1998C20.4827 6.7078 19.8467 6.6958 19.4267 6.9958L12.5867 11.6278L5.75872 6.9958C5.33872 6.6958 4.70272 6.7078 4.35472 7.1998C3.99472 7.6918 4.22272 8.2438 4.51072 8.4838L12.5867 15.1198Z"
-                        fill="black"
-                      />
-                    </svg>
+                    <div className="dark:rounded-[10px] dark:border dark:bg-[#FFF]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.64272 4.7998H20.5427C22.0427 4.7998 22.7987 5.5078 22.7987 6.9478V17.0518C22.7987 18.4798 22.0427 19.1998 20.5427 19.1998H4.64272C3.14272 19.1998 2.38672 18.4798 2.38672 17.0518V6.9478C2.38672 5.5078 3.14272 4.7998 4.64272 4.7998ZM12.5867 15.1198L20.6747 8.4838C20.9627 8.2438 21.1907 7.6918 20.8307 7.1998C20.4827 6.7078 19.8467 6.6958 19.4267 6.9958L12.5867 11.6278L5.75872 6.9958C5.33872 6.6958 4.70272 6.7078 4.35472 7.1998C3.99472 7.6918 4.22272 8.2438 4.51072 8.4838L12.5867 15.1198Z"
+                          fill="black"
+                        />
+                      </svg>
                     </div>
-                    <a href="mailto: info@basatanwertech.com">
+                    <a className="dark:text-[#8E8E8E]" href="mailto: info@basatanwertech.com">
                       {" "}
                       info@basatanwertech.com
                     </a>
                   </li>
                   <li className="flex items-center gap-2 ">
-                  <div className="dark:border dark:bg-[#FFF] dark:rounded-[10px] p-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="19"
-                      viewBox="0 0 14 19"
-                      fill="none"
-                    >
-                      <g clip-path="url(#clip0_101_1617)">
-                        <path
-                          d="M6.13594 18.525C4.23281 16.1426 0 10.3684 0 7.125C0 3.18992 3.13396 0 7 0C10.8646 0 14 3.18992 14 7.125C14 10.3684 9.73438 16.1426 7.86406 18.525C7.41562 19.0928 6.58437 19.0928 6.13594 18.525ZM7 9.5C8.28698 9.5 9.33333 8.43496 9.33333 7.125C9.33333 5.81504 8.28698 4.75 7 4.75C5.71302 4.75 4.66667 5.81504 4.66667 7.125C4.66667 8.43496 5.71302 9.5 7 9.5Z"
-                          fill="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_101_1617">
-                          <rect width="14" height="19" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                    <div className="p-1 dark:rounded-[10px] dark:border dark:bg-[#FFF]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="19"
+                        viewBox="0 0 14 19"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_101_1617)">
+                          <path
+                            d="M6.13594 18.525C4.23281 16.1426 0 10.3684 0 7.125C0 3.18992 3.13396 0 7 0C10.8646 0 14 3.18992 14 7.125C14 10.3684 9.73438 16.1426 7.86406 18.525C7.41562 19.0928 6.58437 19.0928 6.13594 18.525ZM7 9.5C8.28698 9.5 9.33333 8.43496 9.33333 7.125C9.33333 5.81504 8.28698 4.75 7 4.75C5.71302 4.75 4.66667 5.81504 4.66667 7.125C4.66667 8.43496 5.71302 9.5 7 9.5Z"
+                            fill="black"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_101_1617">
+                            <rect width="14" height="19" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
                     </div>
-                    <a href="tel:+70 214 7760"> +703.214.7760</a>
+                    <a className="dark:text-[#8E8E8E]" href="tel:+70 214 7760"> +703.214.7760</a>
                   </li>
                 </ul>
               </div>
-             </div>
             </div>
-           <div className="flex flex-wrap  justify-center  pt-6 text-[14px] ">
-            <div className="">
-              <span>© 2023 Win All Day.</span>
+          </div>
+          <div className="flex flex-wrap  justify-center  pt-6 text-[14px] ">
+            <div className="flex flex-col items-center justify-center">
+              <span className="text-[#202020] dark:text-[#FFF] text-sm font-normal">© 2023 Win All Day.</span>
               <Link
-                className="font-semibold text-black dark:text-[#BAC8D2]"
+                className=" text-[#516371] text-sm font-normal dark:text-[#BAC8D2]"
                 href=""
               >
                 All Rights Reserved • Privacy Policy.

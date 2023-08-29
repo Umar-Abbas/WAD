@@ -52,8 +52,8 @@ export default function Teamslider() {
 
             {staking?.map((teamscard, idx) => {
               return (
-                <div className="relative w-full p-6 mx-auto sm:p-8 md:p-14 lg:p-4 lg:px-12" key={idx}>
-                  <img
+                <div className="relative w-full p-6 bg-[url(/images/stakingbg.svg)] bg-[length:100%_100%] dark:bg-[url(/images/stakingdark.svg)] mx-auto sm:p-8 md:p-14 lg:p-4 lg:px-12" key={idx}>
+                  {/* <img
                     src="/images/stakingbg.svg"
                     alt="staking"
                     className="absolute top-0 bottom-0 left-0 right-0 hidden w-full h-full sm:block"
@@ -62,9 +62,9 @@ export default function Teamslider() {
                     src="/images/stakingmb.svg"
                     alt="staking"
                     className="absolute top-0 bottom-0 left-0 right-0 block w-full h-auto sm:hidden"
-                  />
-                  <div className="relative   flex flex-col   px-4 lg:px-0 lg:py-[50px]">
-                    <h1 className=" flex items-center justify-center gap-2 text-center text-xl font-bold capitalize text-[#000]  sm:text-2xl md:mb-8 md:text-3xl lg:mb-1 lg:text-[22px]">
+                  /> */}
+                  <div className="flex flex-col   px-4 lg:px-0 lg:py-[50px]">
+                    <h1 className=" flex items-center justify-center gap-2 text-center text-xl font-bold capitalize text-[#000] dark:text-[#FFF]  sm:text-2xl md:mb-8 md:text-3xl lg:mb-1 lg:text-[22px]">
                       <Image
                         src={"/images/star.svg"}
                         alt="star"
@@ -81,7 +81,7 @@ export default function Teamslider() {
                       <div className="Satoshi block font-normal text-[#516371]    lg:text-sm 2xl:text-base">
                         DPY
                       </div>
-                      <div className="Satoshi block text-[#000]    lg:text-sm 2xl:text-base">
+                      <div className="Satoshi block text-[#000]  dark:text-[#FFF]  lg:text-sm 2xl:text-base">
                         1.369%
                       </div>
                     </div>
@@ -89,7 +89,7 @@ export default function Teamslider() {
                       <div className="block font-normal text-[#516371]    lg:text-sm 2xl:text-base">
                         APY
                       </div>
-                      <div className="block  text-[#000]    lg:text-sm 2xl:text-base">
+                      <div className="block  text-[#000]  dark:text-[#FFF]  lg:text-sm 2xl:text-base">
                         300%
                       </div>
                     </div>
@@ -106,7 +106,7 @@ export default function Teamslider() {
                         <h1 className="block font-bold stakingtext lg:text-sm 2xl:text-base">
                           $WAD Earned
                         </h1>
-                        <h1 className="block font-black text-[#000]   lg:text-sm 2xl:text-base">
+                        <h1 className="block font-black text-[#000] dark:text-[#FFF]   lg:text-sm 2xl:text-base">
                           0.00
                         </h1>
                       </div>

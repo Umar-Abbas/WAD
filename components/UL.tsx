@@ -8,7 +8,7 @@ export default function Ul(props: any) {
         <>
             {" "}
             <div style={{ justifyContent: "start" }}
-                className={`flex-1 !z-[999999] lg:bg-transparent bgLinear dark:bg-[#000] lg:w-auto lg:p-0 py-2 flex flex-col-reverse justify-end  fixed top-0 right-0 bottom-0 lg:relative pb-3 lg:block md:pb-0 md:mt-0 ${toggle
+                className={`flex-1 !z-[999999] lg:bg-transparent bgLinear  lg:w-auto lg:p-0 py-2 flex flex-col-reverse justify-end  fixed top-0 right-0 bottom-0 lg:relative pb-3 lg:block md:pb-0 md:mt-0 ${toggle
                     ? "lg:w-[50%] w-[70%] "
                     : " lg:inline-block hidden"
                     }`} id={props.id}>
@@ -29,10 +29,10 @@ export default function Ul(props: any) {
                             src='/images/xmarkw.svg' alt='logo'
                         />
                     </button>
-                    <ul className='flex flex-col mt-5 text-white gap-y-4 gap-x-0 lg:flex-row lg:justify-center md:gap-y-0- sm:gap-x-7 md:mt-0 sm:pl-7'>
+                    <ul className='flex flex-col mt-5 text-white dark:text-[#FFF] gap-y-4 gap-x-0 lg:flex-row lg:justify-center md:gap-y-0- sm:gap-x-7 md:mt-0 sm:pl-7'>
                         <li className="mx-5 nav-item">
                             <Link href="/">
-                                <div className='p-0 nav-link text-small' >Home    </div>
+                                <div className='p-0 nav-link text-small dark:text-[#FFF]' >Home    </div>
                             </Link>
                         </li>
                         <li className="mx-5 nav-item">

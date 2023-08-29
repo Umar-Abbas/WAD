@@ -45,15 +45,8 @@ export default function Teamslider() {
             {wadteams?.map((teamscard, idx) => {
               return (
                 <div className="mt-[50px] p-4" key={idx}>
-                  <div className="relative flex h-[470px] w-full flex-col items-center justify-center rounded-[20px] bg-cover  object-cover px-4 lg:py-5  2xl:px-8">
-                    <Image
-                      src="/images/teambg.svg"
-                      alt="img"
-                      width={10}
-                      height={10}
-                      className="absolute w-full h-full"
-                    />
-                    <div className="relative flex h-[150px] w-[150px] items-center justify-center rounded-full bg-[#f98c41]">
+                  <div className="  flex h-[470px] w-full flex-col items-center bg-[url(/images/teambg.svg)] bg-[length:100%_100%] dark:bg-[url(/images/teamdark.svg)]  justify-center rounded-[20px]   object-cover px-4 lg:py-5  2xl:px-8">
+                     <div className="relative flex h-[150px] w-[150px] items-center justify-center rounded-full bg-[#f98c41]">
                       <Image
                         alt="logos"
                         className="rounded-xl"
@@ -62,7 +55,7 @@ export default function Teamslider() {
                         src={teamscard.Image}
                       />
                     </div>
-                    <h4 className="relative mt-3 block font-black text-[#000] md:mt-6 lg:text-lg">
+                    <h4 className="relative mt-3 block font-black text-[#000] dark:text-[#FFF] md:mt-6 lg:text-lg">
                       {teamscard.title}
                     </h4>
                     <p className="dd relative mt-3  text-sm font-normal text-[#000] md:text-xl">
