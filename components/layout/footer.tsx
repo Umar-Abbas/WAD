@@ -280,7 +280,7 @@ export default function Footer() {
                         </defs>
                       </svg>
                     </div>
-                    <a className="dark:text-[#8E8E8E]" href="https://goo.gl/maps/CQujbc13gdQY1uPK7" target="_blank"> 12110 Sunset Hills Rd, Suite 600, Reston, VA 20190</a>
+                    <Link className="dark:text-[#8E8E8E]" href="https://goo.gl/maps/CQujbc13gdQY1uPK7" target="_blank"> 12110 Sunset Hills Rd, Suite 600, Reston, VA 20190</Link>
                   </li>
                 </ul>
               </div>
