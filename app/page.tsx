@@ -49,7 +49,7 @@ export default function Page() {
                 on each purchase.
               </p>
               <h1 className="herotext mt-3 text-[15px] font-medium">
-                WAD, the Premium token at your fingertips!
+                $WAD, the Premium token at your fingertips!
               </h1>
               <div className="flex flex-col items-center gap-2 mt-5 sm:flex-row sm:gap-3 lg:mt-12">
                 <Link

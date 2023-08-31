@@ -41,7 +41,7 @@ export const feartures = [
     Image: "/images/fearture2.svg",
     title: "Winning Momentum",
     description:
-      "The $WAD ecosystem continuously encourages the users to participate actively and Win all Day while contributing to collective community growth.",
+      "The $WAD ecosystem continuously encourages the users to participate actively and Win All Day while contributing to collective community growth.",
   },
   {
     Image: "/images/fearture3.svg",
@@ -53,7 +53,7 @@ export const feartures = [
     Image: "/images/fearture4.svg",
     title: "Transparency and Reliability ",
     description:
-      "$WAD ecosystem aims to provide transparency, security, and trust by ensuring that the users are timely given the earned rewards on their purchases while informed about the updates, security protocols, and development decisions.",
+      "$WAD ecosystem aims to provide transparency, security, and trust by ensuring that the users are timely given the earned rewards on their purchases.",
   },
 ];
 export const pillars = [

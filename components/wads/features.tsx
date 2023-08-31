@@ -179,7 +179,7 @@ export default function Feartures() {
               className="md:h-[70px] h-[40px] w-[100%]"
             />
             <h2 className="absolute top-[10%] mb-4  text-center text-xl font-bold text-[#150035] dark:text-white sm:text-2xl md:mb-8 md:text-3xl lg:mb-12 lg:text-[48px]">
-              Where to buy $WAD
+              Where to buy $WAD?
             </h2>
             <Image
               src="/images/lineC.svg"

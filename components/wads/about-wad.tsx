@@ -24,7 +24,7 @@ export default function AboutWad() {
                 About $WAD
               </h2>
               <p className="text-sm font-normal text-white lg:mt-3 lg:mb-3 dark:text-[#8E8E8E] md:text-lg ">
-                WAD - Win All Day, aims to turn every single token into the
+                $WAD - Win All Day, aims to turn every single token into the
                 epitome of a positive change. Its main objective is to help the
                 community through a raffle system, empowering cultures, and
                 giving charity to propel towards the journey of Compassion,
