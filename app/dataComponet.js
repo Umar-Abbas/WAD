@@ -176,7 +176,7 @@ export const wadteams = [
   {
     Image: "/images/avatarArab.png",
     creater: "C.F.O",
-    title: "Rashid Al Bukhatar",
+    title: "Rashid Al Bukhatab",
     description:
       "Meet Rashid Al Bukhatab, an energetic Chief Financial Officer at $WAD who is born .....",
   },
