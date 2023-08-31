@@ -169,7 +169,7 @@ export const wadteams = [
   {
     Image: "/images/avatarArab.png",
     creater: "C.E.O",
-    title: "Omar Al Shamsi",
+    title: "Omar AlShamsi",
     description:
       "Meet Omar Al Shamsi, a guiding light and a true master of business advisory who turned .....",
   },
