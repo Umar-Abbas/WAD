@@ -34,7 +34,7 @@ export default function WadCommunity() {
                 you toward a new opportunity and victory.
               </p>
               <p className="my-4 text-sm font-normal text-white dark:text-[#8E8E8E] md:text-lg ">
-                LLet’s join hands to fulfill the $WAD’s vision of shaping a
+                Let’s join hands to fulfill the $WAD’s vision of shaping a
                 better future, for all!
               </p>
               <button className="inline-flex items-center justify-center w-auto px-8 py-3 mt-6 font-medium text-white transition duration-300 rounded-full comunitybg gap-x-3 whitespace-nowrap hover:scale-110 focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:ring-0">

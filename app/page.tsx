@@ -40,7 +40,7 @@ export default function Page() {
               </p>
               <h1 className="block text-2xl font-bold text-[#150035] dark:text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-[48px]">
                 Your <span className="tokenText">Token</span> To The Better
-                Future.
+                Future
               </h1>
               <p className="para mt-4 w-full text-xl font-normal text-[#516371]  lg:w-[34rem]">
                 Introducing $WAD, the Win All Day token - Launched by the Youth
