@@ -12,7 +12,7 @@ export default function AboutWad() {
     >
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
-       <div className="z-40 mx-auto   md:max-w-[1280px]">
+       <div className="z-40 mx-auto  px-4 md:max-w-[1280px]">
          <div className="Satoshi  z-40 grid items-center justify-items-center  justify-center overflow-hidden     bg-[length:100%_100%] bg-no-repeat object-cover object-center    h-auto  lg:grid-cols-2 rounded-[45px] bg-[url(/images/bgwad.png)]  ">
           <div className="">
             <img src="/images/aboutwadbg.png" alt="" className="lg:w-full lg:h-full" />
@@ -37,7 +37,7 @@ export default function AboutWad() {
                 nationalities under one universal flag.
                 </p>
                 <p className="text-sm font-normal text-white lg:mt-10 lg:mb-3 dark:text-[#8E8E8E] md:text-lg">
-                Be a part of the WAD’s utility token - Where unity and culture
+                Be a part of the $WAD’s utility token - Where unity and culture
                 prosper!
               </p>
               </div>

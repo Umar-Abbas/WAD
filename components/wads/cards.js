@@ -97,7 +97,7 @@ export default function Cards() {
           alt="background"
           className="absolute left-0 right-0 w-full 2xl:top-[8%]"
         />
-        <div className="Satoshi  relative mx-auto max-w-[1280px]">
+        <div className="Satoshi px-4 relative mx-auto max-w-[1280px]">
           <div
             className="relative z-30 pt-3 sm:pt-5 lg:pt-16 xl:pt-4"
             id="tokenomics"

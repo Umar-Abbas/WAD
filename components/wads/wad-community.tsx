@@ -13,7 +13,7 @@ export default function WadCommunity() {
 
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
-      <div className="Satoshi z-40 mx-auto max-w-[1280px]">
+      <div className="Satoshi px-4 z-40 mx-auto max-w-[1280px]">
         <div className="z-40  grid  h-auto items-center justify-items-center overflow-hidden rounded-[45px] bg-[url(/images/bgwad.png)] bg-[length:100%_100%] lg:grid-cols-2">
           <div>
             <img src="/images/comunitybg.png" alt="" className="" />

@@ -35,7 +35,7 @@ export default async function RootLayout({
             ts-expect-error Server Component */}
             <Navbar />
            </Suspense>
-          <main className="px-4 pb-4 xl:px-5 dark:bg-black dark:text-white lg:pb-10 md:pb-8 ">
+          <main className="pb-4  dark:bg-black dark:text-white lg:pb-10 md:pb-8">
             {children}
           </main>
           <Footer />

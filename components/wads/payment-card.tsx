@@ -11,7 +11,7 @@ export default function PaymentCard() {
   return (
     <>
       <section className=" lg:py-20 slider-section">
-        <div className="Satoshi relative mx-auto max-w-[1280px]">
+        <div className="Satoshi relative mx-auto px-4 max-w-[1280px]">
           <img
             src="/images/ourpartner.png"
             className="absolute bottom-0 left-0 right-0 block w-full dark:hidden"

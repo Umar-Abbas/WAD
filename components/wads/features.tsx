@@ -8,7 +8,7 @@ export default function Feartures() {
     <>
       {/* hero */}
       <section
-        className="relative mx-auto max-w-[1440px] md:pb-6 md:pt-12 lg:pb-12 lg:pt-24"
+        className="relative mx-auto  max-w-[1440px] md:pb-6 md:pt-12 lg:pb-12 lg:pt-24"
         id="keyFeatures"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
@@ -26,7 +26,7 @@ export default function Feartures() {
           className="absolute -top-[40%] md:block hidden right-[35%] w-full"
         />
 
-        <div className="Satoshi mx-auto max-w-[1280px]">
+        <div className="Satoshi mx-auto px-4 max-w-[1280px]">
           <div className="relative">
             <Image
               src="/images/keyFeature.svg"
@@ -92,7 +92,7 @@ export default function Feartures() {
           alt="background"
           className="absolute bottom-0 left-0 right-0 w-full -top-40"
         />
-        <div className="Satoshi mx-auto max-w-[1280px]">
+        <div className="Satoshi mx-auto px-4 max-w-[1280px]">
           <div className="mx-auto text-center">
             <div className="relative flex flex-col items-center justify-center">
               <Image
@@ -169,7 +169,7 @@ export default function Feartures() {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="2000"
       >
-        <div className="Satoshi mx-auto mt-5 md:mt-[100px] max-w-[1280px]">
+        <div className="Satoshi mx-auto px-4 mt-5 md:mt-[100px] max-w-[1280px]">
           <div className="relative flex flex-col items-center justify-center">
             <Image
               src="/images/buyWAD.svg"

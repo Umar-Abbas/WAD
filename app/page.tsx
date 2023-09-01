@@ -32,7 +32,7 @@ export default function Page() {
     <div className=" pt-20 dark:bg-black lg:pt-[125px]">
       {/* hero */}
       <section data-aos="fade-up" data-aos-duration="1500">
-        <div className="Satoshi mx-auto max-w-[1280px]">
+        <div className="Satoshi mx-auto max-w-[1280px] px-4">
            <div className="flex flex-col-reverse md:grid sm:grid-cols-2 lg:gap-x-8 xl:gap-x-12">
             <div className=" relative z-50 md:mt-[80px]">
               <p className="mb-3 text-base font-normal text-[#516371]">
