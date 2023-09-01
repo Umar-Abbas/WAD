@@ -44,7 +44,7 @@ export default function PaymentCard() {
                         Total Supply
                       </p>
                       <h4 className=" text-lg font-normal text-[#ffffff] dark:text-white md:text-xl lg:text-2xl ">
-                        9,402,230,878
+                      100,000,000
                       </h4>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ export default function PaymentCard() {
               </div>
             </div>
             {/* card2 */}
-            <div
+            {/* <div
               className=" z-40 flex items-center overflow-hidden rounded-[45px] bg-[url(/images/payment2.png)] bg-cover md:h-[414px]"
               data-aos="fade-up"
               data-aos-duration="2500"
@@ -96,13 +96,7 @@ export default function PaymentCard() {
                       </h4>
                     </div>
                   </div>
-                  {/* <Image
-                    width={300}
-                    height={300}
-                    alt="logos"
-                    className="rounded-xl"
-                    src="/images/paymentImage1.png"
-                  /> */}
+                  
                 </div>
                 <div className="flex flex-col md:ml-16">
                   <div>
@@ -123,13 +117,13 @@ export default function PaymentCard() {
                     </p>
                     <div className="flex items-center">
                       <div className="text-[18px] font-bold text-[#FFF]">
-                        ( $WAD Community ) (Connect Wallet ) 
+                        ( $WAD Community ) (Connect Wallet )
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* card2 */}
             {/* <div className=" z-40 flex items-center overflow-hidden rounded-[45px] bg-[url(/images/payment3.png)] bg-cover md:h-[414px]"
             data-aos="fade-up"
