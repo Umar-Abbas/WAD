@@ -9,12 +9,10 @@ export default function WadCommunity() {
       data-aos-anchor-placement="top-bottom"
       data-aos-duration="2000"
     >
-      {/* <img src="/images/keybg.svg" alt="background"  className="absolute bottom-0" /> */}
-
       <img className="absolute left-0" src="/images/lineL.png" />
       <img className="absolute right-0" src="/images/lineR.png" />
-      <div className="Satoshi px-4 z-40 mx-auto max-w-[1280px]">
-        <div className="z-40  grid  h-auto items-center justify-items-center overflow-hidden rounded-[45px] bg-[url(/images/bgwad.png)] bg-[length:100%_100%] lg:grid-cols-2">
+      <div className="Satoshi z-40 mx-auto max-w-[1280px] px-4">
+        <div className="z-40  grid h-auto items-center justify-items-center overflow-hidden rounded-[45px] bg-[url(/images/bgwad.png)] bg-[length:100%_100%] lg:grid-cols-2">
           <div>
             <img src="/images/comunitybg.png" alt="" className="" />
           </div>
